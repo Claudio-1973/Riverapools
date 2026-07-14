@@ -90,64 +90,61 @@ export function Landing() {
       </header>
 
       <main>
-        {/* 2. HERO SECTION */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 lg:min-h-[90vh] flex items-center relative overflow-hidden bg-[#F8FAFC]">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-[#0F253F]/5 rounded-bl-[100px] -z-10 hidden lg:block"></div>
-          
-          <div className="container mx-auto px-6 max-w-7xl">
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-              <div className="w-full lg:w-1/2 space-y-8 relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm mb-2">
-                  <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]" />
-                  <span className="text-xs font-medium text-slate-600">Licensed, Bonded & Insured | Serving Temecula & Beyond</span>
-                </div>
-                
-                <h1 className="font-['Montserrat'] font-extrabold text-4xl md:text-5xl lg:text-6xl text-[#0F253F] leading-[1.1] tracking-tight">
-                  Premium Pool <br className="hidden md:block"/>
-                  Remodeling & <br className="hidden md:block"/>
-                  Restoration <span className="text-[#06B6D4]">in Riverside County.</span>
-                </h1>
-                
-                <p className="text-base md:text-lg text-slate-600 max-w-xl leading-relaxed">
-                  We transform your backyard. From plaster resurfacing and natural stone coping to complete structural remodels — local, licensed, and built to last.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white h-14 px-8 rounded-xl font-medium shadow-xl shadow-[#06B6D4]/20 text-base">
-                    Schedule Free Estimate
-                  </Button>
-                  <Button variant="outline" className="h-14 px-8 rounded-xl font-medium border-[#0F253F]/20 text-[#0F253F] hover:bg-[#0F253F]/5 text-base bg-transparent">
-                    View Our Transformations
-                  </Button>
-                </div>
+        {/* 2. HERO SECTION — full-screen video background */}
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+          {/* Background video */}
+          <video
+            src="/__mockup/images/pool-video-opt.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          />
+          {/* Dark gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0F253F]/70 via-[#0F253F]/50 to-[#0F253F]/80 z-10" />
+
+          {/* Content */}
+          <div className="relative z-20 container mx-auto px-6 max-w-5xl text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 shadow mb-8">
+              <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]" />
+              <span className="text-xs font-medium text-white/90">Licensed, Bonded & Insured | Serving Temecula & Beyond</span>
+            </div>
+
+            <h1 className="font-['Montserrat'] font-extrabold text-4xl md:text-6xl lg:text-7xl text-white leading-[1.08] tracking-tight mb-6">
+              Premium Pool Remodeling<br className="hidden md:block" />
+              <span className="text-[#06B6D4]"> & Restoration</span><br className="hidden md:block" />
+              in Riverside County.
+            </h1>
+
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-10">
+              We transform your backyard. From plaster resurfacing and natural stone coping to complete structural remodels — local, licensed, and built to last.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white h-14 px-10 rounded-xl font-semibold shadow-2xl shadow-[#06B6D4]/30 text-base">
+                Schedule Free Estimate
+              </Button>
+              <Button variant="outline" className="h-14 px-10 rounded-xl font-semibold border-white/40 text-white hover:bg-white/10 text-base bg-transparent backdrop-blur">
+                View Our Transformations
+              </Button>
+            </div>
+
+            {/* Floating trust badge */}
+            <div className="mt-14 inline-flex items-center gap-4 bg-white/10 backdrop-blur border border-white/20 py-3 px-6 rounded-2xl shadow-lg">
+              <div className="bg-[#D4AF37] rounded-full p-2">
+                <Award className="w-5 h-5 text-white" />
               </div>
-              
-              <div className="w-full lg:w-1/2 relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/20 to-[#06B6D4]/20 rounded-3xl blur-2xl opacity-50 -z-10"></div>
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                  <video
-                    src="/__mockup/images/pool-video-opt.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover"
-                  />
-                  
-                  {/* Floating badge */}
-                  <div className="absolute bottom-6 left-6 z-20 bg-white/95 backdrop-blur py-3 px-5 rounded-xl shadow-lg flex items-center gap-4">
-                    <div className="bg-[#0F253F] rounded-full p-2">
-                      <Award className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-['Montserrat'] font-bold text-sm text-[#0F253F]">Craftsman Quality</p>
-                      <p className="text-xs text-slate-500">Done right the first time</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="text-left">
+                <p className="font-['Montserrat'] font-bold text-sm text-white">Craftsman Quality</p>
+                <p className="text-xs text-white/60">Done right the first time — guaranteed</p>
               </div>
             </div>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/50 animate-bounce">
+            <div className="w-px h-10 bg-white/30 rounded-full" />
           </div>
         </section>
 
