@@ -271,9 +271,9 @@ export function Landing() {
                 
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex gap-2 mb-2">
-                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">Glass Tile</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">Premium Tile & Black Pebble</span>
                   </div>
-                  <h3 className="font-['Montserrat'] font-bold text-lg text-white mb-1">Premium Tile & Plaster — Menifee</h3>
+                  <h3 className="font-['Montserrat'] font-bold text-lg text-white mb-1">Premium Tile & Black Pebble — Idyllwild-Pine Cove</h3>
                 </div>
               </div>
             </div>
