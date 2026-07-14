@@ -28,7 +28,7 @@ import {
 // 2. Enter claudio@contractor.net → click "Create Access Key"
 // 3. Check your inbox, click the confirmation link
 // 4. Copy the Access Key and paste it below
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "ce1a369d-5a62-4444-8c9e-f233dd1eedbe";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export function Landing() {
