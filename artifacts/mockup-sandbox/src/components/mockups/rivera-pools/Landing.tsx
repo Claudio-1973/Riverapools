@@ -169,7 +169,14 @@ export function Landing() {
             <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
               {/* Item 1 - Large */}
               <div className="md:col-span-2 md:row-span-2 relative rounded-2xl overflow-hidden group cursor-pointer h-[300px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/photo2.jpg" alt="Modern Stone Scapes pool" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <video
+                  src="https://res.cloudinary.com/ci1jfnss/video/upload/v1783994386/Coronapool3_fjz4oo.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
