@@ -126,10 +126,13 @@ export function Landing() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/20 to-[#06B6D4]/20 rounded-3xl blur-2xl opacity-50 -z-10"></div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                  <img 
-                    src="/__mockup/images/photo1.jpg" 
-                    alt="Luxury residential swimming pool with Stone Scapes finish" 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  <video
+                    src="/__mockup/images/pool-video-opt.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
                   />
                   
                   {/* Floating badge */}
