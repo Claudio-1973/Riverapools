@@ -120,7 +120,7 @@ export function Landing() {
             <span className="font-['Montserrat'] font-extrabold text-xl tracking-tight text-[#0F253F] leading-none">
               RIVERA POOLS
               <span className="font-medium text-slate-500 text-sm block tracking-widest">RIVERSIDE</span>
-              <span className="font-medium text-[#06B6D4] text-[11px] block tracking-wide mt-0.5">(951) 345-9276</span>
+              <span className="font-medium text-[#0F253F] text-[11px] block tracking-wide mt-0.5">(951) 345-9276</span>
             </span>
           </a>
 
