@@ -35,6 +35,9 @@ export function Landing() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Before/After modal state
+  const [baModal, setBaModal] = useState<null | { title: string; before: string; after: string }>(null);
+
   // Contact form state
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
@@ -230,10 +233,13 @@ export function Landing() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
-                <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                <button
+                  onClick={() => setBaModal({ title: "Modern Stone Scapes Oasis — Temecula", before: "/__mockup/images/photo3.jpg", after: "/__mockup/images/photo2.jpg" })}
+                  className="absolute top-4 right-4 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20 transition-colors cursor-pointer"
+                >
                   Before → After
-                </div>
-                
+                </button>
+
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex gap-2 mb-3">
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">Stone Scapes</span>
@@ -265,10 +271,13 @@ export function Landing() {
                 <img src="/__mockup/images/photo4.jpg" alt="Pool tile renovation" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
-                <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                <button
+                  onClick={() => setBaModal({ title: "Premium Tile & Black Pebble — Idyllwild-Pine Cove", before: "/__mockup/images/photo4.jpg", after: "/__mockup/images/photo1.jpg" })}
+                  className="absolute top-4 right-4 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20 transition-colors cursor-pointer"
+                >
                   Before → After
-                </div>
-                
+                </button>
+
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex gap-2 mb-2">
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">Premium Tile & Black Pebble</span>
@@ -787,6 +796,60 @@ export function Landing() {
         </div>
       </footer>
       
+      {/* Before / After Modal */}
+      {baModal && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          onClick={() => setBaModal(null)}
+        >
+          <div
+            className="relative w-full max-w-5xl bg-[#0F253F] rounded-3xl overflow-hidden shadow-2xl"
+            onClick={e => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between px-8 py-5 border-b border-white/10">
+              <div>
+                <p className="text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-1">Before & After</p>
+                <h3 className="font-['Montserrat'] font-bold text-xl text-white">{baModal.title}</h3>
+              </div>
+              <button
+                onClick={() => setBaModal(null)}
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Photos */}
+            <div className="grid grid-cols-2 gap-0">
+              <div className="relative">
+                <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  Antes
+                </div>
+                <img src={baModal.before} alt="Before" className="w-full aspect-[4/3] object-cover" />
+              </div>
+              <div className="relative">
+                <div className="absolute top-4 right-4 z-10 bg-[#06B6D4] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  Después
+                </div>
+                <img src={baModal.after} alt="After" className="w-full aspect-[4/3] object-cover" />
+              </div>
+            </div>
+
+            {/* Footer CTA */}
+            <div className="flex items-center justify-between px-8 py-5 border-t border-white/10">
+              <p className="text-white/50 text-sm">¿Te gustaría un resultado similar?</p>
+              <Button
+                onClick={() => { setBaModal(null); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }}
+                className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white rounded-xl px-6 h-10 text-sm font-semibold shadow-lg shadow-[#06B6D4]/20"
+              >
+                Schedule Free Estimate
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Utility Style for custom scrollbar hidden in testimonials */}
       <style dangerouslySetInnerHTML={{__html: `
         .hide-scrollbar::-webkit-scrollbar {
