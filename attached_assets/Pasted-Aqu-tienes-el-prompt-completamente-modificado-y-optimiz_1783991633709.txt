@@ -1,0 +1,112 @@
+Aquí tienes el prompt completamente modificado y optimizado. He adaptado cada sección del portafolio del diseñador digital para convertirlo en una **Landing Page de conversión premium para Rivera Pools Riverside**, enfocada en captar proyectos de alto valor (remodelación, acabados de piedra, modernización de equipos) en tu zona de operación.
+
+Copia y pega este prompt exactamente como está en tu próxima conversación con Gemini para que te genere el código web perfecto:
+
+---
+
+### 📋 Copia y pega el siguiente prompt:
+
+```text
+Desarrolla una Landing Page de conversión premium, responsiva y moderna para "RIVERA POOLS RIVERSIDE" - una empresa contratista especializada en la remodelación, reconstrucción y acabados de lujo para piscinas residenciales en Riverside County (Temecula, Murrieta y zonas aledañas).
+
+DISEÑO Y ESTÉTICA:
+- Paleta de colores inspirada en resorts de lujo: 
+  - Fondo limpio: Blanco puro (#FFFFFF) y Gris ultra claro (#F8FAFC)
+  - Color principal: Azul Océano Profundo (#0F253F) para textos, botones y secciones clave (transmite confianza, agua limpia y profesionalismo)
+  - Color de acento: Turquesa vibrante (#06B6D4) o Oro/Arena suave (#D4AF37) para destacar botones de acción (CTA) y acabados premium.
+- Tipografía moderna: Sans-serif geométrica elegante para títulos (estilo Montserrat o Inter) y una tipografía monospace muy sutil para detalles técnicos de equipos.
+- Diseño limpio con mucho espacio en blanco (whitespace al 50%) para proyectar orden, limpieza y exclusividad.
+- Micro-interacciones suaves en botones y tarjetas de proyectos.
+
+HERO SECTION:
+- Diseño asimétrico de alto impacto (texto a la izquierda, imagen/render de piscina de lujo a la derecha en pantallas grandes).
+- Titular principal (H1) optimizado para SEO Local: "Premium Pool Remodeling & Restoration in Riverside County"
+- Subtítulo enfocado en resolver dolores del cliente: "Transformamos tu patio trasero. Desde revoque de yeso (plaster) y acabados de piedra natural (stone coping) hasta remodelaciones estructurales completas. Locales, licenciados y construidos para durar."
+- Dos botones de llamada a la acción (CTA):
+  - Botón principal destacado con fondo de acento: "Schedule Free Estimate"
+  - Botón secundario sutil con borde: "View Our Transformations"
+- Indicador visual de confianza justo debajo de los botones: "⭐ Licensed, Bonded & Insured | Serving Temecula, Murrieta & Beyond"
+
+PORTAFOLIO DE PROYECTOS (Antes y Después):
+- Grid asimétrico tipo Bento para mostrar el portafolio de remodelaciones finalizadas.
+- Cada tarjeta de proyecto debe incluir:
+  - Imagen/Mockup de alta calidad del proyecto terminado.
+  - Etiqueta "Antes / Después" interactiva (o slider visual si es posible).
+  - Título del proyecto (ej. "Modern PebbleTec Remodel in Temecula").
+  - Tags de las especialidades aplicadas (PebbleTec, Custom Tile, Led Lighting, Stone Coping).
+- Efecto Hover: La imagen se expande ligeramente y muestra un overlay sutil con el texto "Ver detalles del proyecto".
+- Filtros rápidos por categoría en la parte superior: [Ver Todos] [Remodelación Completa] [Revestimiento (Plaster)] [Piedra y Azulejo].
+
+CASO DE ESTUDIO (Sección interactiva detallada):
+Sección dedicada a desglosar un "Antes y Después" real para demostrar la capacidad técnica:
+- Título (H2): "Featured Transformation: Modern Oasis"
+- Layout Split:
+  - Lado Izquierdo: Datos técnicos del proyecto:
+    - Ubicación: Temecula, CA
+    - Tiempo de ejecución: 3 semanas
+    - Servicios: Remodelación estructural, instalación de piedra natural, bomba inteligente Pentair.
+    - El Desafío: Piscina vieja de plaster agrietado, equipos obsoletos que gastaban demasiada energía.
+    - La Solución: Revestimiento premium, azulejo de vidrio moderno y automatización ecológica.
+  - Lado Derecho: Contenedor grande para la galería de fotos del proyecto finalizado.
+
+SERVICIOS Y CAPACIDADES TÉCNICAS:
+Layout en grid de 3 columnas que muestra las áreas de mayor rentabilidad:
+1. "Pool Remodeling & Resurfacing": Explicación sobre acabados en Plaster, PebbleTec y cuarzo.
+2. "Custom Stone Coping & Tile": Instalación artesanal de piedra de borde, losetas de vidrio y mosaicos modernos.
+3. "Equipment Upgrades & Automation": Instalación de bombas de velocidad variable ecológicas, calentadores y sistemas de sal para automatizar la piscina.
+- Cada tarjeta debe tener un ícono limpio en color azul océano y un hover de elevación suave.
+
+SOBRE NOSOTROS (Confianza Familiar y Local):
+- Layout de dos columnas:
+  - Izquierda (40%): Foto real de trabajo en obra o del equipo de trabajo, proyectando cercanía y honestidad.
+  - Derecha (60%): Texto persuasivo que destaque:
+    - Quién es Rivera Pools: Una empresa local comprometida con la excelencia artesanal.
+    - Nuestra filosofía: Sin rodeos, sin tarifas ocultas, comunicación transparente y materiales de la más alta calidad.
+    - Botón CTA: "Download Our Material Guide (PDF)" o "Our Process".
+
+PROCESO DE TRABAJO (La línea del tiempo):
+Esquema horizontal de 4 pasos sencillos para eliminar la fricción del cliente:
+1. "1. Free Site Assessment": Visitamos tu propiedad para evaluar las condiciones de la piscina sin costo.
+2. "2. Material & Design Selection": Elegimos juntos los acabados, piedras y equipos inteligentes.
+3. "3. Clean Execution": Demolición rápida, preparación estructural y aplicación experta sin dejar desastres en tu patio.
+4. "4. Handover & Chemistry Set": Llenado, balanceo químico inicial y entrega de tu nuevo oasis listo para usar.
+
+TESTIMONIALES DE VECINOS DE LA REGIÓN:
+- Formato de tarjetas (cards) horizontales que muestren reseñas reales con enfoque en la zona:
+  - "Rivera Pools transformó por completo nuestra piscina en Murrieta. El trabajo con la piedra de los bordes fue impecable y terminaron a tiempo." - Mark S., Murrieta, CA.
+  - "Excelente comunicación de principio a fin. Cambiamos el viejo plaster por PebbleTec y ahora el agua se ve increíble." - Sarah L., Temecula, CA.
+- Diseño de tarjetas elevadas con sombras muy suaves y bordes redondeados.
+
+SOCIOS COMERCIALES Y CERTIFICACIONES:
+- Fila horizontal con logotipos en escala de grises (que se iluminen a color al pasar el cursor) de marcas líderes en la industria para transferir autoridad:
+  - Pentair, Jandy, Hayward, PebbleTec, NPC (National Plasterers Council).
+
+FORMULARIO DE CONTACTO (Sección de Alta Conversión):
+- Caja destacada con fondo de color Azul Océano Profundo (#0F253F) para romper el patrón visual y enfocar al usuario.
+- Título grande y llamativo: "¿Listo para transformar tu piscina?"
+- Subtítulo: "Solicita hoy tu cotización gratuita. Nos pondremos en contacto contigo en menos de 24 horas hábiles."
+- Formulario limpio con campos optimizados para móviles:
+  - Nombre completo.
+  - Teléfono (con máscara de formato automático).
+  - Correo electrónico.
+  - Ubicación/Ciudad en Riverside County.
+  - Tipo de proyecto (Dropdown: Remodelación Completa, Revestimiento de Yeso, Piedra y Azulejo, Cambio de Equipos).
+  - Mensaje detallado.
+- Botón de envío en color de acento brillante (#06B6D4): "Request My Free Estimate".
+
+FOOTER:
+- Fondo gris oscuro o negro profundo (#0A0A0A) para cerrar la página.
+- Logo de "Rivera Pools Riverside" con una breve leyenda: "Professional Pool Construction, Remodeling, & Restoration."
+- Información de contacto directa: Teléfono, Email, y el enlace directo a mi Google Business Profile.
+- Área de servicio explícita para SEO: "Serving Temecula, Murrieta, Menifee, Winchester, Wildomar, Corona, and surrounding Riverside County areas."
+- Nota de cumplimiento: "Licensed, Bonded, & Insured. CA Contractor License # [Insertar_Licencia]"
+- Copyright dinámico.
+
+REQUERIMIENTOS TÉCNICOS DE PROGRAMACIÓN (Front-End):
+- Genera un único archivo index.html limpio, semántico y auto-contenido.
+- Usa Tailwind CSS mediante CDN para los estilos (clases directamente aplicadas en el HTML) para asegurar una carga instantánea.
+- Usa iconos limpios de Lucide Icons o FontAwesome cargados también por CDN.
+- Asegúrate de que el código esté optimizado para SEO técnico (etiquetas alt en imágenes ficticias, estructura semántica perfecta).
+- Incluye comentarios claros en el código como <!-- INSERTAR FOTO DE REMODELACIÓN AQUÍ --> para poder personalizarlo fácilmente más adelante.
+
+```
