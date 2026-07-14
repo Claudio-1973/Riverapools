@@ -234,7 +234,7 @@ export function Landing() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <button
-                  onClick={() => setBaModal({ title: "Modern Stone Scapes Oasis — Temecula", before: "/__mockup/images/photo3.jpg", after: "/__mockup/images/photo2.jpg" })}
+                  onClick={() => setBaModal({ title: "Modern Stone Scapes Oasis — Temecula", before: "/__mockup/images/before1.jpg", after: "/__mockup/images/photo2.jpg" })}
                   className="absolute top-4 right-4 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20 transition-colors cursor-pointer"
                 >
                   Before → After
