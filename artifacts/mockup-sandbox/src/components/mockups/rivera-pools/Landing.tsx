@@ -109,7 +109,7 @@ export function Landing() {
                 </h1>
                 
                 <p className="text-base md:text-lg text-slate-600 max-w-xl leading-relaxed">
-                  Transformamos tu patio trasero. Desde revoque de yeso (plaster) y acabados de piedra natural (stone coping) hasta remodelaciones estructurales completas. Locales, licenciados y construidos para durar.
+                  We transform your backyard. From plaster resurfacing and natural stone coping to complete structural remodels — local, licensed, and built to last.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -467,7 +467,7 @@ export function Landing() {
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" />)}
                 </div>
-                <p className="text-lg text-white/90 mb-6 italic">"Rivera Pools transformó por completo nuestra piscina en Murrieta. El trabajo con la piedra de los bordes fue impecable y terminaron a tiempo. Absolutamente recomendados."</p>
+                <p className="text-lg text-white/90 mb-6 italic">"Rivera Pools completely transformed our pool in Murrieta. The stone coping work was impeccable and they finished right on schedule. Absolutely recommend them."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#06B6D4] rounded-full flex items-center justify-center font-bold text-lg">M</div>
                   <div>
@@ -482,7 +482,7 @@ export function Landing() {
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" />)}
                 </div>
-                <p className="text-lg text-white/90 mb-6 italic">"Excelente comunicación de principio a fin. Cambiamos el viejo plaster por PebbleTec y ahora el agua se ve increíble. Son muy profesionales y limpios."</p>
+                <p className="text-lg text-white/90 mb-6 italic">"Excellent communication from start to finish. We upgraded from old plaster to PebbleTec and the water looks absolutely stunning now. Very professional and clean crew."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center font-bold text-lg">S</div>
                   <div>
