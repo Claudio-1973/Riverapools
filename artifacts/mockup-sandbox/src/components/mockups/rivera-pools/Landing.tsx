@@ -556,7 +556,7 @@ export function Landing() {
                       <div className="bg-white/10 p-3 rounded-full"><Mail className="w-5 h-5 text-[#06B6D4]" /></div>
                       <div>
                         <p className="text-sm text-white/50">Email Us</p>
-                        <p className="font-medium">quotes@riverapools.com</p>
+                        <p className="font-medium">claudio@contractor.net</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -696,7 +696,7 @@ export function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#06B6D4]" />
-                  <span>quotes@riverapools.com</span>
+                  <span>claudio@contractor.net</span>
                 </li>
               </ul>
             </div>
