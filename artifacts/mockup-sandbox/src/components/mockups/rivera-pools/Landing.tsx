@@ -127,7 +127,7 @@ export function Landing() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                   <img 
-                    src="/__mockup/images/rivera-real.jpg" 
+                    src="/__mockup/images/photo1.jpg" 
                     alt="Luxury residential swimming pool with Stone Scapes finish" 
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
@@ -169,7 +169,7 @@ export function Landing() {
             <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
               {/* Item 1 - Large */}
               <div className="md:col-span-2 md:row-span-2 relative rounded-2xl overflow-hidden group cursor-pointer h-[300px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/rivera-real.jpg" alt="Modern Stone Scapes pool" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/__mockup/images/photo2.jpg" alt="Modern Stone Scapes pool" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -191,7 +191,7 @@ export function Landing() {
 
               {/* Item 2 */}
               <div className="relative rounded-2xl overflow-hidden group cursor-pointer h-[250px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/rivera-real.jpg" alt="Natural stone coping" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/__mockup/images/photo3.jpg" alt="Natural stone coping" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
@@ -204,7 +204,7 @@ export function Landing() {
 
               {/* Item 3 */}
               <div className="relative rounded-2xl overflow-hidden group cursor-pointer h-[250px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/rivera-real.jpg" alt="Pool tile renovation" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/__mockup/images/photo4.jpg" alt="Pool tile renovation" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -279,13 +279,13 @@ export function Landing() {
               {/* Right: Gallery */}
               <div className="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="md:col-span-2 rounded-3xl overflow-hidden h-[300px] lg:h-auto shadow-md">
-                  <img src="/__mockup/images/rivera-real.jpg" alt="Finished pool" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/__mockup/images/photo1.jpg" alt="Finished pool" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="rounded-3xl overflow-hidden h-[200px] shadow-md hidden md:block">
-                  <img src="/__mockup/images/rivera-real.jpg" alt="Detail 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/__mockup/images/photo3.jpg" alt="Detail 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="rounded-3xl overflow-hidden h-[200px] shadow-md hidden md:block">
-                  <img src="/__mockup/images/rivera-real.jpg" alt="Detail 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/__mockup/images/photo4.jpg" alt="Detail 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
             </div>
@@ -362,7 +362,7 @@ export function Landing() {
               <div className="w-full lg:w-[45%] relative">
                 <div className="absolute inset-0 bg-[#06B6D4] rounded-3xl transform rotate-3 scale-105 opacity-10"></div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10 transform -rotate-1 transition-transform hover:rotate-0 duration-500">
-                  <img src="/__mockup/images/rivera-real.jpg" alt="Rivera Pools Riverside Crew" className="w-full h-auto aspect-[4/5] object-cover" />
+                  <img src="/__mockup/images/rivera-opt.jpg" alt="Rivera Pools Riverside Crew" className="w-full h-auto aspect-[4/5] object-cover" />
                 </div>
               </div>
               
@@ -392,7 +392,7 @@ export function Landing() {
                     </div>
                     <div>
                       <p className="text-xs text-slate-500 font-normal">Call us directly</p>
-                      <p>(951) 555-0198</p>
+                      <p>(951) 345-9276</p>
                     </div>
                   </div>
                 </div>
@@ -542,7 +542,7 @@ export function Landing() {
                       <div className="bg-white/10 p-3 rounded-full"><Phone className="w-5 h-5 text-[#06B6D4]" /></div>
                       <div>
                         <p className="text-sm text-white/50">Call Us</p>
-                        <p className="font-medium">(951) 555-0198</p>
+                        <p className="font-medium">(951) 345-9276</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -573,7 +573,7 @@ export function Landing() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Phone</label>
-                      <Input placeholder="(951) 555-0000" className="bg-slate-50 border-slate-200 h-12" />
+                      <Input placeholder="(951) 345-9276" className="bg-slate-50 border-slate-200 h-12" />
                     </div>
                   </div>
                   
@@ -685,7 +685,7 @@ export function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#06B6D4]" />
-                  <span>(951) 555-0198</span>
+                  <span>(951) 345-9276</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#06B6D4]" />
