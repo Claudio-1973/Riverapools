@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,17 +23,13 @@ import {
   ArrowRight
 } from "lucide-react";
 
-// ── EmailJS config ──────────────────────────────────────────────────────────
-// Replace these three values after setting up your EmailJS account:
-// 1. Go to https://www.emailjs.com and create a free account
-// 2. Add a service (Gmail, Outlook, etc.) → copy the Service ID
-// 3. Create a template with variables: {{from_name}}, {{from_email}}, {{phone}}, {{city}}, {{project_type}}, {{message}}
-//    Set "To Email" to claudio@contractor.net → copy the Template ID
-// 4. Go to Account → Public Key → copy it below
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
-// ────────────────────────────────────────────────────────────────────────────
+// ── Web3Forms config ─────────────────────────────────────────────────────────
+// 1. Go to https://web3forms.com
+// 2. Enter claudio@contractor.net → click "Create Access Key"
+// 3. Check your inbox, click the confirmation link
+// 4. Copy the Access Key and paste it below
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY";
+// ─────────────────────────────────────────────────────────────────────────────
 
 export function Landing() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,11 +52,29 @@ export function Landing() {
     e.preventDefault();
     setFormStatus("sending");
     try {
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData, EMAILJS_PUBLIC_KEY);
-      setFormStatus("success");
-      setFormData({ from_name: "", phone: "", from_email: "", city: "", project_type: "", message: "" });
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New Pool Estimate Request — ${formData.from_name}`,
+          from_name: formData.from_name,
+          email: formData.from_email,
+          phone: formData.phone,
+          city: formData.city,
+          project_type: formData.project_type,
+          message: formData.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setFormStatus("success");
+        setFormData({ from_name: "", phone: "", from_email: "", city: "", project_type: "", message: "" });
+      } else {
+        setFormStatus("error");
+      }
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Web3Forms error:", err);
       setFormStatus("error");
     }
   };
