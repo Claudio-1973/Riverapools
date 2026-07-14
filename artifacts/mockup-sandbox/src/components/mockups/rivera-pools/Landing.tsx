@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -23,9 +24,47 @@ import {
   ArrowRight
 } from "lucide-react";
 
+// ── EmailJS config ──────────────────────────────────────────────────────────
+// Replace these three values after setting up your EmailJS account:
+// 1. Go to https://www.emailjs.com and create a free account
+// 2. Add a service (Gmail, Outlook, etc.) → copy the Service ID
+// 3. Create a template with variables: {{from_name}}, {{from_email}}, {{phone}}, {{city}}, {{project_type}}, {{message}}
+//    Set "To Email" to claudio@contractor.net → copy the Template ID
+// 4. Go to Account → Public Key → copy it below
+const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
+// ────────────────────────────────────────────────────────────────────────────
+
 export function Landing() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Contact form state
+  const formRef = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({
+    from_name: "", phone: "", from_email: "", city: "", project_type: "", message: "",
+  });
+  const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+
+  const handleSelect = (field: string, value: string) =>
+    setFormData(prev => ({ ...prev, [field]: value }));
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormStatus("sending");
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData, EMAILJS_PUBLIC_KEY);
+      setFormStatus("success");
+      setFormData({ from_name: "", phone: "", from_email: "", city: "", project_type: "", message: "" });
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setFormStatus("error");
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -569,70 +608,94 @@ export function Landing() {
               
               {/* Form Side */}
               <div className="w-full lg:w-[60%] bg-white p-10 lg:p-14">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Full Name</label>
-                      <Input placeholder="John Doe" className="bg-slate-50 border-slate-200 h-12" />
+                {formStatus === "success" ? (
+                  <div className="flex flex-col items-center justify-center h-full text-center py-16 space-y-4">
+                    <div className="w-16 h-16 bg-[#06B6D4]/10 rounded-full flex items-center justify-center">
+                      <CheckCircle2 className="w-8 h-8 text-[#06B6D4]" />
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Phone</label>
-                      <Input placeholder="(951) 345-9276" className="bg-slate-50 border-slate-200 h-12" />
-                    </div>
+                    <h3 className="font-['Montserrat'] font-bold text-2xl text-[#0F253F]">¡Mensaje Enviado!</h3>
+                    <p className="text-slate-500 max-w-sm">We received your request and will get back to you within 24 business hours.</p>
+                    <Button variant="outline" onClick={() => setFormStatus("idle")} className="mt-4 border-[#06B6D4] text-[#06B6D4]">
+                      Send Another Request
+                    </Button>
                   </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Email Address</label>
-                      <Input type="email" placeholder="john@example.com" className="bg-slate-50 border-slate-200 h-12" />
+                ) : (
+                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-slate-700">Full Name</label>
+                        <Input name="from_name" value={formData.from_name} onChange={handleChange} placeholder="John Doe" className="bg-slate-50 border-slate-200 h-12" required />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-slate-700">Phone</label>
+                        <Input name="phone" value={formData.phone} onChange={handleChange} placeholder="(951) 345-9276" className="bg-slate-50 border-slate-200 h-12" required />
+                      </div>
                     </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-slate-700">Email Address</label>
+                        <Input name="from_email" type="email" value={formData.from_email} onChange={handleChange} placeholder="john@example.com" className="bg-slate-50 border-slate-200 h-12" required />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-slate-700">City</label>
+                        <Select value={formData.city} onValueChange={v => handleSelect("city", v)}>
+                          <SelectTrigger className="bg-slate-50 border-slate-200 h-12 text-slate-700">
+                            <SelectValue placeholder="Select City" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Temecula">Temecula</SelectItem>
+                            <SelectItem value="Murrieta">Murrieta</SelectItem>
+                            <SelectItem value="Menifee">Menifee</SelectItem>
+                            <SelectItem value="Lake Elsinore">Lake Elsinore</SelectItem>
+                            <SelectItem value="Corona">Corona</SelectItem>
+                            <SelectItem value="Riverside">Riverside</SelectItem>
+                            <SelectItem value="Other">Other (Riverside County)</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">City</label>
-                      <Select>
+                      <label className="text-sm font-medium text-slate-700">Project Type</label>
+                      <Select value={formData.project_type} onValueChange={v => handleSelect("project_type", v)}>
                         <SelectTrigger className="bg-slate-50 border-slate-200 h-12 text-slate-700">
-                          <SelectValue placeholder="Select City" />
+                          <SelectValue placeholder="What do you need help with?" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="temecula">Temecula</SelectItem>
-                          <SelectItem value="murrieta">Murrieta</SelectItem>
-                          <SelectItem value="menifee">Menifee</SelectItem>
-                          <SelectItem value="lake-elsinore">Lake Elsinore</SelectItem>
-                          <SelectItem value="corona">Corona</SelectItem>
-                          <SelectItem value="riverside">Riverside</SelectItem>
-                          <SelectItem value="other">Other (Riverside County)</SelectItem>
+                          <SelectItem value="Full Remodel">Full Remodel</SelectItem>
+                          <SelectItem value="Plaster / Stone Scapes Resurfacing">Plaster / Stone Scapes Resurfacing</SelectItem>
+                          <SelectItem value="Stone Coping & Tile">Stone Coping &amp; Tile</SelectItem>
+                          <SelectItem value="Equipment Upgrade">Equipment Upgrade</SelectItem>
+                          <SelectItem value="Other / Not Sure">Other / Not Sure</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-700">Project Type</label>
-                    <Select>
-                      <SelectTrigger className="bg-slate-50 border-slate-200 h-12 text-slate-700">
-                        <SelectValue placeholder="What do you need help with?" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="full">Full Remodel</SelectItem>
-                        <SelectItem value="resurfacing">Plaster / Stone Scapes Resurfacing</SelectItem>
-                        <SelectItem value="stone">Stone Coping & Tile</SelectItem>
-                        <SelectItem value="equipment">Equipment Upgrade</SelectItem>
-                        <SelectItem value="other">Other / Not Sure</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-700">Project Details</label>
-                    <Textarea 
-                      placeholder="Tell us a bit about your pool and what you're looking to do..." 
-                      className="bg-slate-50 border-slate-200 min-h-[120px] resize-none"
-                    />
-                  </div>
-                  
-                  <Button type="button" className="w-full bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white font-bold h-14 text-lg rounded-xl shadow-lg shadow-[#06B6D4]/20">
-                    Request My Free Estimate
-                  </Button>
-                </form>
+
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-slate-700">Project Details</label>
+                      <Textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Tell us a bit about your pool and what you're looking to do..."
+                        className="bg-slate-50 border-slate-200 min-h-[120px] resize-none"
+                      />
+                    </div>
+
+                    {formStatus === "error" && (
+                      <p className="text-sm text-red-500">Something went wrong. Please try again or call us at (951) 345-9276.</p>
+                    )}
+
+                    <Button
+                      type="submit"
+                      disabled={formStatus === "sending"}
+                      className="w-full bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white font-bold h-14 text-lg rounded-xl shadow-lg shadow-[#06B6D4]/20 disabled:opacity-60"
+                    >
+                      {formStatus === "sending" ? "Sending…" : "Request My Free Estimate"}
+                    </Button>
+                  </form>
+                )}
               </div>
             </div>
           </div>
