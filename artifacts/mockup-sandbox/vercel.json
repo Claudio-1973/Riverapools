@@ -1,11 +1,11 @@
 {
-  "buildCommand": "pnpm install && pnpm run build",
-  "outputDirectory": "dist",
   "framework": "vite",
+  "buildCommand": "pnpm --filter ./artifacts/mockup-sandbox build",
+  "outputDirectory": "artifacts/mockup-sandbox/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "env": {
-    "BASE_PATH": "/"
-  }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
