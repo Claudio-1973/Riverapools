@@ -24,8 +24,11 @@ import {
   ArrowRight
 } from "lucide-react";
 
-// Resolves image/video paths correctly in both Replit sandbox and Vercel production
-const asset = (name: string) => `${import.meta.env.BASE_URL}images/${name}`.replace(/\/+/g, "/");
+// Resolves image/video paths correctly in both Replit sandbox (/__mockup/) and Vercel (/)
+const BASE = typeof window !== "undefined" && window.location.pathname.startsWith("/__mockup")
+  ? "/__mockup/"
+  : "/";
+const asset = (name: string) => `${BASE}images/${name}`;
 
 // ── Web3Forms config ─────────────────────────────────────────────────────────
 // 1. Go to https://web3forms.com
