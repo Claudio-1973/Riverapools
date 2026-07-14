@@ -128,7 +128,7 @@ export function Landing() {
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                   <img 
                     src="/__mockup/images/pool-hero.jpg" 
-                    alt="Luxury residential swimming pool with PebbleTec finish" 
+                    alt="Luxury residential swimming pool with Stone Scapes finish" 
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                   
@@ -169,7 +169,7 @@ export function Landing() {
             <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
               {/* Item 1 - Large */}
               <div className="md:col-span-2 md:row-span-2 relative rounded-2xl overflow-hidden group cursor-pointer h-[300px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/pool-1.jpg" alt="Modern PebbleTec pool" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/__mockup/images/pool-1.jpg" alt="Modern Stone Scapes pool" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -178,10 +178,10 @@ export function Landing() {
                 
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex gap-2 mb-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">PebbleTec</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#06B6D4] text-white px-2 py-1 rounded">Stone Scapes</span>
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded">Full Remodel</span>
                   </div>
-                  <h3 className="font-['Montserrat'] font-bold text-2xl text-white mb-2">Modern PebbleTec Oasis — Temecula</h3>
+                  <h3 className="font-['Montserrat'] font-bold text-2xl text-white mb-2">Modern Stone Scapes Oasis — Temecula</h3>
                   <div className="flex items-center gap-2 text-[#06B6D4] opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                     <span className="text-sm font-semibold">View Project Details</span>
                     <ChevronRight className="w-4 h-4" />
@@ -267,7 +267,7 @@ export function Landing() {
                   
                   <div className="bg-black/20 rounded-xl p-5 border border-white/5">
                     <p className="text-sm text-white/70 mb-2"><strong className="text-white">Challenge:</strong> Cracked old plaster, outdated energy-hungry equipment, fading coping.</p>
-                    <p className="text-sm text-white/70"><strong className="text-[#06B6D4]">Solution:</strong> Premium PebbleTec resurfacing, modern glass tile, eco automation system.</p>
+                    <p className="text-sm text-white/70"><strong className="text-[#06B6D4]">Solution:</strong> Premium Stone Scapes resurfacing, modern glass tile, eco automation system.</p>
                   </div>
                 </div>
                 
@@ -308,9 +308,9 @@ export function Landing() {
                     <Droplets className="w-7 h-7" />
                   </div>
                   <h3 className="font-['Montserrat'] font-bold text-xl text-[#0F253F] mb-3">Pool Remodeling & Resurfacing</h3>
-                  <p className="text-slate-600 leading-relaxed mb-6">Restore your pool's surface with premium plaster, durable PebbleTec, or stunning quartz finishes designed to last decades.</p>
+                  <p className="text-slate-600 leading-relaxed mb-6">Restore your pool's surface with premium plaster, durable Stone Scapes, or stunning quartz finishes designed to last decades.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-slate-500"><CheckCircle2 className="w-4 h-4 text-[#06B6D4]" /> PebbleTec Application</li>
+                    <li className="flex items-center gap-2 text-sm text-slate-500"><CheckCircle2 className="w-4 h-4 text-[#06B6D4]" /> Stone Scapes Application</li>
                     <li className="flex items-center gap-2 text-sm text-slate-500"><CheckCircle2 className="w-4 h-4 text-[#06B6D4]" /> Plaster Repair & Resurfacing</li>
                     <li className="flex items-center gap-2 text-sm text-slate-500"><CheckCircle2 className="w-4 h-4 text-[#06B6D4]" /> Acid Wash & Stain Removal</li>
                   </ul>
@@ -482,7 +482,7 @@ export function Landing() {
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" />)}
                 </div>
-                <p className="text-lg text-white/90 mb-6 italic">"Excellent communication from start to finish. We upgraded from old plaster to PebbleTec and the water looks absolutely stunning now. Very professional and clean crew."</p>
+                <p className="text-lg text-white/90 mb-6 italic">"Excellent communication from start to finish. We upgraded from old plaster to Stone Scapes and the water looks absolutely stunning now. Very professional and clean crew."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center font-bold text-lg">S</div>
                   <div>
@@ -518,7 +518,7 @@ export function Landing() {
               <span className="font-['Montserrat'] font-bold text-2xl text-slate-800">PENTAIR</span>
               <span className="font-['Montserrat'] font-bold text-2xl text-slate-800">Jandy</span>
               <span className="font-['Montserrat'] font-bold text-2xl text-slate-800">HAYWARD</span>
-              <span className="font-['Montserrat'] font-bold text-2xl text-slate-800">PebbleTec</span>
+              <span className="font-['Montserrat'] font-bold text-2xl text-slate-800">Stone Scapes</span>
               <span className="font-['Montserrat'] font-bold text-2xl text-slate-800 border border-slate-800 px-3 py-1">NPC</span>
             </div>
           </div>
@@ -609,7 +609,7 @@ export function Landing() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="full">Full Remodel</SelectItem>
-                        <SelectItem value="resurfacing">Plaster / PebbleTec Resurfacing</SelectItem>
+                        <SelectItem value="resurfacing">Plaster / Stone Scapes Resurfacing</SelectItem>
                         <SelectItem value="stone">Stone Coping & Tile</SelectItem>
                         <SelectItem value="equipment">Equipment Upgrade</SelectItem>
                         <SelectItem value="other">Other / Not Sure</SelectItem>
@@ -669,7 +669,7 @@ export function Landing() {
               <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Services</h4>
               <ul className="space-y-3 text-sm text-white/60">
                 <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Pool Remodeling</a></li>
-                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Plaster & PebbleTec</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Plaster & Stone Scapes</a></li>
                 <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Stone Coping & Tile</a></li>
                 <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Equipment Upgrades</a></li>
                 <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Energy Efficiency</a></li>
