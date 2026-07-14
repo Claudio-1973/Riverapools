@@ -24,6 +24,9 @@ import {
   ArrowRight
 } from "lucide-react";
 
+// Resolves image/video paths correctly in both Replit sandbox and Vercel production
+const asset = (name: string) => `${import.meta.env.BASE_URL}images/${name}`.replace(/\/+/g, "/");
+
 // ── Web3Forms config ─────────────────────────────────────────────────────────
 // 1. Go to https://web3forms.com
 // 2. Enter claudio@contractor.net → click "Create Access Key"
@@ -163,7 +166,7 @@ export function Landing() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background video */}
           <video
-            src="/__mockup/images/pool-video-opt.mp4"
+            src={asset("pool-video-opt.mp4")}
             autoPlay
             muted
             loop
@@ -246,7 +249,7 @@ export function Landing() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 via-[#0F253F]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <button
-                  onClick={() => setBaModal({ title: "Modern Stone Scapes Oasis — Temecula", before: "/__mockup/images/before1.jpg", after: "/__mockup/images/photo2.jpg" })}
+                  onClick={() => setBaModal({ title: "Modern Stone Scapes Oasis — Temecula", before: asset("before1.jpg"), after: asset("photo2.jpg") })}
                   className="absolute top-4 right-4 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20 transition-colors cursor-pointer"
                 >
                   Before → After
@@ -267,7 +270,7 @@ export function Landing() {
 
               {/* Item 2 */}
               <div className="relative rounded-2xl overflow-hidden group cursor-pointer h-[250px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/photo3.jpg" alt="Natural stone coping" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src={asset("photo3.jpg")} alt="Natural stone coping" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
@@ -280,11 +283,11 @@ export function Landing() {
 
               {/* Item 3 */}
               <div className="relative rounded-2xl overflow-hidden group cursor-pointer h-[250px] md:h-auto shadow-sm hover:shadow-xl transition-all duration-300">
-                <img src="/__mockup/images/photo4.jpg" alt="Pool tile renovation" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src={asset("photo4.jpg")} alt="Pool tile renovation" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F253F]/90 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
                 
                 <button
-                  onClick={() => setBaModal({ title: "Premium Tile & Black Pebble — Idyllwild-Pine Cove", before: "/__mockup/images/photo4.jpg", after: "/__mockup/images/photo1.jpg" })}
+                  onClick={() => setBaModal({ title: "Premium Tile & Black Pebble — Idyllwild-Pine Cove", before: asset("photo4.jpg"), after: asset("photo1.jpg") })}
                   className="absolute top-4 right-4 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20 transition-colors cursor-pointer"
                 >
                   Before → After
@@ -358,13 +361,13 @@ export function Landing() {
               {/* Right: Gallery */}
               <div className="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="md:col-span-2 rounded-3xl overflow-hidden h-[300px] lg:h-auto shadow-md">
-                  <img src="/__mockup/images/photo1.jpg" alt="Finished pool" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src={asset("photo1.jpg")} alt="Finished pool" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="rounded-3xl overflow-hidden h-[200px] shadow-md hidden md:block">
-                  <img src="/__mockup/images/photo3.jpg" alt="Detail 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src={asset("photo3.jpg")} alt="Detail 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="rounded-3xl overflow-hidden h-[200px] shadow-md hidden md:block">
-                  <img src="/__mockup/images/photo4.jpg" alt="Detail 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src={asset("photo4.jpg")} alt="Detail 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
             </div>
@@ -441,7 +444,7 @@ export function Landing() {
               <div className="w-full lg:w-[45%] relative">
                 <div className="absolute inset-0 bg-[#06B6D4] rounded-3xl transform rotate-3 scale-105 opacity-10"></div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10 transform -rotate-1 transition-transform hover:rotate-0 duration-500">
-                  <img src="/__mockup/images/rivera-opt.jpg" alt="Rivera Pools Riverside Crew" className="w-full h-auto aspect-[4/5] object-cover" />
+                  <img src={asset("rivera-opt.jpg")} alt="Rivera Pools Riverside Crew" className="w-full h-auto aspect-[4/5] object-cover" />
                 </div>
               </div>
               
