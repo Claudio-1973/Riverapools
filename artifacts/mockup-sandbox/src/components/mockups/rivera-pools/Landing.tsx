@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -92,6 +93,17 @@ export function Landing() {
 
   return (
     <div className="min-h-screen font-['Inter'] text-slate-700 bg-white overflow-x-hidden scroll-smooth selection:bg-[#06B6D4] selection:text-white">
+      <Helmet>
+        <title>Rivera Pools Riverside — Premium Pool Remodeling in Riverside County, CA</title>
+        <meta name="description" content="Rivera Pools Riverside specializes in premium pool remodeling, plaster resurfacing, Stone Scapes finishes, and full pool restoration across Riverside County. Licensed, bonded & insured. Call (951) 345-9276 for a free estimate." />
+        <meta name="keywords" content="pool remodeling Riverside County, pool resurfacing Temecula, Stone Scapes pool, pool contractor Murrieta, pool renovation Riverside CA" />
+        <meta property="og:title" content="Rivera Pools Riverside — Premium Pool Remodeling" />
+        <meta property="og:description" content="Transform your backyard with Rivera Pools Riverside. Expert pool remodeling, resurfacing & restoration in Riverside County. Free estimates." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.riverapoolsriverside.com" />
+      </Helmet>
+
       {/* NAVIGATION */}
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
