@@ -102,8 +102,10 @@ export function Landing() {
             <div className="bg-[#0F253F] p-2 rounded-lg group-hover:bg-[#06B6D4] transition-colors">
               <Droplets className="w-5 h-5 text-white" />
             </div>
-            <span className="font-['Montserrat'] font-extrabold textxl tracking-tight text-[#0F253F]">
-              RIVERA POOLS <span className="font-medium text-slate-500 text-sm block -mt-1 tracking-widest">RIVERSIDE</span>
+            <span className="font-['Montserrat'] font-extrabold text-xl tracking-tight text-[#0F253F] leading-none">
+              RIVERA POOLS
+              <span className="font-medium text-slate-500 text-sm block tracking-widest">RIVERSIDE</span>
+              <span className="font-medium text-[#06B6D4] text-[11px] block tracking-wide mt-0.5">(951) 345-9276</span>
             </span>
           </a>
 
