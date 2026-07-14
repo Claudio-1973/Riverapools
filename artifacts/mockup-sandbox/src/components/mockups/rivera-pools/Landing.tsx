@@ -256,7 +256,7 @@ export function Landing() {
                       <div className="bg-white/10 p-2 rounded-lg text-[#06B6D4]"><Clock className="w-5 h-5" /></div>
                       <div>
                         <p className="text-xs text-white/50 uppercase tracking-wider font-bold mb-1">Timeline</p>
-                        <p className="font-medium text-lg">3 weeks</p>
+                        <p className="font-medium text-lg">2 weeks</p>
                       </div>
                     </div>
                     
