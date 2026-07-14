@@ -1,4 +1,5 @@
 import { useEffect, useState, type ComponentType } from "react";
+import { Landing } from "./components/mockups/rivera-pools/Landing";
 
 import { modules as discoveredModules } from "./.generated/mockup-components";
 
@@ -140,7 +141,7 @@ function App() {
     );
   }
 
-  return <Gallery />;
+  return <Landing />;
 }
 
 export default App;

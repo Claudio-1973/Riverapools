@@ -105,6 +105,7 @@ export function Landing() {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://www.riverapoolsriverside.com" />
+        <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       {/* NAVIGATION */}
