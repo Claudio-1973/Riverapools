@@ -34,7 +34,17 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- **vercel.json en la raíz**: Al configurar cualquier proyecto Vite SPA para Vercel, siempre crear un `vercel.json` en la raíz con esta estructura base:
+  ```json
+  {
+    "framework": "vite",
+    "outputDirectory": "dist/public",
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
+  ```
+  Ajustar `outputDirectory` según la estructura real del proyecto (ej. `artifacts/mockup-sandbox/dist` en monorepos).
 
 ## Gotchas
 
