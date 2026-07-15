@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "pnpm install && cd artifacts/mockup-sandbox && BASE_PATH=/ pnpm run build",
+  "buildCommand": "pnpm install --no-frozen-lockfile && cd artifacts/mockup-sandbox && BASE_PATH=/ pnpm run build",
   "outputDirectory": "artifacts/mockup-sandbox/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
