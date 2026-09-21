@@ -1,4 +1,4 @@
-const GEMINI_MODEL = process.env.GEMINI_MODEL ?? "gemini-3.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL ?? "gemini-3-flash-preview";
 const MAX_REQUESTS = 20;
 const WINDOW_MS = 10 * 60 * 1000;
 const requestWindows = new Map();
@@ -104,10 +104,11 @@ export default async function handler(req, res) {
     parts: [{ text: String(item.content ?? "") }],
   }));
 
-  const models = [GEMINI_MODEL, "gemini-3.5-flash", "gemini-2.5-flash", "gemini-2.0-flash"]
+  const models = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest"]
     .filter((m, i, arr) => arr.indexOf(m) === i);
 
   let upstream = null;
+  const modelAttempts = [];
   for (const model of models) {
     try {
       const candidate = await fetch(
@@ -121,22 +122,31 @@ export default async function handler(req, res) {
             contents: [...history, { role: "user", parts: [{ text: message }] }],
             generationConfig: { temperature: 0.3, maxOutputTokens: 450 },
           }),
-        }
+        },
       );
-      if (candidate.ok || ![404, 429, 500, 502, 503].includes(candidate.status)) {
-        upstream = candidate; break;
-      }
       upstream = candidate;
-    } catch { /* timeout — try next */ }
+      modelAttempts.push({ model, status: candidate.status });
+      if (candidate.ok) break;
+    } catch (error) {
+      modelAttempts.push({
+        model,
+        status: "request_error",
+        error: error instanceof Error ? error.name : "unknown_error",
+      });
+    }
   }
 
   if (!upstream?.ok) {
+    console.error("gemini_upstream_failed", { modelAttempts });
     res.status(502).json({ error: "The assistant is temporarily unavailable." }); return;
   }
 
   const data = await upstream.json();
   const reply = getReplyText(data);
-  if (!reply) { res.status(502).json({ error: "The assistant returned an empty response." }); return; }
+  if (!reply) {
+    console.error("gemini_empty_response", { modelAttempts });
+    res.status(502).json({ error: "The assistant returned an empty response." }); return;
+  }
 
   res.status(200).json({ reply, language: lang });
 }
