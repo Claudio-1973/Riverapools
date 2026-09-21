@@ -11,8 +11,8 @@ type SubmitState = "idle" | "sending" | "success" | "error";
 
 const copy = {
   en: {
-    pageTitle: "Share Your Experience | Rivera Pool Services",
-    pageDescription: "Share private feedback or leave a Google review for Rivera Pool Services.",
+    pageTitle: "Share Your Experience | Rivera Pools Riverside",
+    pageDescription: "Share private feedback or leave a Google review for Rivera Pools Riverside.",
     visualKicker: "After the finish line",
     visualHeadingBefore: "Good work should",
     visualHeadingHighlight: "feel",
@@ -61,11 +61,11 @@ const copy = {
     consent: "I agree to have Web3Forms process this feedback so the Rivera team can follow up with me.",
     consentError: "Please confirm that we may process your feedback.",
     secure: "Sent privately to the Rivera team",
-    footer: "Rivera Pool Services · Riverside County & the Inland Empire",
+    footer: "Rivera Pools Riverside · Riverside County & the Inland Empire",
   },
   es: {
-    pageTitle: "Comparta su experiencia | Rivera Pool Services",
-    pageDescription: "Comparta un comentario privado o deje una reseña en Google para Rivera Pool Services.",
+    pageTitle: "Comparta su experiencia | Rivera Pools Riverside",
+    pageDescription: "Comparta un comentario privado o deje una reseña en Google para Rivera Pools Riverside.",
     visualKicker: "Después de terminar el trabajo",
     visualHeadingBefore: "Un buen trabajo debe",
     visualHeadingHighlight: "sentirse",
@@ -114,7 +114,7 @@ const copy = {
     consent: "Acepto que Web3Forms procese este comentario para que el equipo Rivera pueda contactarme.",
     consentError: "Confirme que podemos procesar su comentario.",
     secure: "Enviado de forma privada al equipo Rivera",
-    footer: "Rivera Pool Services · Riverside County y el Inland Empire",
+    footer: "Rivera Pools Riverside · Riverside County y el Inland Empire",
   },
 };
 
@@ -396,7 +396,7 @@ export function ReviewPage() {
       `}</style>
       <div className="review-shell">
         <aside className="review-visual">
-          <a href="/" className="review-brand" aria-label="Rivera Pool Services home">
+          <a href="/" className="review-brand" aria-label="Rivera Pools Riverside home">
             <span className="review-mark"><Droplets size={22} aria-hidden="true" /></span>
             <span className="review-brand-name">RIVERA POOLS<span className="review-brand-sub">RIVERSIDE</span></span>
           </a>

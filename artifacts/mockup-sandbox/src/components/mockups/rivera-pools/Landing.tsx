@@ -140,7 +140,7 @@ export function Landing() {
           <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between py-1.5">
             <span className="flex items-center gap-1.5">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2"/></svg>
-              Mon – Fri: 8:00 AM – 5:00 PM
+              Mon – Sat: 8:00 AM – 5:00 PM
             </span>
             <a href="tel:+19513459276" onClick={() => trackPhoneClick("header_hours_bar")} className="flex items-center gap-1.5 hover:text-[#06B6D4] transition-colors">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>

@@ -499,9 +499,9 @@ function pebbleQuartzStaticRoot() {
       <h1 style="font-size:2.75rem;font-weight:800;line-height:1.12;margin:12px 0 16px">${esc(pebbleQuartzPost.title)}</h1>
       <p style="font-size:1.125rem;color:#475569;line-height:1.75">${esc(pebbleQuartzPost.intro)}</p>
       <p style="color:#64748b">${esc(pebbleQuartzPost.published)} · ${esc(pebbleQuartzPost.readTime)}</p>
-      <p style="margin-top:28px;color:#475569;line-height:1.75">At Rivera Swimming Pools Riverside, we specialize in high-end replastering using premium aggregate finishes. Here is a clear breakdown to help you choose the best surface for your backyard.</p>
+      <p style="margin-top:28px;color:#475569;line-height:1.75">At Rivera Pools Riverside, we specialize in high-end replastering using premium aggregate finishes. Here is a clear breakdown to help you choose the best surface for your backyard.</p>
       ${sections}
-      <section style="margin-top:48px;background:#0f253f;color:#fff;padding:32px;border-radius:20px"><h2>Ready to Remodel Your Pool?</h2><p>Get the peace of mind that comes with expert installation by Rivera Swimming Pools Riverside and certified post-finish care from Rivera Pool Care.</p><a href="/#contact" style="color:#67e8f9;font-weight:700">Request a Free Estimate</a></section>
+      <section style="margin-top:48px;background:#0f253f;color:#fff;padding:32px;border-radius:20px"><h2>Ready to Remodel Your Pool?</h2><p>Get the peace of mind that comes with expert installation and certified post-finish start-up care by Rivera Pools Riverside.</p><a href="/#contact" style="color:#67e8f9;font-weight:700">Request a Free Estimate</a></section>
       <section style="margin-top:48px"><h2>Pebble and quartz finish questions</h2>${faqs}</section>
       <p style="margin-top:48px"><a href="/pool-finishes/pebble">Pebble pool resurfacing</a> · <a href="/pool-finishes/quartz">Quartz pool finishes</a> · <a href="/pool-plaster-delaminating">Pool plaster repair</a></p>
      </main>

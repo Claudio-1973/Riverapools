@@ -84,7 +84,7 @@ export function PebbleVsQuartzPost() {
 
         <article className="container mx-auto max-w-4xl px-6 py-16 md:py-20">
           <div className="mb-12 overflow-hidden rounded-3xl"><img src={asset("photo3.webp")} alt="Pebble and quartz pool finish options for a Riverside County remodel" width={1200} height={800} className="aspect-[16/8] w-full object-cover" /></div>
-          <p className="mb-12 text-lg leading-relaxed text-slate-600">At Rivera Swimming Pools Riverside, we specialize in high-end replastering using premium aggregate finishes. Here is a clear breakdown to help you choose the best surface for your backyard.</p>
+          <p className="mb-12 text-lg leading-relaxed text-slate-600">At Rivera Pools Riverside, we specialize in high-end replastering using premium aggregate finishes. Here is a clear breakdown to help you choose the best surface for your backyard.</p>
 
           {post.sections.map((section, index) => (
             <section key={section.heading} className="mb-12">
@@ -105,7 +105,7 @@ export function PebbleVsQuartzPost() {
           ))}
 
           <section className="mb-14 rounded-3xl bg-[#0F253F] p-8 text-white md:p-10">
-            <div className="flex items-start gap-4"><ShieldCheck className="mt-1 h-7 w-7 shrink-0 text-[#67e8f9]" /><div><h2 className="mb-3 font-['Montserrat'] text-2xl font-bold">Ready to Remodel Your Pool?</h2><p className="mb-6 leading-relaxed text-white/75">Get the peace of mind that comes with expert installation by Rivera Swimming Pools Riverside and certified post-finish care from Rivera Pool Care.</p><a href="/#contact" className="inline-flex items-center rounded-xl bg-[#06B6D4] px-6 py-3 font-bold text-white hover:bg-[#0891b2]">Request a Free Estimate <ArrowRight className="ml-2 h-4 w-4" /></a></div></div>
+            <div className="flex items-start gap-4"><ShieldCheck className="mt-1 h-7 w-7 shrink-0 text-[#67e8f9]" /><div><h2 className="mb-3 font-['Montserrat'] text-2xl font-bold">Ready to Remodel Your Pool?</h2><p className="mb-6 leading-relaxed text-white/75">Get the peace of mind that comes with expert installation and certified post-finish start-up care by Rivera Pools Riverside.</p><a href="/#contact" className="inline-flex items-center rounded-xl bg-[#06B6D4] px-6 py-3 font-bold text-white hover:bg-[#0891b2]">Request a Free Estimate <ArrowRight className="ml-2 h-4 w-4" /></a></div></div>
           </section>
 
           <section className="mb-14">
