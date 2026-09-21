@@ -1,0 +1,13 @@
+.git
+.local
+.agents
+.cache
+.vercel
+backups
+screenshots
+exports
+node_modules
+**/node_modules
+**/dist
+**/.cache
+**/.local

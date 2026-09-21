@@ -22,6 +22,45 @@ export default defineConfig({
     react(),
     tailwindcss(),
     ...(process.env.REPL_ID !== undefined ? [runtimeErrorOverlay()] : []),
+    // Convert render-blocking CSS to async preload in production builds
+    {
+      name: "async-css-preload",
+      apply: "build",
+      enforce: "post",
+      async closeBundle() {
+        const { readFileSync, writeFileSync, existsSync } = await import("node:fs");
+        const outDir = path.resolve(import.meta.dirname, "dist");
+        const htmlFiles = [
+          path.join(outDir, "index.html"),
+          path.join(outDir, "temecula", "index.html"),
+          path.join(outDir, "murrieta", "index.html"),
+          path.join(outDir, "corona", "index.html"),
+        ];
+        const criticalCss =
+          "*,::before,::after{box-sizing:border-box}" +
+          "body{margin:0;font-family:Inter,sans-serif;background:#0F253F;color:#fff}" +
+          "#root{min-height:100vh}";
+
+        for (const file of htmlFiles) {
+          if (!existsSync(file)) continue;
+          let html = readFileSync(file, "utf8");
+          let injected = false;
+          html = html.replace(
+            /<link rel="stylesheet"(?:\s+crossorigin)?\s+href="(\/assets\/[^"]+\.css)">/g,
+            (_m: string, href: string) => {
+              const prefix = injected ? "" : `<style>${criticalCss}</style>`;
+              injected = true;
+              return (
+                prefix +
+                `<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="${href}">` +
+                `<noscript><link rel="stylesheet" href="${href}"></noscript>`
+              );
+            }
+          );
+          writeFileSync(file, html);
+        }
+      },
+    },
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -42,6 +81,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
+    cssCodeSplit: false,
   },
   server: {
     port,

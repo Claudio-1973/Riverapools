@@ -1,0 +1,352 @@
+{
+  "pool-resurfacing": {
+    "symptoms": ["Faded, porous, or stained plaster", "Sharp or uncomfortable areas underfoot", "Recurring scale, mottling, or exposed aggregate", "A finish that is difficult to keep clean"],
+    "causes": ["Normal finish age and surface wear", "Unbalanced water chemistry or difficult startup history", "Poor bonding or preparation from an earlier renovation", "Sun, heat, evaporation, and regular pool use"],
+    "options": ["Standard white or colored plaster", "Quartz aggregate for added color and texture", "Pebble or StoneScapes for a natural, durable finish", "Coordinated coping, waterline tile, and equipment upgrades"],
+    "comparison": [
+      { "label": "Classic plaster", "detail": "The smoothest and most economical direction, with a clean look that needs careful chemistry and regular maintenance." },
+      { "label": "Quartz finish", "detail": "Adds color and fine aggregate texture while staying smoother underfoot than larger pebble." },
+      { "label": "Pebble or StoneScapes", "detail": "Creates deeper water color and a natural aggregate look with a more pronounced texture and durable surface." }
+    ],
+    "process": ["Drain and inspect the pool shell, coping, tile, and visible equipment", "Chip out failing material and repair or prepare the shell", "Apply the selected finish and complete detail work", "Fill, balance startup chemistry, and explain early care"],
+    "duration": "Most standard resurfacing projects take about 5–7 business days from drain to refill. Coping, tile, structural work, or equipment additions can extend the schedule.",
+    "priceFactors": ["Pool size and shape", "Shell condition and chip-out requirements", "Finish material, color, and aggregate", "Access, coping, tile, plumbing, or equipment work"],
+    "aftercare": ["Brush and monitor the new surface during startup, paying attention to dust, streaking, scale, or areas that do not respond normally to the agreed care plan", "Balance pH, alkalinity, sanitizer, and calcium hardness so the cement-based finish can cure without preventable etching or mineral deposits", "Follow the fill and startup instructions before swimming, adding only approved products and recording the early readings for the contractor or service team", "Keep regular cleaning and water testing on schedule after startup; new plaster is not maintenance-free and inland heat can magnify chemistry drift"],
+    "whenToCall": ["Plaster is rough, porous, stained, or uncomfortable underfoot", "Scale and discoloration return after cleaning", "The finish is flaking, hollow, or exposing aggregate", "You are planning tile, coping, equipment, or layout work at the same time"],
+    "diagnosticNotes": [
+      "A rough surface does not automatically mean the entire pool needs to be replastered. We distinguish removable scale from etched plaster, isolated delamination, widespread bond failure, and ordinary cosmetic discoloration before defining the scope.",
+      "The empty-pool inspection matters because water can hide hollow areas, cracks, failed patches, damaged fittings, and the actual condition of the bond beam. Preparation should be based on what remains sound, not on one standard demolition package.",
+      "Resurfacing is also the right time to decide whether failing waterline tile, loose coping, old lights, suspect return fittings, or circulation problems should be addressed. Coordinating necessary work now can avoid cutting into a new finish later.",
+      "A good recommendation explains why a localized repair is unlikely to last when failure is widespread. It should also explain when a pool is still a candidate for targeted work, so the homeowner is not pushed into a full renovation simply because a new finish is easier to quote."
+    ],
+    "ownerChecklist": [
+      "Ask exactly how much existing material will be removed, how hollow areas will be identified, and what shell repairs are included rather than assuming every proposal describes the same preparation.",
+      "Compare finish samples wet and dry, in sun and shade. Water depth, aggregate color, surrounding tile, coping, and landscaping all change the final appearance.",
+      "Confirm who controls the uninterrupted fill, startup brushing, early chemistry, filtration schedule, and first safe swim date. A strong application can still be harmed by a poor startup.",
+      "Request separate pricing for required shell work and optional upgrades so you can compare proposals without hiding structural needs inside finish allowances."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "Rivera Pools documented this two-week Temecula transformation with before-and-after photography. The pool required more than a color change, so the finish work was planned together with the surrounding systems instead of treating resurfacing as an isolated coating.",
+      "challenge": "The documented starting conditions included cracked old plaster, fading coping, and outdated, energy-hungry equipment. Those conditions required decisions about shell preparation, the pool edge, circulation, and the final water appearance.",
+      "response": "The completed scope combined a structural remodel, premium StoneScapes resurfacing, modern glass tile, natural-stone details, and a Pentair smart pump. Sequencing the masonry, equipment, and interior finish protected the new work from later demolition.",
+      "lesson": "A resurfacing estimate should identify everything that must be opened, repaired, or replaced before the new interior is applied. The finish is the visible result, but preparation and coordination determine whether the renovation is durable."
+    },
+    "localLinks": [
+      { "href": "/murrieta", "label": "Pool resurfacing in Murrieta" },
+      { "href": "/temecula", "label": "Pool replastering in Temecula" },
+      { "href": "/riverside", "label": "Pool resurfacing in Riverside" }
+    ],
+    "ctaTitle": "Planning resurfacing in Murrieta or Temecula?",
+    "ctaText": "Send photos or schedule a free evaluation. We will explain whether your pool needs a localized repair, replastering, or a broader remodel.",
+    "ctaLabel": "Request a Resurfacing Evaluation",
+    "images": [
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool resurfacing project with new coping" },
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools completed pool renovation project" }
+    ]
+  },
+  "pool-remodeling": {
+    "symptoms": ["Worn plaster alongside cracked tile or loose coping", "An outdated pool layout that no longer fits the backyard", "Old pumps, filters, heaters, or controls", "A renovation plan that needs a Baja shelf, new steps, or better circulation"],
+    "causes": ["Several aging pool systems need to be coordinated", "Previous repairs solved symptoms without addressing the surrounding scope", "The pool shell, tile, coping, deck, or equipment no longer work as one system"],
+    "options": ["Resurfacing, replastering, quartz, pebble, or StoneScapes finishes", "Waterline tile, steps, coping, and deck-edge restoration", "Baja shelf, tanning ledge, benches, and optional bubblers", "Equipment upgrades, automation, leak repair, and startup care"],
+    "comparison": [
+      { "label": "Surface refresh", "detail": "Resurfacing, replastering, tile, or coping work when the layout and structure are still serving the homeowner." },
+      { "label": "Feature remodel", "detail": "A Baja shelf, new steps, benches, bubblers, or water features that change how the pool is used." },
+      { "label": "Full renovation", "detail": "A coordinated scope that combines structure, finish, masonry, equipment, and startup around the actual condition of the pool." }
+    ],
+    "process": ["Inspect the shell, finish, tile, coping, deck, plumbing, equipment, access, and drainage", "Separate required repairs from optional improvements and define the renovation sequence", "Complete demolition, structural work, plumbing, finish, tile, coping, and equipment installation", "Fill, balance, test circulation, and explain startup and maintenance"],
+    "duration": "A remodel schedule depends on the number of trades and whether the scope includes structural work, a Baja shelf, plumbing, coping, tile, equipment, or inspections. It is longer than a finish-only project.",
+    "priceFactors": ["Pool size, access, demolition, and shell condition", "Selected finish, tile, coping, deck, and masonry materials", "Baja shelf, steps, bubblers, plumbing, and structural scope", "Equipment, electrical, drainage, permits, and startup service"],
+    "aftercare": ["Follow the startup plan for the new finish and structural additions, including brushing, filtration, water-level control, and the date when normal swimming and cleaning can resume", "Keep water chemistry, filtration, and circulation in range, because a new surface, shelf, bubbler, heater, and automation system all depend on stable operation", "Inspect tile joints, coping, deck drainage, and equipment connections after the first heavy rain and through the first season rather than waiting for a visible failure", "Use shelves, steps, bubblers, and automation according to the handoff guidance, and keep the equipment pad accessible for baskets, filters, valves, and service readings"],
+    "whenToCall": ["You are considering several upgrades and need a useful scope before requesting bids", "New tile, coping, or a finish replacement may require coordinated demolition", "The pool has both surface problems and equipment, plumbing, or layout issues", "You want a Baja shelf or new steps rather than another cosmetic patch"],
+    "diagnosticNotes": [
+      "A remodeling evaluation begins with how the pool is used now and what is not working. We then inspect the shell, bond beam, tile, coping, deck interface, drainage, plumbing, lights, skimmers, returns, equipment, access, and electrical conditions that affect the plan.",
+      "Tile, coping, deck, and interior finish meet at vulnerable transitions. Cracked grout, loose edge material, poor drainage, or movement should be understood before selecting finishes, because a cosmetic replacement cannot stabilize a failing substrate.",
+      "A Baja shelf or tanning ledge changes more than appearance. Depth, step geometry, reinforcement, plumbing, circulation, finish transitions, water level, bubblers, and local requirements must be coordinated as one structural scope.",
+      "Not every upgrade belongs in the same phase. We separate work that protects the pool now from comfort, automation, and design choices that can be deferred without damaging completed surfaces."
+    ],
+    "ownerChecklist": [
+      "Define the problems you must solve, the features you would like, and the maximum disruption you can accept. That keeps essential repairs separate from optional design additions.",
+      "Ask the contractor to explain demolition limits, structural assumptions, plumbing changes, drainage, electrical responsibilities, material allowances, permits, and what happens if concealed damage appears.",
+      "Review tile, coping, deck, and interior samples together. Selecting each material independently can create mismatched undertones, uncomfortable edges, or maintenance requirements that do not fit the backyard.",
+      "Confirm the sequence, site protection, debris removal, equipment shutdowns, inspections, fill, startup, and final handoff before work begins."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "This documented Rivera Pools project is a complete example of coordinated remodeling rather than a finish-only refresh. Before-and-after images and the recorded two-week timeline show how structural, masonry, surface, and equipment decisions were handled as one renovation.",
+      "challenge": "Cracked old plaster, fading coping, and inefficient equipment affected both appearance and operation. Solving only the plaster would have left aging edge materials and circulation equipment next to a newly finished pool.",
+      "response": "Rivera Pools completed structural remodeling, premium StoneScapes resurfacing, modern glass tile, natural-stone installation, and a Pentair smart pump. The scope joined the visual upgrade to the systems needed to support daily operation.",
+      "lesson": "A useful remodeling proposal explains dependencies. Tile and coping demolition come before the interior finish; shelf or step changes precede waterproofing; plumbing and equipment changes should be tested before final startup."
+    },
+    "localLinks": [
+      { "href": "/temecula", "label": "Pool remodeling in Temecula" },
+      { "href": "/murrieta", "label": "Pool renovation in Murrieta" },
+      { "href": "/riverside", "label": "Pool remodeling in Riverside" }
+    ],
+    "ctaTitle": "Planning a pool remodel in Temecula or Murrieta?",
+    "ctaText": "Bring us the problems you want solved and the improvements you want to consider. We will help separate essential repairs from optional upgrades.",
+    "ctaLabel": "Plan a Pool Renovation",
+    "images": [
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool remodeling project with new coping" },
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools completed pool renovation project" }
+    ]
+  },
+  "pool-finishes/pebble": {
+    "symptoms": ["A tired plaster surface that no longer matches the backyard", "Stains, exposed aggregate, or recurring rough patches", "A desire for deeper water color and natural texture"],
+    "causes": ["Aging or failing plaster", "Surface wear from sun, chemistry, and use", "A renovation goal that calls for a more durable aggregate finish"],
+    "options": ["Standard pebble aggregate", "Smoother mini-pebble options", "StoneScapes color and aggregate blends", "Coordinated tile, coping, Baja shelf, and startup care"],
+    "comparison": [
+      { "label": "Pebble", "detail": "A natural, durable aggregate with more visible texture and strong color variation." },
+      { "label": "Mini-pebble", "detail": "A finer aggregate that keeps the natural water color while offering a more comfortable feel underfoot." },
+      { "label": "Quartz", "detail": "A smoother, finer alternative when you want color and texture without the larger-pebble appearance." }
+    ],
+    "process": ["Inspect the shell and compare finish samples", "Drain, chip out failing material, and prepare the surface", "Apply and detail the selected pebble or StoneScapes finish", "Fill, brush, balance, and monitor the startup period"],
+    "duration": "Most pebble resurfacing projects take about 5–7 business days from drain to refill. Added coping, tile, shelves, or equipment work changes the schedule.",
+    "priceFactors": ["Pool dimensions and access", "Selected pebble or StoneScapes blend", "Shell repairs and preparation", "Coping, tile, steps, shelves, and startup service"],
+    "aftercare": ["Brush the new aggregate as directed so the cement dust can be carried to filtration without abrading the surface or allowing deposits to harden during the first weeks", "Keep startup chemistry within the recommended range and ask before using stain treatments, salt systems, heaters, or products that were not part of the handoff plan", "Monitor filtration and water clarity during curing, recording pressure changes so a loaded cartridge or abnormal circulation is addressed before the finish is affected", "Maintain balanced water after the initial startup period; consistent pH, alkalinity, calcium, sanitizer, and cleaning are what protect the texture and color homeowners selected"],
+    "diagnosticNotes": [
+      "Pebble should be selected for the actual pool, not from a small dry chip alone. Aggregate size, exposure, pigment, pool depth, sunlight, shade, tile, coping, and landscaping all influence texture and water color.",
+      "We check whether the old finish is sound enough for the proposed preparation or whether loose, hollow, patched, or contaminated areas require removal. The exposed aggregate cannot compensate for weak material underneath it.",
+      "Comfort is specific to the swimmer. Standard pebble has stronger texture and visible aggregate; mini-pebble can feel finer. Steps, benches, a Baja shelf, and high-contact areas deserve particular attention during sample review and application.",
+      "Color consistency depends on application, exposure, fill, startup, and chemistry. Natural aggregate has intentional variation, so the goal is a well-applied, balanced surface rather than the flat uniformity of paint.",
+      "For a pool used by children, older swimmers, or frequent barefoot guests, texture deserves the same attention as color. Ask to review steps, benches, and shelf areas specifically; a finish that looks ideal across the pool may feel different on high-contact surfaces.",
+      "Pebble can hide small visual changes better than a flat white surface, but it does not excuse weak water care. Calcium scale, poor startup, and neglected filtration can still change the look and feel of an exposed aggregate finish."
+    ],
+    "ownerChecklist": [
+      "Compare standard pebble, mini-pebble, StoneScapes, and quartz by touching larger samples and viewing completed work rather than relying only on catalog names.",
+      "Ask what chip-out, bond preparation, crack repair, fitting replacement, tile detail, and startup service are included in the quoted finish price.",
+      "Choose waterline tile and coping beside the aggregate sample. Dark finishes, reflective glass, warm stone, and surrounding shade can shift the perceived water color.",
+      "Confirm the 28-day brushing and chemistry plan, warranty conditions, and who documents startup readings before the pool returns to routine service."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "Rivera Pools documented this Temecula full remodel with before-and-after images and a two-week project timeline. It provides a real example of an aggregate finish being selected and installed as part of a complete backyard-facing renovation.",
+      "challenge": "The pool had cracked old plaster, fading coping, and aging equipment. The homeowner needed a durable interior with richer water color, but the adjacent materials and circulation system also had to support the result.",
+      "response": "The finished project combined premium StoneScapes aggregate, modern glass waterline tile, natural-stone details, structural work, and a Pentair smart pump. Each visible choice was coordinated with preparation and operating requirements.",
+      "lesson": "Pebble performance is not just a brand or color decision. Shell preparation, aggregate exposure, edge details, uninterrupted filling, startup brushing, and balanced chemistry all contribute to the finished surface."
+    },
+    "localLinks": [
+      { "href": "/riverside", "label": "Pebble pool finish in Riverside" },
+      { "href": "/temecula", "label": "Pebble pool finish in Temecula" },
+      { "href": "/murrieta", "label": "Pebble resurfacing in Murrieta" }
+    ],
+    "ctaTitle": "Comparing pebble finishes for a Riverside pool?",
+    "ctaText": "We can compare pebble, mini-pebble, StoneScapes, and quartz samples against your pool, tile, coping, and maintenance goals.",
+    "ctaLabel": "Compare Pool Finish Options",
+    "images": [
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools pebble finish pool remodeling project" },
+      { "file": "photo3.webp", "alt": "Representative Rivera Pools pool finish and coping project" }
+    ]
+  },
+  "pool-finishes/stone-scapes": {
+    "symptoms": ["Old plaster that looks flat, faded, or worn", "A backyard that needs richer water color and texture", "A surface that no longer fits a planned pool renovation"],
+    "causes": ["Normal plaster age and surface deterioration", "A design change toward an aggregate finish", "Waterline, coping, or tile updates that call for a coordinated interior"],
+    "options": ["StoneScapes mini-pebble and pebble blends", "Natural blue, gray, and earth-tone color families", "New waterline tile and coping coordinated with the finish", "Optional Baja shelf, steps, or equipment upgrades"],
+    "comparison": [
+      { "label": "StoneScapes mini-pebble", "detail": "A finer aggregate direction with natural variation, richer water color, and a more comfortable feel than larger pebble." },
+      { "label": "StoneScapes pebble", "detail": "A more pronounced natural texture for homeowners who want visible aggregate character and a resort-style appearance." },
+      { "label": "Quartz finish", "detail": "A finer, smoother alternative with color depth when a homeowner wants less pebble texture underfoot." }
+    ],
+    "process": ["Review samples in the pool's actual light and inspect the shell", "Drain, remove failing material, and prepare the bond surface", "Trowel the selected StoneScapes finish and complete details", "Fill, brush, balance, and explain the 28-day startup plan"],
+    "duration": "A typical StoneScapes resurfacing project takes about 5–7 business days from drain to refill. Structural additions and surrounding masonry require additional time.",
+    "priceFactors": ["Pool size, shape, and access", "StoneScapes blend and aggregate selection", "Shell preparation and repairs", "Tile, coping, shelves, steps, and equipment scope"],
+    "aftercare": ["Brush the surface according to the startup plan, covering steps, shelves, benches, walls, and floor so exposed aggregate cures evenly and early dust does not become scale", "Test and balance water chemistry frequently during curing, with particular attention to pH, alkalinity, calcium hardness, and the hard-water conditions common in the Inland Empire", "Run filtration as directed and watch for plaster dust, rising filter pressure, cloudy water, or localized discoloration that should be reported instead of covered with extra chemicals", "Continue regular cleaning once startup care is complete and inspect darker or more textured areas for scale before it becomes difficult to remove"],
+    "diagnosticNotes": [
+      "StoneScapes includes different aggregate sizes and color families, so the right comparison is between specific blends. A mini-pebble and a larger exposed aggregate can produce different comfort, visual movement, and water color in the same shell.",
+      "The inspection identifies whether stains are superficial, whether plaster is etched or hollow, and whether cracks, fittings, tile, coping, or the bond beam need work before the new aggregate is placed.",
+      "Dark or richly colored finishes can show scale, chemistry drift, and application variation differently than light plaster. Inland heat and hard fill water make startup control and long-term saturation balance especially important.",
+      "Samples should be considered with depth. A shelf, step, spa, deep end, and shaded wall can display the same blend differently, which is why backyard light and surrounding materials belong in the selection process.",
+      "The exact product name should be recorded alongside aggregate size, color family, and any tile or coping allowance. Two samples described casually as StoneScapes can produce noticeably different texture and water color once installed. Put those details in the signed scope and change order."
+    ],
+    "ownerChecklist": [
+      "Write down the exact StoneScapes blend and aggregate size in the proposal; a product family name alone is not a complete finish specification.",
+      "Confirm whether tile, coping, fittings, lights, steps, or a Baja shelf will interrupt the finish and how those transitions will be detailed.",
+      "Ask how the crew controls aggregate exposure, fill timing, brushing, filtration, and early chemistry, and who is responsible each day during startup.",
+      "Review long-term cleaning and chemistry expectations before choosing a dark blend or more textured aggregate."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "This Rivera Pools transformation is the site's documented StoneScapes case study. Before-and-after photography records a two-week Temecula remodel in which the aggregate finish was coordinated with structural, masonry, tile, and equipment work.",
+      "challenge": "Cracked old plaster and fading coping made a simple cosmetic overlay inappropriate, while older equipment no longer matched the planned renovation. The finished pool needed both a stronger visual identity and updated operation.",
+      "response": "Rivera Pools installed premium StoneScapes, modern glass tile, natural-stone details, structural improvements, and a Pentair smart pump. The aggregate color and texture were treated as part of the whole composition rather than an isolated surface.",
+      "lesson": "The strongest StoneScapes result comes from matching the exact blend to the pool, preparing every weak area, coordinating edge materials, and protecting the cement-based finish during fill and startup."
+    },
+    "localLinks": [
+      { "href": "/temecula", "label": "StoneScapes pool finish in Temecula" },
+      { "href": "/riverside", "label": "StoneScapes pool finish in Riverside" },
+      { "href": "/murrieta", "label": "StoneScapes resurfacing in Murrieta" }
+    ],
+    "ctaTitle": "Choosing a StoneScapes finish in Temecula?",
+    "ctaText": "We will compare samples in your backyard light and explain the preparation, startup, tile, coping, and maintenance requirements.",
+    "ctaLabel": "Plan a StoneScapes Evaluation",
+    "images": [
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools aggregate pool finish project" },
+      { "file": "rivera-opt.webp", "alt": "Representative Rivera Pools completed pool finish project" }
+    ]
+  },
+  "pool-finishes/quartz": {
+    "symptoms": ["Faded or porous white plaster", "Small surface imperfections and discoloration", "A desire for more color and texture without a larger pebble feel"],
+    "causes": ["Finish age, sun exposure, and regular use", "Scale or chemistry-related surface wear", "A renovation plan that needs a refined aggregate surface"],
+    "options": ["Light and colored quartz blends", "A smoother feel than larger pebble aggregate", "Coordinated tile and coping", "Optional equipment, leak, or shell repairs during resurfacing"],
+    "comparison": [
+      { "label": "Quartz", "detail": "Adds fine aggregate, color depth, and a refined texture while staying relatively smooth underfoot." },
+      { "label": "Classic plaster", "detail": "The smoothest and most economical finish direction, but it generally shows wear sooner under difficult chemistry and heavy use." },
+      { "label": "Pebble", "detail": "Uses larger exposed aggregate for a more natural, tactile surface and stronger visual variation." }
+    ],
+    "process": ["Inspect the shell, waterline, coping, and equipment", "Select a quartz blend and prepare the surface", "Apply the finish and complete tile or coping details", "Fill, balance startup chemistry, and explain maintenance"],
+    "duration": "Most quartz resurfacing work takes about 5–7 business days from drain to refill. The final schedule depends on repairs and related masonry.",
+    "priceFactors": ["Pool size and shell condition", "Quartz blend and color", "Chip-out, patching, and preparation", "Tile, coping, access, and equipment additions"],
+    "aftercare": ["Brush and filter during the initial cure according to the written schedule, including steps and benches where dust or early deposits can remain even when the deep end looks clear", "Keep pH, alkalinity, sanitizer, and calcium in range; quartz still uses a cement matrix and is vulnerable to etching, scale, and uneven curing when water is neglected", "Avoid adding unapproved chemicals during startup and confirm when salt, heaters, cleaners, stain products, or normal service routines may resume", "Continue routine cleaning and water testing after the cure, documenting changes in texture, color, scale, or water clarity before a small maintenance issue becomes a finish complaint"],
+    "diagnosticNotes": [
+      "Quartz is an upgrade to a cement-based plaster matrix, not a waterproof paint. The evaluation still needs to identify hollow material, cracks, weak patches, stains, scale, fittings, and shell conditions that determine preparation.",
+      "The fine aggregate usually feels smoother than larger pebble, but blend, exposure, workmanship, and the condition of steps and benches affect comfort. Homeowners should compare actual texture, not assume every quartz finish feels identical.",
+      "Color and mottling are influenced by pigments, troweling, fill water, curing, brushing, and chemistry. We discuss natural variation before installation and plan startup to reduce preventable scale, streaking, and uneven hydration.",
+      "Quartz can be the right middle choice when classic plaster feels too plain and pebble feels too textured. It should still be compared against expected service life, budget, water color, hard-water maintenance, and surrounding materials.",
+      "The best comparison is not simply smooth versus rough. A homeowner should weigh how much visual variation is desired, how the finish will feel on steps and benches, how often hard water is managed, and whether the surrounding tile and coping support the chosen color."
+    ],
+    "ownerChecklist": [
+      "Identify the exact quartz blend, base color, and included preparation in writing; generic references to upgraded plaster make bids difficult to compare.",
+      "View the sample wet and in backyard light, then compare it beside the planned tile and coping. Pool depth will make the installed water color appear stronger.",
+      "Ask who manages fill water, brushing, filtration, pH, alkalinity, calcium, and sanitizer during the first weeks, and request written startup instructions.",
+      "Confirm how stains, hollow areas, cracks, fittings, lights, and existing repairs will be handled before the quartz finish is applied."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "Rivera Pools' documented Temecula case used StoneScapes rather than quartz, which makes it useful as a transparent comparison project. Its before-and-after record shows the same preparation and coordination questions a homeowner should resolve before choosing either aggregate system.",
+      "challenge": "The existing pool had cracked plaster, fading coping, and outdated equipment. Choosing a finish could not happen responsibly until the structural, edge, and operating conditions were considered together.",
+      "response": "The recorded scope combined structural remodeling, premium aggregate resurfacing, modern glass tile, natural stone, and a Pentair smart pump over two weeks. Quartz would offer a finer texture, but it would require the same disciplined preparation and startup.",
+      "lesson": "Material choice changes feel and appearance; it does not eliminate substrate work. Homeowners comparing quartz with pebble should expect both proposals to explain removal, repairs, transitions, fill, and startup in equal detail."
+    },
+    "localLinks": [
+      { "href": "/murrieta", "label": "Quartz pool plaster in Murrieta" },
+      { "href": "/riverside", "label": "Quartz pool finish in Riverside" },
+      { "href": "/temecula", "label": "Quartz pool finish in Temecula" }
+    ],
+    "ctaTitle": "Comparing quartz, plaster, and pebble?",
+    "ctaText": "We will show how each finish changes texture, color, maintenance, and the overall renovation scope for your pool.",
+    "ctaLabel": "Plan a Quartz Finish Evaluation",
+    "images": [
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool resurfacing project" },
+      { "file": "photo4.webp", "alt": "Representative Rivera Pools pool tile and finish project" }
+    ]
+  },
+  "rough-pool-plaster-repair": {
+    "symptoms": ["Sharp or abrasive areas underfoot", "Scale, etching, exposed aggregate, or rough patches", "Algae or dirt collecting in damaged areas", "A surface that makes swimming uncomfortable"],
+    "causes": ["Calcium scale or chemical etching", "Exposed aggregate and localized plaster failure", "Poor startup or an aging finish", "Surface damage that an acid wash cannot safely correct"],
+    "options": ["Targeted surface repair when damage is localized", "Scale or stain evaluation", "Quartz, pebble, StoneScapes, or plaster resurfacing", "Coping, tile, or equipment work during a broader remodel"],
+    "process": ["Inspect and map rough, sharp, hollow, or damaged areas", "Identify whether the issue is scale, etching, plaster, or aggregate", "Complete the least invasive repair that is appropriate", "Explain startup or maintenance steps for the repaired surface"],
+    "duration": "Localized repairs vary by area and preparation. A full resurfacing plan commonly takes about 5–7 business days from drain to refill.",
+    "priceFactors": ["Size and depth of damaged areas", "Cause of the roughness", "Repair versus full resurfacing scope", "Access, finish selection, coping, and tile"],
+    "aftercare": ["Keep water balanced to reduce scale and etching", "Brush and clean repaired areas as instructed", "Avoid masking recurring roughness with repeated acid washing", "Schedule an inspection if sharp or flaking areas return"],
+    "images": [
+      { "file": "photo3.webp", "alt": "Representative Rivera Pools pool surface and coping project" },
+      { "file": "photo4.webp", "alt": "Representative Rivera Pools pool tile renovation project" }
+    ]
+  },
+  "pool-plaster-delaminating": {
+    "symptoms": ["Hollow-sounding spots", "Lifting, flaking, or peeling plaster", "Exposed shell or aggregate", "Recurring patches, cracks, or loose material"],
+    "causes": ["Poor bond or surface preparation", "Age, trapped moisture, or shell movement", "Aggressive or unbalanced water chemistry", "Earlier repairs that did not address the surrounding failure"],
+    "options": ["Localized repair for small isolated failures", "Broader chip-out and shell preparation", "Quartz, pebble, StoneScapes, or plaster replacement", "Coping, tile, leak, or equipment work during a complete renovation"],
+    "process": ["Tap and inspect the surface to identify hollow or loose areas", "Remove failed material and evaluate the shell", "Repair, prepare, and apply the selected replacement finish", "Fill, balance, and monitor the new surface during startup"],
+    "duration": "Small repairs depend on the affected area. Widespread delamination usually requires a resurfacing project taking about 5–7 business days from drain to refill.",
+    "priceFactors": ["Extent of delamination", "Shell repair and preparation", "Selected replacement finish", "Coping, tile, plumbing, access, and equipment scope"],
+    "aftercare": ["Follow the startup brushing and chemistry plan", "Monitor for returning hollow, loose, or flaking areas", "Keep the pool clean and circulation operating correctly", "Address water chemistry drift before it damages the new finish"],
+    "images": [
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool surface renovation project" },
+      { "file": "before1.webp", "alt": "Representative Rivera Pools pool renovation before-work example" }
+    ]
+  },
+  "pool-leak-detection": {
+    "symptoms": ["Water level dropping faster than expected", "Air in the pump basket or loss of prime", "Wet soil, deck movement, or unexplained water near equipment", "A pool that needs frequent refilling"],
+    "causes": ["Shell, plumbing, skimmer, return, or equipment leaks", "Evaporation that has not been separated from water loss", "Cracks, loose fittings, or worn seals", "A leak that becomes visible only when the system runs"],
+    "options": ["Water-loss assessment and evaporation comparison", "Visual inspection of shell, deck, plumbing, and equipment", "Pressure or dye testing when appropriate", "Repair recommendations coordinated with resurfacing or remodeling"],
+    "process": ["Document the water-loss pattern and pool conditions", "Inspect visible plumbing, equipment, shell, and surrounding areas", "Use appropriate testing to narrow the likely source", "Explain repair options and whether other pool work should be coordinated"],
+    "duration": "An initial water-loss assessment is scheduled around the pool and system conditions. Repair timing depends on the suspected source, access, parts, and whether resurfacing is also needed.",
+    "priceFactors": ["Type and location of the suspected leak", "Access to plumbing, equipment, or shell", "Testing required to narrow the source", "Repair parts and related resurfacing, tile, or deck work"],
+    "aftercare": ["Monitor the water level after the repair with a repeatable mark or bucket comparison rather than relying on memory, especially during hot, windy, or unusually dry weather", "Keep equipment operating on its normal schedule and check pump prime, baskets, valves, filter pressure, autofill behavior, and visible fittings for changes after the repair", "Watch for air, wet areas, deck movement, staining, unusual water bills, or renewed water loss and record when each symptom appears relative to pump operation", "Address small changes before they create larger shell or deck damage, but avoid unnecessary demolition until a logical testing path identifies the likely source"],
+    "whenToCall": ["The water level drops repeatedly beyond normal evaporation", "The pump loses prime, the basket fills with air, or returns behave differently", "Wet soil, deck movement, staining, or unexplained water appears near the pool", "You are planning resurfacing and want to rule out an unresolved leak first"],
+    "diagnosticNotes": [
+      "Water loss should be measured before parts are replaced. A marked-level or bucket comparison, normal weather observations, autofill status, recent backwashing, splash-out, and the difference between pump-on and pump-off loss help define the next test.",
+      "Air in the pump basket points toward a suction-side condition, but it may come from water level, a skimmer vortex, a lid seal, a valve, or plumbing. Wet soil alone also does not prove which line or fitting is responsible.",
+      "Dye testing can help at a visible crack, fitting, light niche, skimmer, or suspected shell opening when the water is still. Pressure testing may narrow buried plumbing, but access and system layout determine what can be isolated conclusively.",
+      "Leak assessment should precede resurfacing, tile replacement, or deck work. A new finish can cover visual clues, while later plumbing access can damage recently completed surfaces."
+    ],
+    "ownerChecklist": [
+      "Record the water level at the same time for several days, note weather and equipment schedules, disable the autofill only when safe, and photograph wet areas or air in the system.",
+      "Ask what the assessment can confirm, what remains a hypothesis, which tests are included, and whether a specialist or destructive access may be needed next.",
+      "Do not authorize broad deck demolition from one symptom. Request a test path that narrows shell, fittings, equipment, suction plumbing, and return plumbing in a logical order.",
+      "After repair, repeat the same controlled water-loss observation and monitor pump prime, soil, fittings, and the water bill so the result is verified."
+    ],
+    "projectExample": {
+      "title": "Modern StoneScapes Oasis — Temecula",
+      "summary": "The documented Temecula remodel was not presented as a leak-repair case, and we do not claim that it was. It is included because its before-and-after sequence shows why water-loss questions must be settled before structural work, masonry, equipment changes, and a new interior finish are closed in.",
+      "challenge": "Cracked plaster, fading coping, and outdated equipment created overlapping visual and mechanical decisions. Conditions like these can obscure the source of water loss if a contractor assumes every drop is caused by the visible surface.",
+      "response": "Rivera Pools coordinated structural remodeling, StoneScapes resurfacing, glass tile, natural-stone work, and a Pentair smart pump. On any comparable renovation, suspected leakage should be assessed before that sequence so later testing does not disturb finished work.",
+      "lesson": "A real project does not become a leak case simply because it includes plumbing and resurfacing. The correct lesson is sequencing: document loss, narrow the source, plan repairs, and only then close the pool with new finishes."
+    },
+    "localLinks": [
+      { "href": "/riverside", "label": "Pool leak repair in Riverside" },
+      { "href": "/murrieta", "label": "Pool leak assessment in Murrieta" },
+      { "href": "/temecula", "label": "Pool leak detection in Temecula" }
+    ],
+    "ctaTitle": "Need pool leak repair in Riverside County?",
+    "ctaText": "Schedule a focused water-loss assessment before repeated refilling damages the shell, deck, equipment, or surrounding soil.",
+    "ctaLabel": "Request a Leak Assessment",
+    "images": [
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool remodeling inspection project" },
+      { "file": "rivera-opt.webp", "alt": "Representative Rivera Pools completed swimming pool project" }
+    ]
+  },
+  "travertine-coping": {
+    "symptoms": ["Cracked, loose, or uneven coping", "Hot or uncomfortable concrete around the pool", "Failing joints, waterline damage, or a dated pool edge", "A deck and coping combination that no longer fits the renovation"],
+    "causes": ["Weathering, movement, and age", "Water intrusion at joints or the bond beam", "Material wear and repeated pool use", "A remodel that needs coordinated coping, tile, and finish details"],
+    "options": ["Tumbled or chiseled-edge travertine", "Natural stone, slate, glass, or ceramic tile", "Coping-only restoration when the shell allows it", "Coordinated deck, waterline, and interior finish work"],
+    "process": ["Inspect the coping, bond beam, deck, tile, drainage, and shell", "Remove failing material and prepare the installation surface", "Install the selected coping, tile, or deck restoration details", "Seal, clean, and coordinate the finished edge with pool startup"],
+    "duration": "Coping-only work varies by access and quantity. Coordinated coping, tile, and resurfacing commonly takes longer than a standard 5–7 business-day surface project.",
+    "priceFactors": ["Linear footage and material selection", "Bond beam, deck, and substrate condition", "Demolition, access, drainage, and disposal", "Tile, interior finish, steps, and related masonry"],
+    "aftercare": ["Use the recommended stone or tile cleaning method", "Keep joints and drainage paths clear", "Inspect for movement, cracks, or loose pieces", "Follow sealing and maintenance guidance for the selected material"],
+    "images": [
+      { "file": "photo3.webp", "alt": "Representative Rivera Pools natural stone coping project" },
+      { "file": "photo4.webp", "alt": "Representative Rivera Pools custom tile project" }
+    ]
+  },
+  "baja-shelf-addition-cost": {
+    "symptoms": ["No shallow lounging or tanning area", "Steps and entry that do not fit how the pool is used", "A renovation plan that needs a family or entertaining zone", "An existing shell that may need structural changes"],
+    "causes": ["The original pool was built without a shelf", "A remodel creates an opportunity to change depth and circulation", "New plumbing, finish, coping, or tile needs to be integrated"],
+    "options": ["Shallow Baja shelf or tanning ledge", "Optional bubblers and plumbing", "Integrated steps, benches, and seating", "Quartz, pebble, StoneScapes, or Diamond Brite finish details"],
+    "process": ["Inspect the pool shell, depth, plumbing, access, and local requirements", "Plan the shelf dimensions, steps, structure, and finish", "Complete structural work, waterproofing, plumbing, and surface preparation", "Apply finish, coordinate tile and coping, then fill and balance"],
+    "duration": "A shelf addition is a structural renovation rather than a simple finish repair. Timing depends on demolition, shell work, plumbing, finish, coping, tile, and inspections.",
+    "priceFactors": ["Shelf size, depth, and structural design", "Shell access, demolition, and reinforcement", "Bubblers, plumbing, coping, tile, and finish", "Permits, drainage, equipment, and site conditions"],
+    "aftercare": ["Follow the startup plan for the new finish", "Keep bubblers and circulation operating as instructed", "Check joints, waterline, and drainage during the first season", "Use the shelf within the depth and safety guidance provided"],
+    "images": [
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools pool renovation project with shallow-area inspiration" },
+      { "file": "photo4.webp", "alt": "Representative Rivera Pools custom pool tile project" }
+    ]
+  },
+  "pool-equipment-upgrades": {
+    "symptoms": ["Noisy or inefficient pump operation", "Old single-speed equipment and high energy use", "Manual controls that are difficult to manage", "Poor circulation, unreliable heating, or equipment near the end of its life"],
+    "causes": ["Aging pumps, filters, heaters, or valves", "Equipment sized for an earlier pool configuration", "Outdated controls and automation", "Renovations that changed the pool's circulation or water features"],
+    "options": ["Variable-speed pump upgrades", "Pentair or Hayward automation integration", "Filter, heater, valve, and control improvements", "Saltwater conversion or equipment coordination during resurfacing"],
+    "process": ["Document the current equipment, plumbing, controls, and pool needs", "Compare compatible equipment, energy use, access, and project goals", "Install and connect the selected upgrade", "Test circulation, controls, water balance, and homeowner operation"],
+    "duration": "Equipment-only work depends on the number of components, compatibility, access, and parts availability. Work combined with resurfacing or structural remodeling follows the larger project schedule.",
+    "priceFactors": ["Equipment type, capacity, and brand", "Plumbing changes, electrical access, and controls", "Filter, heater, valves, automation, or salt system scope", "Coordination with resurfacing, tile, coping, or structural work"],
+    "aftercare": ["Learn the normal pump, filter, and automation readings", "Keep baskets, filters, and water chemistry maintained", "Monitor for leaks, air, unusual noise, or loss of prime", "Schedule seasonal checks before heavy summer use"],
+    "images": [
+      { "file": "rivera-opt.webp", "alt": "Representative Rivera Pools completed pool project" },
+      { "file": "photo1.webp", "alt": "Representative Rivera Pools pool renovation project" }
+    ]
+  },
+  "pool-finishes/diamond-brite": {
+    "symptoms": ["Discolored or porous plaster", "A pool surface that looks flat or worn", "A need for color and aggregate texture with a refined appearance"],
+    "causes": ["Finish age, staining, scale, and sun exposure", "Surface wear and chemistry drift", "A renovation plan that calls for quartz aggregate"],
+    "options": ["Diamond Brite color and aggregate selections", "Coordinated quartz, coping, and tile details", "Shell repair and preparation", "Equipment or leak work during the renovation"],
+    "process": ["Inspect the existing finish and shell", "Review Diamond Brite samples in the property light", "Prepare the shell and apply the selected finish", "Fill, balance chemistry, and explain startup care"],
+    "duration": "Most Diamond Brite resurfacing projects take about 5–7 business days from drain to refill. Additional masonry, equipment, or shell work changes the schedule.",
+    "priceFactors": ["Pool dimensions and access", "Color and finish selection", "Shell preparation and repairs", "Coping, tile, plumbing, and equipment work"],
+    "aftercare": ["Brush and filter during startup", "Maintain recommended chemistry while the finish cures", "Avoid premature swimming or chemical additions", "Continue routine cleaning and balanced water care"],
+    "images": [
+      { "file": "photo4.webp", "alt": "Representative Rivera Pools pool finish and tile project" },
+      { "file": "photo2.webp", "alt": "Representative Rivera Pools completed pool renovation project" }
+    ]
+  }
+}

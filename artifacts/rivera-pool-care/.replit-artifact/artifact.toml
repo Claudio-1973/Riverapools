@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Rivera Pool Care"
+description = "Sitio web bilingüe de Rivera Pool Care para limpieza, mantenimiento y reparación de albercas en Murrieta, Temecula, Lake Elsinore, Winchester y Canyon Lake, California."
+version = "1.0.0"
+id = "artifacts/rivera-pool-care"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25913
+
+[services.development]
+run = "pnpm --filter @workspace/rivera-pool-care run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/rivera-pool-care", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/rivera-pool-care/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25913"
+BASE_PATH = "/"

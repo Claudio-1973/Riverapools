@@ -1,0 +1,7 @@
+- [Vercel prebuilt redirects](vercel-prebuilt-redirects.md) — host redirects must reach the Build Output manifest when deploying with `--prebuilt`.
+- [Static SEO metadata and Helmet](seo-static-helmet.md) — prerendered titles must not be emitted a second time during React hydration.
+- [Initial JavaScript performance](performance-initial-js.md) — keep simple controls native and defer non-critical telemetry on the marketing landing page.
+- [Gemini API model availability](gemini-model-fallbacks.md) — keep the chatbot model configurable with ordered Flash fallbacks.
+- [Vercel deploy lessons](vercel-deploy-lessons.md) — use the right monorepo root, stored project settings, archive mode, and approved prebuilt/ESM conventions.
+- [Canvas artifact selection](canvas-artifact-selection.md) — the selected artifact iframe can be restored by Canvas; changing the shape is not a persistent project remap.
+- [Service-page evidence](service-page-evidence.md) — describe representative portfolio photos as representative unless the service, scope, and location are documented.

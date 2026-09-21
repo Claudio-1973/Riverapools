@@ -1,6 +1,6 @@
-# [Project name]
+# Rivera Pools Riverside
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Marketing site and bilingual customer assistant for Rivera Pools pool remodeling services across Riverside County and nearby communities.
 
 ## Run & Operate
 
@@ -10,6 +10,9 @@ _Replace the heading above with the project's name, and this line with one sente
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - Required env: `DATABASE_URL` — Postgres connection string
+- Required API secret: `GEMINI_API_KEY` — Google AI Studio key used only by the API server
+- Optional API env: `GEMINI_MODEL` and `CHAT_ALLOWED_ORIGINS`
+- Production frontend env: `VITE_CHAT_API_URL` — public URL of the independent API, including `/api`
 
 ## Stack
 
@@ -22,15 +25,22 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/mockup-sandbox/src/components/mockups/rivera-pools/` — Rivera Pools landing, local SEO pages, quote form, and chatbot widget
+- `artifacts/api-server/src/routes/chat.ts` — bilingual Gemini endpoint with validation, rate limiting, prompt guardrails, and model fallback
+- `lib/api-spec/openapi.yaml` — source of truth for the `/api/chat` contract
+- `artifacts/mockup-sandbox/public/` — static SEO files including sitemap, robots, and `llms.txt`
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The marketing site is statically prerendered for SEO and deployed independently from the API.
+- The chatbot answers common FAQs locally first; only uncaptured questions use the Gemini API.
+- `GEMINI_API_KEY` stays server-side. The Vercel frontend receives only the public API URL through `VITE_CHAT_API_URL`.
+- Chat requests are short, bilingual, rate-limited, and instructed not to invent prices, diagnoses, appointments, or business facts.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Visitors can learn about pool resurfacing, plaster, quartz, pebble, StoneScapes, Diamond Brite, coping, tile, leak detection, and remodeling services.
+- Visitors can browse Riverside County area pages, request a free estimate, call the business, and ask the bilingual assistant questions.
 
 ## User preferences
 
@@ -48,7 +58,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Set `VITE_CHAT_API_URL` in the Vercel production environment after the independent API has a public URL; local development defaults to the proxied `/api/chat` path.
+- After changing `lib/api-spec/openapi.yaml`, run codegen before typechecking the API server.
 
 ## Pointers
 

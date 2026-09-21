@@ -1,4 +1,59 @@
-User-agent: *
+# robots.txt — riverapoolsriverside.com
+# Last updated: 2026-08-14
+
+# Allow all major search engines
+User-agent: Googlebot
 Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow AI discovery, grounding, and user-requested browsing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Limit aggressive SEO scrapers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Default — all other bots
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.php
+Allow: /
+Crawl-delay: 5
 
 Sitemap: https://www.riverapoolsriverside.com/sitemap.xml

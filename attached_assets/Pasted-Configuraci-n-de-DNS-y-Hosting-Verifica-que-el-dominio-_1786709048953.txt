@@ -1,0 +1,64 @@
+Configuración de DNS y Hosting:
+
+Verifica que el dominio riverapoolsriverside.com apunte correctamente a las direcciones IP (Registros A o CNAME) de tu servidor/hosting.
+
+Comprueba que cuente con un certificado SSL activo (https://). Si no tiene SSL, los navegadores y Google marcan el sitio como no seguro o bloquean el acceso.
+
+Desactivar el bloqueo de rastreo (Robots / NoIndex):
+
+Si usas WordPress u otra plataforma, revisa en Ajustes > Lectura que no esté marcada la casilla "Disuadir a los motores de búsqueda de indexar este sitio".
+
+Revisa que el archivo [riverapoolsriverside.com/robots.txt](https://riverapoolsriverside.com/robots.txt) no tenga la directiva Disallow: /.
+
+Dar de alta en Google Search Console:
+
+Ingresa a Google Search Console, añade la propiedad [https://www.riverapoolsriverside.com/](https://www.riverapoolsriverside.com/) y sube el mapa del sitio (sitemap.xml).
+
+2. Estructura y Diseño (Replicando el modelo de ca-plasteringservice.com)
+Para que tenga la misma presencia, credibilidad y capacidad de captar clientes (leads), estructura la página de la siguiente manera:
+
+A. Cabecera (Header) y Sección Superior (Hero)
+Barra superior:
+
+Teléfono con botón de llamada directo (tel:951...).
+
+Horarios de atención claros (ej. Lunes a Viernes 8:00 am - 5:00 pm).
+
+Menú principal:
+
+Inicio | Servicios | Galería | Testimonios | Áreas de Cobertura | Contacto
+
+Sección Hero:
+
+Título Principal (H1): Expert Pool Plastering & Resurfacing in Riverside & Inland Empire
+
+Subtítulo: Enfatiza los años de experiencia y la calidad garantizada.
+
+Llamado a la acción (CTA): Botón destacado "Get a Free Estimate" o "Call (951) XXX-XXXX".
+
+Insignias de confianza: Sellos visibles de "Licensed & Insured", número de licencia y años de trayectoria.
+
+B. Sección de Servicios Especializados (Grid de Tarjetas)
+Crea bloques visuales con iconos o fotos reales para cada servicio (evitando mezclar servicios ajenos como conserjería o limpieza general):
+
+Pool Plastering & Finishing: Yeso tradicional blanco, acabados de cuarzo y acabados de guijarro (Pebble finish).
+
+Pool Resurfacing & Restorations: Revestimiento completo para albercas deterioradas.
+
+Pool Remodeling & Upgrades: Modernización estructural, adición de spas, cascadas o bancas.
+
+Tile & Coping Replacement: Reemplazo de azulejo perimetral y piedra de coronación (coping).
+
+Equipment Repair & Automation: Bombas, filtros, calentadores y sistemas de sal.
+
+C. Sección de Áreas de Cobertura (Local SEO)
+En lugar de una sola ciudad, segmenta la región geográfica correspondiente (ej. Condado de Riverside e Inland Empire):
+
+Riverside, Corona, Moreno Valley, Norco, Eastvale, Jurupa Valley, Murrieta, Temecula.
+
+D. Prueba Social y Formulario de Contacto
+Galería Antes / Después: Fotografías reales de proyectos terminados.
+
+Testimonios de clientes: Reseñas con nombre, ciudad y valoración de 5 estrellas.
+
+Formulario de captura rápido: Nombre, Teléfono, Código Postal, Tipo de Servicio requerido y botón "Request Free Onsite Consultation".

@@ -1,0 +1,295 @@
+{
+  "riverside": {
+    "metaDescription": "Pool plastering, resurfacing, leak detection, coping, and tile for Riverside homes. Rivera Pools serves Wood Streets, Canyon Crest, Orangecrest, and nearby areas.",
+    "projectFocus": "Riverside projects can combine pool resurfacing with leak detection, equipment checks, coping, and waterline tile. We plan the work around the existing shell and the property, whether the pool is in Wood Streets, Canyon Crest, Orangecrest, Mission Grove, Arlington Heights, or La Sierra.",
+    "localConsiderations": "Riverside's inland conditions can mean long hot seasons, direct sun, evaporation, wind-blown dust, and faster changes in water chemistry. During an evaluation, we look at the finish, waterline, circulation, equipment, access, and any signs that water loss or chemistry has contributed to surface wear.",
+    "localFaqs": [
+      {
+        "q": "What pool remodeling work do you handle in Riverside?",
+        "a": "We handle plaster and aggregate resurfacing, leak detection, coping and tile, equipment upgrades, and complete pool renovations in Riverside. The right scope depends on the shell, finish, equipment, and the changes you want to make."
+      },
+      {
+        "q": "Can you inspect a Riverside pool for water loss before remodeling?",
+        "a": "Yes. We can assess the pool, visible plumbing, equipment, and surrounding conditions before recommending a resurfacing or renovation plan."
+      },
+      {
+        "q": "Which Riverside neighborhoods do you serve?",
+        "a": "Our listed Riverside service areas include Wood Streets, Canyon Crest, Orangecrest, Mission Grove, Arlington Heights, and La Sierra, along with nearby areas."
+      }
+    ]
+  },
+  "temecula": {
+    "metaDescription": "Pool resurfacing and pebble, quartz, and Stone Scapes finishes for Temecula homes. Rivera Pools serves Wine Country, Redhawk, Crowne Hill, and nearby areas.",
+    "projectFocus": "Temecula homeowners often compare pebble, quartz, and Stone Scapes finishes alongside coping and waterline tile. We plan finish upgrades and full remodels for properties in Wine Country, Redhawk, Crowne Hill, Paloma del Sol, Wolf Creek, and nearby areas.",
+    "localConsiderations": "Direct sun, hot summer weather, evaporation, and regular outdoor entertaining can affect how a Temecula pool surface and waterline age. We review the existing plaster, tile, coping, equipment, access, and the way the pool is used before recommending materials.",
+    "localServices": [
+      { "title": "Pool resurfacing and replastering", "description": "Inspect the shell, remove failing material, and select plaster, quartz, pebble, or StoneScapes based on the pool's condition and the finish you want.", "href": "/pool-resurfacing" },
+      { "title": "Quartz, pebble, and StoneScapes finishes", "description": "Compare samples, water color, texture, startup care, and maintenance before choosing the interior finish for a Temecula backyard.", "href": "/pool-finishes/stone-scapes" },
+      { "title": "Coping, tile, and pool remodeling", "description": "Coordinate waterline tile, coping, shelves, equipment, and the interior finish when a partial repair needs to become a complete renovation plan.", "href": "/pool-remodeling" }
+    ],
+    "resurfacingSigns": [
+      { "title": "Faded or mottled plaster", "description": "Uneven color, exposed aggregate, and stains that return after cleaning can indicate that the finish is reaching the end of its useful life." },
+      { "title": "Rough or uncomfortable surface", "description": "Sharp areas, scale, and texture changes can affect bare feet and may point to etching, poor startup, or surface wear." },
+      { "title": "Waterline and edge deterioration", "description": "Cracked tile, loose coping, or recurring scale should be evaluated with the interior finish so one repair does not create another later." }
+    ],
+    "availableFinishes": [
+      { "name": "Plaster", "description": "A clean, familiar finish when the shell and budget call for a straightforward replastering project.", "href": "/pool-resurfacing" },
+      { "name": "Quartz", "description": "Fine aggregate adds color variation and visual depth while staying smoother than larger pebble blends.", "href": "/pool-finishes/quartz" },
+      { "name": "Pebble and StoneScapes", "description": "Exposed aggregate blends create a more natural look and richer water color, with texture selected for the way the pool is used.", "href": "/pool-finishes/stone-scapes" }
+    ],
+    "documentedProject": {
+      "title": "Modern StoneScapes Oasis",
+      "location": "Temecula",
+      "problem": "The documented project was presented as a dated pool that needed a stronger finish direction and a more cohesive backyard look.",
+      "work": "Rivera Pools documented a StoneScapes finish transformation with before-and-after imagery, focusing on the aggregate surface and the finished pool presentation.",
+      "result": "The completed pool has a richer water-color direction and a more current resort-style appearance. The project is shown publicly as a Temecula transformation; it is not a promise that every pool needs the same scope.",
+      "photos": [
+        { "file": "before1.webp", "alt": "Before photo from Rivera Pools' documented Modern StoneScapes Oasis project in Temecula" },
+        { "file": "photo2.webp", "alt": "After photo from Rivera Pools' documented Modern StoneScapes Oasis project in Temecula" }
+      ]
+    },
+    "projectPhotos": [
+      { "file": "photo1.webp", "alt": "Completed Rivera Pools pool remodeling work with new coping and finish details" },
+      { "file": "photo2.webp", "alt": "Completed Rivera Pools StoneScapes-style pool finish project" },
+      { "file": "photo4.webp", "alt": "Completed Rivera Pools pool tile and finish detail" }
+    ],
+    "nearbyAreas": [
+      { "name": "Murrieta", "href": "/murrieta" },
+      { "name": "Menifee", "href": "/menifee" },
+      { "name": "Riverside", "href": "/riverside" }
+    ],
+    "localFaqs": [
+      {
+        "q": "Which pool finish is best for a Temecula home?",
+        "a": "Quartz, pebble, Stone Scapes, and standard plaster can all be appropriate. We compare texture, color, expected service life, maintenance, pool condition, and budget before recommending a finish."
+      },
+      {
+        "q": "Do you coordinate coping and tile with Temecula resurfacing?",
+        "a": "Yes. Coping, waterline tile, and the interior finish can be planned together so the new materials work as one design instead of looking like separate repairs."
+      },
+      {
+        "q": "Do you serve Wine Country and nearby Temecula communities?",
+        "a": "Yes. Our listed Temecula service areas include Wine Country, Redhawk, Crowne Hill, Paloma del Sol, and Wolf Creek, along with nearby areas."
+      }
+    ]
+  },
+  "murrieta": {
+    "metaDescription": "Pool plaster repair, resurfacing, coping, tile, and remodeling for Murrieta homes. Rivera Pools serves Bear Creek, French Valley, Murrieta Hot Springs, and nearby areas.",
+    "projectFocus": "Murrieta projects range from rough or aging plaster repairs to quartz and pebble resurfacing, coping and tile updates, equipment upgrades, and complete renovations. We serve properties in Bear Creek, French Valley, Murrieta Hot Springs, La Cresta, Greer Ranch, and nearby areas.",
+    "localConsiderations": "Murrieta's dry inland weather can bring direct sun, evaporation, dust, and landscaping debris into a pool. We check the surface, waterline, circulation, and equipment so the proposed repair addresses the cause of the problem rather than only covering its appearance.",
+    "localServices": [
+      { "title": "Rough plaster repair and resurfacing", "description": "Separate scale, etching, exposed aggregate, and localized damage from a surface that needs complete resurfacing before choosing the least disruptive repair.", "href": "/rough-pool-plaster-repair" },
+      { "title": "Quartz, pebble, and StoneScapes finishes", "description": "Review texture, water color, service expectations, and startup care for a Murrieta pool that needs a new interior surface.", "href": "/pool-finishes/quartz" },
+      { "title": "Coping, tile, and equipment coordination", "description": "Plan coping, waterline tile, pumps, automation, and leak assessment around the existing shell instead of treating each issue as a separate project.", "href": "/pool-remodeling" }
+    ],
+    "resurfacingSigns": [
+      { "title": "Roughness that catches bare feet", "description": "Abrasive areas and exposed aggregate can come from scale, etching, poor startup, or an aging finish and should be evaluated before the problem spreads." },
+      { "title": "Hollow, flaking, or lifting plaster", "description": "Delamination is not just cosmetic. A surface inspection can show whether isolated repair is reasonable or a broader resurfacing plan is safer." },
+      { "title": "Recurring stains or difficult cleaning", "description": "Persistent discoloration, scale, and algae-holding texture may indicate a surface problem rather than a cleaning problem alone." }
+    ],
+    "availableFinishes": [
+      { "name": "Plaster", "description": "A practical, familiar surface option when the shell is sound and a straightforward finish is the right fit.", "href": "/pool-resurfacing" },
+      { "name": "Quartz", "description": "A finer aggregate option with added color variation and texture between standard plaster and larger pebble.", "href": "/pool-finishes/quartz" },
+      { "name": "Pebble and StoneScapes", "description": "Natural aggregate blends for a more textured, resort-style appearance, selected with the pool's use and maintenance in mind.", "href": "/pool-finishes/stone-scapes" }
+    ],
+    "documentedProject": {
+      "title": "Artisan Edge Stone",
+      "location": "Murrieta",
+      "problem": "The public project portfolio identifies this Murrieta project as a stone coping renovation, giving homeowners a real local reference for edge-detail work.",
+      "work": "Rivera Pools documented an artisan stone coping installation in Murrieta and presented it as part of the company's completed project portfolio.",
+      "result": "The finished stone edge gives the pool a more defined transition between the water and surrounding hardscape. Interior resurfacing is evaluated separately rather than assumed from the coping photo.",
+      "photos": [
+        { "file": "photo3.webp", "alt": "Rivera Pools Artisan Edge Stone coping project documented in Murrieta" }
+      ]
+    },
+    "projectPhotos": [
+      { "file": "photo3.webp", "alt": "Rivera Pools artisan stone coping project documented in Murrieta" },
+      { "file": "photo1.webp", "alt": "Completed Rivera Pools pool remodeling work with finished coping details" },
+      { "file": "photo4.webp", "alt": "Completed Rivera Pools pool tile and finish detail" }
+    ],
+    "nearbyAreas": [
+      { "name": "Temecula", "href": "/temecula" },
+      { "name": "Menifee", "href": "/menifee" },
+      { "name": "Riverside", "href": "/riverside" }
+    ],
+    "localFaqs": [
+      {
+        "q": "Can you repair rough plaster on a Murrieta pool?",
+        "a": "We evaluate whether the roughness comes from scale, etching, exposed aggregate, localized damage, or an aging surface. Some problems can be repaired; widespread wear may call for resurfacing."
+      },
+      {
+        "q": "Can a Murrieta pool renovation include equipment upgrades?",
+        "a": "Yes. A renovation can include resurfacing, coping, tile, pumps, automation, and other equipment work when the existing system and project scope support the upgrade."
+      },
+      {
+        "q": "Which Murrieta areas do you serve?",
+        "a": "Our listed Murrieta service areas include Bear Creek, French Valley, Murrieta Hot Springs, La Cresta, and Greer Ranch, along with nearby areas."
+      }
+    ]
+  },
+  "menifee": {
+    "metaDescription": "Pool resurfacing, plaster repair, quartz, pebble, coping, tile, and remodeling for Menifee homes. Rivera Pools serves Menifee Lakes, Quail Valley, Sun City, and nearby areas.",
+    "projectFocus": "Menifee pool work often starts with an aging interior surface, cracked edge detail, equipment concern, or a backyard that needs to work better for everyday use. We plan resurfacing, plaster repair, quartz and pebble finishes, coping, tile, and remodel scopes for Menifee Lakes, Quail Valley, Sun City, Heritage Lake, Audie Murphy Ranch, and nearby areas.",
+    "localConsiderations": "Menifee's hot, dry inland conditions can increase evaporation, sun exposure, dust, and water-chemistry swings. We review the surface, waterline, shell, equipment, access, and drainage before recommending a finish or repair.",
+    "localServices": [
+      { "title": "Pool resurfacing and plaster repair", "description": "Evaluate roughness, stains, exposed aggregate, and delamination before deciding between localized repair and a complete new finish.", "href": "/pool-resurfacing" },
+      { "title": "Quartz, pebble, and StoneScapes finishes", "description": "Compare finish texture, color, maintenance, and startup requirements for a Menifee pool exposed to long hot seasons.", "href": "/pool-finishes/stone-scapes" },
+      { "title": "Coping, tile, and renovation planning", "description": "Coordinate the interior surface with waterline tile, coping, equipment, leak assessment, or a Baja shelf when the pool needs more than cosmetic work.", "href": "/pool-remodeling" }
+    ],
+    "resurfacingSigns": [
+      { "title": "The surface feels rough or sharp", "description": "Widespread roughness, scale, or exposed aggregate can make the pool uncomfortable and harder to keep clean." },
+      { "title": "Stains keep returning", "description": "Recurring discoloration may signal surface wear, scale, or water-balance damage that an ordinary cleaning cannot solve." },
+      { "title": "Water loss or equipment problems appear too", "description": "Leak symptoms, air in the system, or aging equipment should be checked before a new finish hides a related problem." }
+    ],
+    "availableFinishes": [
+      { "name": "Plaster", "description": "A straightforward finish for a sound shell and homeowners who want a familiar, clean surface.", "href": "/pool-resurfacing" },
+      { "name": "Quartz", "description": "A fine aggregate with more color variation and visual depth than standard plaster.", "href": "/pool-finishes/quartz" },
+      { "name": "Pebble and StoneScapes", "description": "Natural aggregate options with richer texture and water color for a more resort-style pool.", "href": "/pool-finishes/pebble" }
+    ],
+    "projectPhotos": [
+      { "file": "photo2.webp", "alt": "Completed Rivera Pools pool resurfacing project with a new interior finish" },
+      { "file": "photo3.webp", "alt": "Completed Rivera Pools natural-stone coping work" },
+      { "file": "before1.webp", "alt": "Before photo from a Rivera Pools pool renovation project, shown as a representative example" }
+    ],
+    "nearbyAreas": [
+      { "name": "Murrieta", "href": "/murrieta" },
+      { "name": "Temecula", "href": "/temecula" },
+      { "name": "Hemet", "href": "/hemet" }
+    ],
+    "localFaqs": [
+      { "q": "What pool resurfacing options do you offer in Menifee?", "a": "We evaluate plaster, quartz, pebble, and StoneScapes options against the shell, desired texture, water color, maintenance expectations, and budget." },
+      { "q": "Can you repair a rough Menifee pool before recommending a remodel?", "a": "Yes. We look for scale, etching, exposed aggregate, localized damage, and delamination before explaining whether repair or complete resurfacing is the better fit." },
+      { "q": "Do you serve Menifee Lakes, Quail Valley, and Sun City?", "a": "Yes. Those are among the Menifee service areas listed for Rivera Pools, along with Heritage Lake, Audie Murphy Ranch, and nearby communities." }
+    ]
+  },
+  "hemet": {
+    "metaDescription": "Pool plastering, resurfacing, quartz, pebble, coping, tile, and remodeling for Hemet homes. Rivera Pools serves Seven Hills, West Hemet, East Hemet, and nearby areas.",
+    "projectFocus": "Hemet pool projects can range from rough or stained plaster repair to a complete resurfacing and renovation plan. We evaluate the existing shell, finish, waterline, coping, equipment, access, and the way the pool is used in Seven Hills, West Hemet, East Hemet, Stoney Mountain Ranch, Valle Vista, and nearby areas.",
+    "localConsiderations": "Hemet's inland heat, sun, evaporation, dust, and seasonal use can put additional stress on an older pool surface and waterline. A useful inspection considers water loss and equipment alongside the finish so the proposed work solves the right problem.",
+    "localServices": [
+      { "title": "Pool plastering and resurfacing", "description": "Inspect rough, stained, thin, or delaminating plaster and build a repair or resurfacing scope around the actual shell condition.", "href": "/pool-resurfacing" },
+      { "title": "Quartz, pebble, and StoneScapes finishes", "description": "Compare smoothness, aggregate size, color, startup care, and maintenance before selecting a new Hemet pool finish.", "href": "/pool-finishes/quartz" },
+      { "title": "Coping, tile, leak, and equipment work", "description": "Coordinate edge details, waterline tile, leak assessment, pumps, filters, and automation when a surface project exposes a wider need.", "href": "/pool-remodeling" }
+    ],
+    "resurfacingSigns": [
+      { "title": "Thin, rough, or flaking plaster", "description": "Sharp areas, exposed aggregate, hollow spots, and flaking are reasons to have the finish evaluated before swimming or patching it repeatedly." },
+      { "title": "Scale, stains, and hard-to-clean areas", "description": "Persistent scale or discoloration can be a sign that the surface is worn or chemically damaged, not simply dirty." },
+      { "title": "The pool loses water repeatedly", "description": "Frequent refilling, wet soil, air in the system, or a pump that loses prime can point to a leak that should be addressed before resurfacing." }
+    ],
+    "availableFinishes": [
+      { "name": "Plaster", "description": "A clean, familiar option for a sound shell and a practical replastering scope.", "href": "/pool-resurfacing" },
+      { "name": "Quartz", "description": "A finer aggregate finish that adds color variation and visual depth with a smoother feel than larger pebble.", "href": "/pool-finishes/quartz" },
+      { "name": "Pebble and StoneScapes", "description": "Exposed aggregate blends for homeowners who want more texture, color, and a natural water appearance.", "href": "/pool-finishes/stone-scapes" }
+    ],
+    "projectPhotos": [
+      { "file": "photo1.webp", "alt": "Completed Rivera Pools pool remodeling work with finished coping" },
+      { "file": "photo2.webp", "alt": "Completed Rivera Pools pool finish installation, shown as a representative project example" },
+      { "file": "photo4.webp", "alt": "Completed Rivera Pools custom pool tile and finish detail" }
+    ],
+    "nearbyAreas": [
+      { "name": "Menifee", "href": "/menifee" },
+      { "name": "Murrieta", "href": "/murrieta" },
+      { "name": "Riverside", "href": "/riverside" }
+    ],
+    "localFaqs": [
+      { "q": "How do I know if my Hemet pool needs resurfacing?", "a": "Roughness, exposed aggregate, recurring stains, thin plaster, hollow areas, and difficult cleaning can justify an inspection. We distinguish localized issues from surface-wide wear before recommending work." },
+      { "q": "Which finish can handle a Hemet pool's hot inland conditions?", "a": "Plaster, quartz, pebble, and StoneScapes can all be considered. Preparation, startup water chemistry, shade, use, and ongoing maintenance affect performance more than a city name alone." },
+      { "q": "Should leak detection happen before a Hemet pool remodel?", "a": "Usually, yes. Repeated water loss, wet soil, air in the system, or a pump losing prime should be investigated before a new finish is installed." }
+    ]
+  },
+  "corona": {
+    "metaDescription": "Pool remodeling, tile, coping, resurfacing, and leak assessment for Corona homes. Rivera Pools serves Eagle Glen, Sycamore Creek, South Corona, and nearby areas.",
+    "projectFocus": "Corona remodeling plans can combine plaster or aggregate resurfacing with new coping, waterline tile, leak assessment, and equipment improvements. We serve Eagle Glen, Sycamore Creek, South Corona, Dos Lagos, Temescal Valley, and nearby areas.",
+    "localConsiderations": "Hot inland weather, strong sun, wind, dust, and outdoor use can put pressure on an older pool finish and waterline. Before selecting materials, we inspect the shell, drainage and access, coping, tile, and visible equipment.",
+    "localFaqs": [
+      {
+        "q": "Can you remodel a Corona pool without replacing everything?",
+        "a": "Often, yes. We inspect the shell and surrounding details first, then explain whether a finish-only repair, coping and tile update, equipment work, or a larger renovation makes the most sense."
+      },
+      {
+        "q": "Do you install pool tile and coping in Corona?",
+        "a": "Yes. We install and coordinate travertine, slate, glass, ceramic, and natural-stone details with the pool finish and existing deck conditions."
+      },
+      {
+        "q": "Which Corona communities do you serve?",
+        "a": "Our listed Corona service areas include Eagle Glen, Sycamore Creek, South Corona, Dos Lagos, and Temescal Valley, along with nearby areas."
+      }
+    ]
+  },
+  "fallbrook": {
+    "metaDescription": "Pool resurfacing, quartz, pebble, Diamond Brite, coping, and plaster repair for Fallbrook homes and estates. Free estimates from Rivera Pools.",
+    "projectFocus": "Fallbrook work can include quartz, pebble, Diamond Brite, plaster repair, coping, tile, and complete pool renovations for homes and estates. We serve Downtown Fallbrook, Live Oak Park, Rainbow, Fallbrook Estates, and nearby areas.",
+    "localConsiderations": "Every Fallbrook property has its own access, landscaping, drainage, and pool-use considerations. We review those conditions along with the shell and existing finish so the resurfacing, coping, tile, and material choices fit the property.",
+    "localFaqs": [
+      {
+        "q": "What resurfacing options do you offer in Fallbrook?",
+        "a": "We offer standard plaster, quartz, pebble, Stone Scapes, and Diamond Brite options, subject to the pool shell, preparation requirements, desired appearance, and budget."
+      },
+      {
+        "q": "Can you repair plaster before deciding on a full Fallbrook remodel?",
+        "a": "Yes. We can evaluate rough, cracked, stained, hollow, or delaminating areas and explain whether a localized repair or broader resurfacing plan is more appropriate."
+      },
+      {
+        "q": "Which Fallbrook areas do you serve?",
+        "a": "Our listed Fallbrook service areas include Downtown Fallbrook, Live Oak Park, Rainbow, and Fallbrook Estates, along with nearby areas."
+      }
+    ]
+  },
+  "bonsall": {
+    "metaDescription": "Premium pool finishes, natural-stone coping, tile, plaster repair, and renovations for Bonsall homes. Rivera Pools serves Via Monserate, Lilac Hills, and nearby areas.",
+    "projectFocus": "Bonsall projects focus on durable finishes, natural-stone coping, tile coordination, plaster repair, and complete renovations. We plan the work for properties in Bonsall Village, Via Monserate, Lilac Hills, San Luis Rey Heights, and nearby areas.",
+    "localConsiderations": "Bonsall properties can have different lot layouts, access conditions, landscaping, and outdoor-living priorities. An on-site review helps us plan material delivery, shell preparation, drainage details, coping, tile, and the finish as one project.",
+    "localFaqs": [
+      {
+        "q": "Which pool finishes do you install in Bonsall?",
+        "a": "We install plaster, quartz, pebble, Stone Scapes, and Diamond Brite finishes after reviewing the pool shell, desired texture, water color, maintenance expectations, and budget."
+      },
+      {
+        "q": "Can you add travertine coping during a Bonsall resurfacing project?",
+        "a": "Yes. We can evaluate the existing bond beam and deck, then coordinate travertine or other coping and tile work with the selected interior finish."
+      },
+      {
+        "q": "Which Bonsall areas do you serve?",
+        "a": "Our listed Bonsall service areas include Bonsall Village, Via Monserate, Lilac Hills, and San Luis Rey Heights, along with nearby areas."
+      }
+    ]
+  },
+  "vista": {
+    "metaDescription": "Rough plaster repair, pool resurfacing, quartz and pebble finishes, coping, tile, and equipment upgrades for Vista homes.",
+    "projectFocus": "Vista projects range from rough plaster repair to quartz and pebble resurfacing, coping and tile, equipment upgrades, and complete renovations. We serve Shadowridge, Vista Village, Buena, Civic Center, and nearby areas.",
+    "localConsiderations": "Vista properties can combine established landscaping, outdoor use, sun exposure, wind, and changing coastal-to-inland conditions. We inspect the finish, waterline, coping, circulation, and equipment before recommending the least disruptive durable solution.",
+    "localFaqs": [
+      {
+        "q": "Can you fix rough pool plaster in Vista?",
+        "a": "We identify whether roughness comes from scale, etching, exposed aggregate, localized damage, or an aging surface. The recommendation may be a targeted repair or a complete resurfacing."
+      },
+      {
+        "q": "Do you handle pool equipment upgrades during a Vista remodel?",
+        "a": "Yes. When appropriate, the scope can include pumps, automation, and other equipment work alongside resurfacing, coping, tile, or finish upgrades."
+      },
+      {
+        "q": "Which Vista areas do you serve?",
+        "a": "Our listed Vista service areas include Shadowridge, Vista Village, Buena, and Civic Center, along with nearby areas."
+      }
+    ]
+  },
+  "oceanside": {
+    "metaDescription": "Coastal pool resurfacing, durable finishes, coping, tile, leak assessment, and renovations for Oceanside homes. Rivera Pools serves Fire Mountain and nearby areas.",
+    "projectFocus": "Oceanside remodeling can include durable plaster, quartz, pebble, coping, tile, leak assessment, and complete renovations designed around outdoor living. We serve Fire Mountain, Arrowood, Rancho Del Oro, South Oceanside, and nearby areas.",
+    "localConsiderations": "Coastal exposure, sun, pool use, landscaping, and the existing deck can all affect finish and coping decisions in Oceanside. We inspect the surface and surrounding details so the material selection works for the pool's actual conditions.",
+    "localFaqs": [
+      {
+        "q": "What pool remodeling services do you offer in Oceanside?",
+        "a": "We offer resurfacing, plaster repair, quartz and pebble finishes, coping, waterline tile, leak assessment, equipment upgrades, and complete pool renovations."
+      },
+      {
+        "q": "Can you coordinate a coastal Oceanside pool with new coping and tile?",
+        "a": "Yes. We review the pool finish, existing deck, waterline, access, and outdoor-living goals before coordinating coping and tile with the resurfacing plan."
+      },
+      {
+        "q": "Which Oceanside areas do you serve?",
+        "a": "Our listed Oceanside service areas include Fire Mountain, Arrowood, Rancho Del Oro, and South Oceanside, along with nearby areas."
+      }
+    ]
+  }
+}

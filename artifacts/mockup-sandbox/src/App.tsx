@@ -1,5 +1,44 @@
-import { useEffect, useState, type ComponentType } from "react";
-import { Landing } from "./components/mockups/rivera-pools/Landing";
+import { useEffect, useState, lazy, Suspense, type ComponentType } from "react";
+import { CITIES } from "./components/mockups/rivera-pools/cities";
+import seoPages from "./components/mockups/rivera-pools/seo-pages.json";
+import serviceDetails from "./components/mockups/rivera-pools/service-details.json";
+import type { SeoPage } from "./components/mockups/rivera-pools/SeoLanding";
+import { DeferredInsights } from "./components/DeferredInsights";
+
+// Lazy-load heavy page components — keeps initial bundle small
+const Landing = lazy(() =>
+  import("./components/mockups/rivera-pools/Landing").then((m) => ({ default: m.Landing }))
+);
+const CityLanding = lazy(() =>
+  import("./components/mockups/rivera-pools/CityLanding").then((m) => ({ default: m.CityLanding }))
+);
+const SeoLanding = lazy(() =>
+  import("./components/mockups/rivera-pools/SeoLanding").then((m) => ({ default: m.SeoLanding }))
+);
+const PoolCleaningCenter = lazy(() =>
+  import("./components/mockups/rivera-pools/PoolCleaningCenter").then((m) => ({ default: m.PoolCleaningCenter }))
+);
+const PebbleVsQuartzPost = lazy(() =>
+  import("./components/mockups/rivera-pools/PebbleVsQuartzPost").then((m) => ({ default: m.PebbleVsQuartzPost }))
+);
+const BlogHub = lazy(() =>
+  import("./components/mockups/rivera-pools/BlogHub").then((m) => ({ default: m.BlogHub }))
+);
+const PoolRemodelingCenter = lazy(() =>
+  import("./components/mockups/rivera-pools/PoolRemodelingCenter").then((m) => ({ default: m.PoolRemodelingCenter }))
+);
+const ChatWidget = lazy(() =>
+  import("./components/mockups/rivera-pools/ChatWidget").then((m) => ({ default: m.ChatWidget }))
+);
+const ReviewPage = lazy(() =>
+  import("./components/mockups/rivera-pools/ReviewPage").then((m) => ({ default: m.ReviewPage }))
+);
+
+const SEO_PAGES = seoPages.map((page) => ({
+  ...page,
+  ...serviceDetails[page.slug as keyof typeof serviceDetails],
+})) as SeoPage[];
+const SEO_PAGE_MAP = new Map(SEO_PAGES.map((page) => [page.slug, page]));
 
 import { modules as discoveredModules } from "./.generated/mockup-components";
 
@@ -118,6 +157,14 @@ function Gallery() {
   );
 }
 
+function DeferredChat() {
+  return (
+    <Suspense fallback={null}>
+      <ChatWidget />
+    </Suspense>
+  );
+}
+
 function getPreviewPath(): string | null {
   const basePath = getBasePath();
   const { pathname } = window.location;
@@ -127,6 +174,24 @@ function getPreviewPath(): string | null {
       : pathname;
   const match = local.match(/^\/preview\/(.+)$/);
   return match ? match[1] : null;
+}
+
+function getRoutePath(): string {
+  const basePath = getBasePath();
+  const { pathname } = window.location;
+  const local =
+    basePath && pathname.startsWith(basePath)
+      ? pathname.slice(basePath.length) || "/"
+      : pathname;
+
+  if (local === "/preview/" || local === "/preview") {
+    const previewRoute = new URLSearchParams(window.location.search).get("route");
+    if (previewRoute) return previewRoute.replace(/^\/|\/$/g, "");
+  }
+
+  // The Replit design preview adds this prefix locally; it is not part of
+  // public Vercel routes such as /review.
+  return local.replace(/^\/__mockup(?=\/|$)/, "").replace(/^\/|\/$/g, "");
 }
 
 function App() {
@@ -141,7 +206,89 @@ function App() {
     );
   }
 
-  return <Landing />;
+  const routePath = getRoutePath();
+
+  if (routePath === "review") {
+    return (
+      <Suspense fallback={null}>
+        <ReviewPage />
+      </Suspense>
+    );
+  }
+
+  if (routePath === "blog/pool-cleaning-maintenance-riverside-ca") {
+    return (
+      <Suspense fallback={null}>
+        <PoolCleaningCenter />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  if (routePath === "blog") {
+    return (
+      <Suspense fallback={null}>
+        <BlogHub />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  if (routePath === "blog/pebble-vs-quartz-pool-finishes") {
+    return (
+      <Suspense fallback={null}>
+        <PebbleVsQuartzPost />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  if (routePath === "blog/pool-remodeling") {
+    return (
+      <Suspense fallback={null}>
+        <PoolRemodelingCenter />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  const seoPage = SEO_PAGE_MAP.get(routePath);
+
+  if (seoPage) {
+    return (
+      <Suspense fallback={null}>
+        <SeoLanding page={seoPage} />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  // City-specific pages
+  const citySlug = routePath.split("/")[0];
+  const city = CITIES[citySlug];
+
+  if (city) {
+    return (
+      <Suspense fallback={null}>
+        <CityLanding city={city} />
+        <DeferredInsights />
+        <DeferredChat />
+      </Suspense>
+    );
+  }
+
+  return (
+    <Suspense fallback={null}>
+      <Landing />
+      <DeferredInsights />
+      <DeferredChat />
+    </Suspense>
+  );
 }
 
 export default App;

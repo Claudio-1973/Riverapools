@@ -1,0 +1,44 @@
+Reducing the download time of images can improve the perceived load time of the page and LCP. Learn more about optimizing image sizeLCPFCPUnscored
+URL
+Resource Size
+Est Savings
+Cloudinary content
+1,884.2 KiB	1,796.5 KiB
+Modern Stone Scapes pebble finish pool remodel — Rivera Pools Riverside CA
+<img alt="Modern Stone Scapes pebble finish pool remodel — Rivera Pools Riverside CA" class="w-full h-full object-cover transform group-hover:scale-105 transition-tran…" src="https://res.cloudinary.com/ci1jfnss/image/upload/v1783996664/1783996593574…">
+…v178…/178…_yqch5d.png(res.cloudinary.com)
+1,884.2 KiB
+1,796.5 KiB
+Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.
+1,776.6 KiB
+This image file is larger than it needs to be (896x738) for its displayed dimensions (637x846). Use responsive images to reduce the image download size.
+347.8 KiB
+riverapoolsriverside.com 1st party
+774.6 KiB	511.6 KiB
+Natural stone coping installation — pool renovation Riverside County CA
+<img alt="Natural stone coping installation — pool renovation Riverside County CA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-105 transition-tran…" src="/images/photo3.webp">
+/images/photo3.webp(www.riverapoolsriverside.com)
+315.6 KiB
+227.9 KiB
+Increasing the image compression factor could improve this image's download size.
+224.4 KiB
+This image file is larger than it needs to be (904x620) for its displayed dimensions (637x846). Use responsive images to reduce the image download size.
+12.2 KiB
+Custom glass tile pool renovation — Riverside County CA by Rivera Pools
+<img alt="Custom glass tile pool renovation — Riverside County CA by Rivera Pools" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-105 transition-tran…" src="/images/photo4.webp">
+/images/photo4.webp(www.riverapoolsriverside.com)
+231.0 KiB
+143.4 KiB
+Increasing the image compression factor could improve this image's download size.
+139.8 KiB
+This image file is larger than it needs to be (904x620) for its displayed dimensions (637x846). Use responsive images to reduce the image download size.
+9.0 KiB
+Completed Stone Scapes pool remodel in Temecula CA
+<img alt="Completed Stone Scapes pool remodel in Temecula CA" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-7…" src="/images/photo1.webp">
+/images/photo1.webp(www.riverapoolsriverside.com)
+227.9 KiB
+140.3 KiB
+Increasing the image compression factor could improve this image's download size.
+118.5 KiB
+This image file is larger than it needs to be (904x744) for its displayed dimensions (637x846). Use responsive images to reduce the image download size.
+45.3 KiB

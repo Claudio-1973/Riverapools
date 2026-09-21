@@ -2,6 +2,16 @@
   "framework": "vite",
   "buildCommand": "cd artifacts/mockup-sandbox && BASE_PATH=/ pnpm run build",
   "outputDirectory": "artifacts/mockup-sandbox/dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "riverapoolsriverside.com" }
+      ],
+      "destination": "https://www.riverapoolsriverside.com/:path*",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
