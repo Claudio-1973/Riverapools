@@ -4,5 +4,6 @@
 - [Gemini API model availability](gemini-model-fallbacks.md) — keep the chatbot model configurable with ordered Flash fallbacks.
 - [Vercel deploy lessons](vercel-deploy-lessons.md) — use the right monorepo root, stored project settings, archive mode, and approved prebuilt/ESM conventions.
 - [GitHub sync through Replit](github-sync.md) — use the authorized connection and Git Data API when local HTTPS push authentication is unavailable.
+- [Rivera deployment mapping](deployment-repository-mapping.md) — prospoolcare.com and riverapoolsriverside.com use separate Vercel and GitHub projects.
 - [Canvas artifact selection](canvas-artifact-selection.md) — the selected artifact iframe can be restored by Canvas; changing the shape is not a persistent project remap.
 - [Service-page evidence](service-page-evidence.md) — describe representative portfolio photos as representative unless the service, scope, and location are documented.

@@ -1,44 +1,4 @@
 uploads = []
 generated = []
 
-[[outputs]]
-id = "UBF0oFzcm6BTmmzxbJCGX"
-uri = "file://exports/rivera-pool-care-standalone.zip"
-type = "unspecified"
-title = "Rivera Pool Care — proyecto independiente actualizado"
-description = "ZIP autónomo actualizado con el centro de diez artículos sobre limpieza y mantenimiento en /blog. No contiene secretos ni vinculación privada de Vercel."
-logical_id = "3bdebc1c-825b-4d7b-ba45-93210b1c5c71"
-content_hash = "sha256:58ff5736c9364d5f5c1dc8df1a92147b02b36ebfc1f8c67a0e68fed9a33efc00"
-size = 4413288
-mtime_ms = 1789442862356
-storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:3107caed-b02b-45b6-91c9-46366486c507/3bdebc1c-825b-4d7b-ba45-93210b1c5c71/14e85538-c99e-49f0-8709-61fb57bde765"
-storage_version_token = "1789442875319312"
-content_type = "application/octet-stream"
 
-[[outputs]]
-id = "PxsxUU6nXonlAH4NVHW6u"
-uri = "file://backups/riverapoolsriverside-project-2026-09-18.zip"
-type = "unspecified"
-title = "Rivera Pools Riverside — Project Backup"
-description = "ZIP backup of the workspace source, Rivera Pools artifact, configuration, and assets. Excludes node_modules, Git history, caches, builds, and environment/secret files. SHA-256: 1b97218279e73514307dea78dfa8b3c283c22518e1afc1b78bbf09e038f2063a"
-logical_id = "bbcd34fb-e693-4a65-be16-1bec1fcfbae9"
-content_hash = "sha256:1b97218279e73514307dea78dfa8b3c283c22518e1afc1b78bbf09e038f2063a"
-size = 41759011
-mtime_ms = 1789957791168
-storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:3107caed-b02b-45b6-91c9-46366486c507/bbcd34fb-e693-4a65-be16-1bec1fcfbae9/520787e1-4332-418e-8587-637626d96d21"
-storage_version_token = "1789957813031628"
-content_type = "application/octet-stream"
-
-[[outputs]]
-id = "J6T4FhFHKl2xhTRwtYcs3"
-uri = "file://backups/prospoolcare-project-2026-09-18.zip"
-type = "unspecified"
-title = "Prospoolcare — Project Backup"
-description = "ZIP backup of the rivera-pool-care artifact source, configuration, and assets. Excludes node_modules, builds, caches, Git history, and environment/secret files. SHA-256: ae5690cc12324e9b3244b7c78ee719831361ac28f04f7b84f264e1d5b56994a1"
-logical_id = "0b8316d4-26f2-4c6d-a753-3cc0bc7e8a86"
-content_hash = "sha256:ae5690cc12324e9b3244b7c78ee719831361ac28f04f7b84f264e1d5b56994a1"
-size = 4488904
-mtime_ms = 1789957963097
-storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:3107caed-b02b-45b6-91c9-46366486c507/0b8316d4-26f2-4c6d-a753-3cc0bc7e8a86/9336c577-62f5-4667-bd81-9418e87189a0"
-storage_version_token = "1789957972451629"
-content_type = "application/octet-stream"
