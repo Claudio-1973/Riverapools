@@ -38,7 +38,7 @@ DATOS DE LA EMPRESA Y HORARIOS:
 - Propietario / Contratista: Claudio Rivera.
 - Horario de atención: Lunes a Sábado de 8:00 AM a 5:00 PM (Domingos cerrado).
 - Credenciales: Contratista con licencia C-35, 100% asegurado y afianzado (Licensed, Insured & Bonded).
-- Zona de cobertura: Murrieta, Temecula, Menifee y todo el área de Riverside County.
+- Zona de cobertura: Murrieta, Temecula, Menifee, Lake Elsinore (incluyendo Alberhill), Hemet, Corona, Riverside y todo el área de Riverside County.
 - Métodos de pago aceptados: Zelle, cheque y efectivo.
 `.trim();
 

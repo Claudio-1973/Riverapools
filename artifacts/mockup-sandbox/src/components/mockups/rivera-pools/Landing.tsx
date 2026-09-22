@@ -802,8 +802,9 @@ export function Landing() {
                 { city: "Temecula", note: "City pages available" },
                 { city: "Murrieta", note: "City pages available" },
                 { city: "Menifee", note: "SW Riverside County" },
+                { city: "Hemet", note: "City pages available" },
+                { city: "Lake Elsinore", note: "Alberhill & I-15 corridor" },
                 { city: "Moreno Valley", note: "NW Riverside County" },
-                { city: "Lake Elsinore", note: "Near I-15 corridor" },
                 { city: "Norco", note: "Western Riverside" },
                 { city: "Eastvale", note: "Western Riverside" },
                 { city: "Jurupa Valley", note: "Western Riverside" },
@@ -929,7 +930,7 @@ export function Landing() {
                           <option value="Murrieta">Murrieta</option>
                           <option value="Menifee">Menifee</option>
                           <option value="Moreno Valley">Moreno Valley</option>
-                          <option value="Lake Elsinore">Lake Elsinore</option>
+                          <option value="Lake Elsinore">Lake Elsinore / Alberhill</option>
                           <option value="Norco">Norco</option>
                           <option value="Eastvale">Eastvale</option>
                           <option value="Jurupa Valley">Jurupa Valley</option>
