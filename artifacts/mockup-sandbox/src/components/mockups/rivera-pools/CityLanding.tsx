@@ -8,6 +8,7 @@ import {
 
 import { CITIES, type CityConfig } from "./cities";
 import { trackPhoneClick, trackQuoteSubmission } from "@/lib/analytics";
+import { ReviewModal } from "./ReviewModal";
 export type { CityConfig };
 export { CITIES };
 
@@ -50,6 +51,7 @@ function asset(file: string): string {
 export function CityLanding({ city }: { city: CityConfig }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled] = useState(false);
+  const [reviewModalOpen, setReviewModalOpen] = useState(false);
   const [formData, setFormData] = useState({ from_name: "", phone: "", from_email: "", project_type: "" , message: "" });
   const [formStatus, setFormStatus] = useState<"idle"|"sending"|"success"|"error">("idle");
   const formRef = useRef<HTMLFormElement>(null);
@@ -502,6 +504,17 @@ export function CityLanding({ city }: { city: CityConfig }) {
                 </div>
               ))}
             </div>
+
+            <div className="mt-10 text-center">
+              <button
+                type="button"
+                onClick={() => setReviewModalOpen(true)}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0F253F] hover:bg-[#0F253F]/90 text-white font-semibold text-sm shadow-md transition-all cursor-pointer hover:scale-105 active:scale-95"
+              >
+                <Star className="w-4 h-4 fill-[#D4AF37] text-[#D4AF37]" />
+                <span>Dejar una Reseña / Leave a Review</span>
+              </button>
+            </div>
           </div>
         </section>
 
@@ -606,9 +619,25 @@ export function CityLanding({ city }: { city: CityConfig }) {
             <span className="font-['Montserrat'] font-bold text-white">Rivera Pools Riverside</span>
           </div>
            <p>Pool Remodeling in {city.name}, {city.county} · (951) 345-9276 · C-35 License #1053279</p>
-          <a href="/" className="text-[#06B6D4] hover:underline">← Back to Main Site</a>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => setReviewModalOpen(true)}
+              className="text-[#D4AF37] hover:underline flex items-center gap-1 cursor-pointer"
+            >
+              <Star className="w-3.5 h-3.5 fill-[#D4AF37]" />
+              Leave a Review
+            </button>
+            <a href="/" className="text-[#06B6D4] hover:underline">← Back to Main Site</a>
+          </div>
         </div>
       </footer>
+
+      {/* Smart Review Funnel Modal */}
+      <ReviewModal 
+        isOpen={reviewModalOpen} 
+        onClose={() => setReviewModalOpen(false)} 
+      />
     </div>
   );
 }

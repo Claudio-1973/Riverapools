@@ -10,6 +10,7 @@ export const modules: ModuleMap = {
   "./components/mockups/rivera-pools/PoolCleaningCenter.tsx": () => import("../components/mockups/rivera-pools/PoolCleaningCenter.tsx"),
   "./components/mockups/rivera-pools/PoolRemodelingCenter.tsx": () => import("../components/mockups/rivera-pools/PoolRemodelingCenter.tsx"),
   "./components/mockups/rivera-pools/QuoteForm.tsx": () => import("../components/mockups/rivera-pools/QuoteForm.tsx"),
+  "./components/mockups/rivera-pools/ReviewModal.tsx": () => import("../components/mockups/rivera-pools/ReviewModal.tsx"),
   "./components/mockups/rivera-pools/ReviewPage.tsx": () => import("../components/mockups/rivera-pools/ReviewPage.tsx"),
   "./components/mockups/rivera-pools/SeoLanding.tsx": () => import("../components/mockups/rivera-pools/SeoLanding.tsx")
 };

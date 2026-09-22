@@ -25,6 +25,7 @@ import {
   Search
 } from "lucide-react";
 import { trackPhoneClick, trackQuoteSubmission } from "@/lib/analytics";
+import { ReviewModal } from "./ReviewModal";
 
 // Resolves image/video paths correctly in both Replit sandbox (/__mockup/) and Vercel (/)
 const BASE = typeof window !== "undefined" && window.location.pathname.startsWith("/__mockup")
@@ -50,11 +51,18 @@ const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 export function Landing() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [reviewModalOpen, setReviewModalOpen] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const querySection = new URLSearchParams(window.location.search).get("section");
+    const hasReviewParam = new URLSearchParams(window.location.search).get("review") === "true";
     const targetId = querySection || window.location.hash.replace(/^#/, "");
+
+    if (hasReviewParam || targetId === "reviews" || targetId === "review") {
+      setReviewModalOpen(true);
+    }
+
     if (!targetId) return;
     const frame = window.requestAnimationFrame(() => {
       document.getElementById(targetId)?.scrollIntoView();
@@ -171,6 +179,13 @@ export function Landing() {
             <a href="#process" className="text-sm font-medium text-slate-600 hover:text-[#06B6D4] transition-colors">Process</a>
             <a href="#coverage" className="text-sm font-medium text-slate-600 hover:text-[#06B6D4] transition-colors">Coverage</a>
             <a href="/blog" className="text-sm font-medium text-slate-600 hover:text-[#06B6D4] transition-colors">Blogs</a>
+            <button
+              type="button"
+              onClick={() => setReviewModalOpen(true)}
+              className="text-sm font-medium text-slate-600 hover:text-[#06B6D4] transition-colors cursor-pointer"
+            >
+              Reviews
+            </button>
             <Button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white rounded-full px-6 font-medium shadow-lg shadow-[#06B6D4]/20">
               Free Estimate
             </Button>
@@ -194,6 +209,14 @@ export function Landing() {
             <a href="#process" className="px-4 py-2 hover:bg-slate-50 rounded-lg font-medium" onClick={() => setMobileMenuOpen(false)}>Process</a>
             <a href="#coverage" className="px-4 py-2 hover:bg-slate-50 rounded-lg font-medium" onClick={() => setMobileMenuOpen(false)}>Coverage</a>
             <a href="/blog" className="px-4 py-2 hover:bg-slate-50 rounded-lg font-medium" onClick={() => setMobileMenuOpen(false)}>Blogs</a>
+            <button
+              type="button"
+              className="text-left px-4 py-2 hover:bg-slate-50 rounded-lg font-medium text-slate-700 flex items-center justify-between"
+              onClick={() => { setMobileMenuOpen(false); setReviewModalOpen(true); }}
+            >
+              <span>Reviews / Dejar Reseña</span>
+              <span className="text-xs text-[#D4AF37] font-bold">★★★★★</span>
+            </button>
             <Button onClick={() => { setMobileMenuOpen(false); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }} className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white w-full rounded-lg mt-2">
               Free Estimate
             </Button>
@@ -769,6 +792,33 @@ export function Landing() {
                 </div>
               </div>
             </div>
+
+            {/* Leave a review CTA card / banner */}
+            <div className="mt-12 p-8 md:p-10 rounded-3xl bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/15 backdrop-blur-md flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+              <div className="max-w-xl">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-bold uppercase tracking-wider mb-3">
+                  <Star className="w-3.5 h-3.5 fill-[#D4AF37]" />
+                  Calificación 5.0 en Riverside County
+                </div>
+                <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-white mb-2">
+                  ¿Hicimos un proyecto en tu piscina recientemente?
+                </h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Tu opinión nos ayuda a seguir cuidando cada patio con el máximo estándar. Déjanos saber cómo fue tu experiencia con nuestro equipo.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => setReviewModalOpen(true)}
+                  className="px-6 py-3.5 rounded-full bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white font-bold text-sm shadow-lg shadow-[#06B6D4]/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
+                >
+                  <Star className="w-4 h-4 fill-white" />
+                  <span>Dejar una Reseña / Leave a Review</span>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -1012,10 +1062,18 @@ export function Landing() {
               <p className="text-sm text-white/80 max-w-sm mb-6">
                 Professional Pool Construction, Remodeling, & Restoration in Riverside County. We build outdoor living spaces that last a lifetime.
               </p>
-              <div className="flex gap-4">
-                <a href="https://maps.google.com/maps?cid=7153614855009489923" aria-label="Rivera Pools Riverside on Google Business" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#06B6D4] hover:text-white transition-colors">
-                  <Star className="w-4 h-4" />
+              <div className="flex items-center gap-3">
+                <a href="https://maps.google.com/maps?cid=7153614855009489923" target="_blank" rel="noopener noreferrer" aria-label="Rivera Pools Riverside on Google Business" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#06B6D4] hover:text-white transition-colors" title="Google Business Profile">
+                  <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]" />
                 </a>
+                <button
+                  type="button"
+                  onClick={() => setReviewModalOpen(true)}
+                  className="text-xs font-semibold text-white/80 hover:text-[#06B6D4] flex items-center gap-1.5 cursor-pointer bg-white/5 hover:bg-white/10 px-3 py-2 rounded-xl transition-all"
+                >
+                  <Star className="w-3.5 h-3.5 text-[#D4AF37] fill-[#D4AF37]" />
+                  Leave a Review
+                </button>
               </div>
             </div>
             
@@ -1034,6 +1092,7 @@ export function Landing() {
                 <li><a href="/baja-shelf-addition-cost" className="hover:text-[#06B6D4] transition-colors">Baja Shelf Additions</a></li>
                 <li><a href="/blog/pool-cleaning-maintenance-riverside-ca" className="hover:text-[#06B6D4] transition-colors">Pool Cleaning Guide</a></li>
                 <li><a href="/blog/pool-remodeling" className="hover:text-[#06B6D4] transition-colors">Pool Remodeling Blog</a></li>
+                <li><button type="button" onClick={() => setReviewModalOpen(true)} className="hover:text-[#06B6D4] transition-colors flex items-center gap-1.5 cursor-pointer text-left text-white/80">Customer Reviews / Dejar Reseña</button></li>
                 <li><a href="#contact" className="hover:text-[#06B6D4] transition-colors">Free Pool Estimate</a></li>
               </ul>
             </div>
@@ -1143,6 +1202,12 @@ export function Landing() {
           scrollbar-width: none;
         }
       `}} />
+
+      {/* Smart Review Funnel Modal */}
+      <ReviewModal 
+        isOpen={reviewModalOpen} 
+        onClose={() => setReviewModalOpen(false)} 
+      />
     </div>
   );
 }
