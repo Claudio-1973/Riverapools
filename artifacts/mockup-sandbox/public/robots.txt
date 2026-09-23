@@ -62,6 +62,15 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
 # Limit aggressive SEO scrapers
 User-agent: AhrefsBot
 Crawl-delay: 10
@@ -83,5 +92,10 @@ Disallow: /*.php
 Allow: /
 Crawl-delay: 5
 
+# AI / LLM Context Discovery
+# https://www.riverapoolsriverside.com/llms.txt
+# https://www.riverapoolsriverside.com/llms-full.txt
+
 Sitemap: https://www.riverapoolsriverside.com/sitemap.xml
+
 
