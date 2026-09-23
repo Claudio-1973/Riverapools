@@ -184,7 +184,7 @@ export function CityLanding({ city }: { city: CityConfig }) {
               Pool Remodeling Experts Serving {city.name}, CA
             </h2>
             <p className="text-slate-600 leading-relaxed text-base md:text-lg max-w-3xl mx-auto mb-4">
-              Rivera Pools Riverside has been transforming outdated pools across {city.name} and {city.county} for over 15 years.
+              Rivera Pools Riverside has been transforming outdated pools across {city.name} and {city.county} for over 15 years (replastering since 2010, CSLB-licensed since 2019).
               Whether your pool needs a fresh Stone Scapes pebble finish, full plaster resurfacing, new coping and tile, or a
               complete structural renovation, our licensed team handles every project with the same attention to detail.
             </p>
@@ -539,7 +539,7 @@ export function CityLanding({ city }: { city: CityConfig }) {
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="bg-white/10 p-2.5 rounded-full"><Mail className="w-4 h-4 text-[#06B6D4]" /></div>
-                      <div><p className="text-xs text-white/75">Email</p><p className="font-medium text-sm">claudio@contractor.net</p></div>
+                      <div><p className="text-xs text-white/75">Email</p><p className="font-medium text-sm">claudio@prospoolcare.com</p></div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="bg-white/10 p-2.5 rounded-full"><MapPin className="w-4 h-4 text-[#06B6D4]" /></div>
@@ -618,7 +618,7 @@ export function CityLanding({ city }: { city: CityConfig }) {
             <Droplets className="w-5 h-5 text-[#06B6D4]" />
             <span className="font-['Montserrat'] font-bold text-white">Rivera Pools Riverside</span>
           </div>
-           <p>Pool Remodeling in {city.name}, {city.county} · (951) 345-9276 · C-35 License #1053279</p>
+           <p>Pool Remodeling in {city.name}, {city.county} · (951) 345-9276 · C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p>
           <div className="flex items-center gap-4">
             <button
               type="button"

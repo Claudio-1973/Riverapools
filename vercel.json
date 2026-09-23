@@ -7,13 +7,123 @@
     {
       "source": "/:path*",
       "has": [
-        { "type": "host", "value": "riverapoolsriverside.com" }
+        {
+          "type": "host",
+          "value": "riverapoolsriverside.com"
+        }
       ],
       "destination": "https://www.riverapoolsriverside.com/:path*",
       "statusCode": 301
     }
   ],
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    {
+      "source": "/review",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/riverside",
+      "destination": "/riverside/index.html"
+    },
+    {
+      "source": "/temecula",
+      "destination": "/temecula/index.html"
+    },
+    {
+      "source": "/murrieta",
+      "destination": "/murrieta/index.html"
+    },
+    {
+      "source": "/menifee",
+      "destination": "/menifee/index.html"
+    },
+    {
+      "source": "/hemet",
+      "destination": "/hemet/index.html"
+    },
+    {
+      "source": "/corona",
+      "destination": "/corona/index.html"
+    },
+    {
+      "source": "/fallbrook",
+      "destination": "/fallbrook/index.html"
+    },
+    {
+      "source": "/bonsall",
+      "destination": "/bonsall/index.html"
+    },
+    {
+      "source": "/vista",
+      "destination": "/vista/index.html"
+    },
+    {
+      "source": "/oceanside",
+      "destination": "/oceanside/index.html"
+    },
+    {
+      "source": "/pool-finishes/quartz",
+      "destination": "/pool-finishes/quartz/index.html"
+    },
+    {
+      "source": "/pool-finishes/pebble",
+      "destination": "/pool-finishes/pebble/index.html"
+    },
+    {
+      "source": "/pool-finishes/stone-scapes",
+      "destination": "/pool-finishes/stone-scapes/index.html"
+    },
+    {
+      "source": "/pool-finishes/diamond-brite",
+      "destination": "/pool-finishes/diamond-brite/index.html"
+    },
+    {
+      "source": "/travertine-coping",
+      "destination": "/travertine-coping/index.html"
+    },
+    {
+      "source": "/pool-plaster-delaminating",
+      "destination": "/pool-plaster-delaminating/index.html"
+    },
+    {
+      "source": "/rough-pool-plaster-repair",
+      "destination": "/rough-pool-plaster-repair/index.html"
+    },
+    {
+      "source": "/baja-shelf-addition-cost",
+      "destination": "/baja-shelf-addition-cost/index.html"
+    },
+    {
+      "source": "/pool-resurfacing",
+      "destination": "/pool-resurfacing/index.html"
+    },
+    {
+      "source": "/pool-remodeling",
+      "destination": "/pool-remodeling/index.html"
+    },
+    {
+      "source": "/pool-leak-detection",
+      "destination": "/pool-leak-detection/index.html"
+    },
+    {
+      "source": "/pool-equipment-upgrades",
+      "destination": "/pool-equipment-upgrades/index.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/pool-remodeling",
+      "destination": "/blog/pool-remodeling/index.html"
+    },
+    {
+      "source": "/blog/pebble-vs-quartz-pool-finishes",
+      "destination": "/blog/pebble-vs-quartz-pool-finishes/index.html"
+    },
+    {
+      "source": "/blog/pool-cleaning-maintenance-riverside-ca",
+      "destination": "/blog/pool-cleaning-maintenance-riverside-ca/index.html"
+    }
   ]
 }

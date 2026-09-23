@@ -53,7 +53,7 @@ export function BlogHub() {
           <div className="mt-14 grid gap-4 border-t border-[#d9e5e7] pt-8 text-sm text-[#607685] sm:grid-cols-3"><div className="flex gap-3"><ShieldCheck className="h-5 w-5 shrink-0 text-[#d3a62d]" /><span>Licensed contractor perspective, not anonymous advice.</span></div><div className="flex gap-3"><FileText className="h-5 w-5 shrink-0 text-[#08aeca]" /><span>Technical details explained in plain language.</span></div><div className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-[#08aeca]" /><span>Know what to ask before work begins.</span></div></div>
         </section>
       </main>
-      <footer className="bg-[#10283f] px-5 py-8 text-center text-sm text-white/65"><p>Rivera Pools Riverside · Remodeling, resurfacing, repairs, and pool care across Riverside County.</p><p className="mt-2">CA C-35 Contractor License #1053279 · Licensed, Bonded, &amp; Insured</p><a href="tel:+19513459276" className="mt-2 inline-block font-bold text-[#80e9e9]">(951) 345-9276</a></footer>
+      <footer className="bg-[#10283f] px-5 py-8 text-center text-sm text-white/65"><p>Rivera Pools Riverside · Remodeling, resurfacing, repairs, and pool care across Riverside County.</p><p className="mt-2">C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p><p className="mt-2">Weekly pool cleaning: <a href="https://prospoolcare.com/" className="underline">Rivera Pools Care</a> · (951) 383-9753</p><a href="tel:+19513459276" className="mt-2 inline-block font-bold text-[#80e9e9]">(951) 345-9276</a></footer>
     </div>
   );
 }

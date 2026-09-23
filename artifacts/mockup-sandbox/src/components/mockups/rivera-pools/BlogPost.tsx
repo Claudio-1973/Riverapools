@@ -172,7 +172,7 @@ export function BlogPost({ post = POOL_CLEANING_POST }: { post?: BlogPostData })
 
       <footer className="bg-[#0A0A0A] py-8 text-center text-sm text-white/70">
         <p>Rivera Pools Riverside · Pool cleaning, remodeling, resurfacing, and repairs across Riverside County.</p>
-        <p className="mt-2">CA C-35 Contractor License #1053279 · Licensed, Bonded, &amp; Insured</p>
+        <p className="mt-2">C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p>
         <a href="tel:+19513459276" className="mt-2 inline-block font-semibold text-white hover:text-[#67e8f9]">(951) 345-9276</a>
       </footer>
     </div>
