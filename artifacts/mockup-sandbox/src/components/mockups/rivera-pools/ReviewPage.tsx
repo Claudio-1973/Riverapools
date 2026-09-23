@@ -58,7 +58,7 @@ export function ReviewPage() {
               <span>Licensed, Bonded &amp; Insured</span>
             </div>
             <p className="text-[11px] text-white/60">
-              CA C-35 Contractor License #1053279
+              CSLB #1053279 · C-35 Lathing &amp; Plastering
             </p>
           </div>
         </div>

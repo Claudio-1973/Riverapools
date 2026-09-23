@@ -261,7 +261,7 @@ export function Landing() {
             </h1>
 
             <p className="text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed mb-10">
-              Over 15 years transforming pools across Riverside County. Every project backed by our quality guarantee — from premium plaster and Stone Scapes finishes to full structural remodels. Local, licensed, and built to last.
+              Replastering pools since 2010 and CSLB-licensed since 2019, transforming pools across Riverside County. Every project backed by our quality guarantee — from premium plaster and Stone Scapes finishes to full structural remodels. Local, licensed, and built to last.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -283,7 +283,7 @@ export function Landing() {
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-5 py-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#06B6D4]" />
-              <span className="text-xs font-semibold text-white">C-35 License #1053279</span>
+              <span className="text-xs font-semibold text-white">CSLB #1053279 · C-35</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-5 py-2.5">
                 <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]" />
@@ -723,7 +723,7 @@ export function Landing() {
                     3
                   </div>
                   <h3 className="font-['Montserrat'] font-bold text-xl text-[#0F253F] mb-3">Clean Execution</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">Fast demolition, structural prep, and expert application by our specialized crews with zero mess left behind.</p>
+                  <p className="text-slate-600 text-sm leading-relaxed">Fast demolition, structural prep, and expert application by our experienced team with zero mess left behind.</p>
                 </div>
                 
                 {/* Step 4 */}
@@ -920,7 +920,7 @@ export function Landing() {
                       <div className="bg-white/10 p-3 rounded-full"><Mail className="w-5 h-5 text-[#06B6D4]" /></div>
                       <div>
                         <p className="text-sm text-white/75">Email Us</p>
-                        <p className="font-medium">claudio@contractor.net</p>
+                        <p className="font-medium">claudio@prospoolcare.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -1122,7 +1122,7 @@ export function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#06B6D4]" />
-                  <span>claudio@contractor.net</span>
+                  <span>claudio@prospoolcare.com</span>
                 </li>
               </ul>
             </div>
@@ -1130,9 +1130,9 @@ export function Landing() {
           </div>
           
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/65">
-            <p>Copyright © {new Date().getFullYear()} Rivera Pools Riverside. All rights reserved.</p>
+            <p>Copyright © {new Date().getFullYear()} Rivera Pools Riverside, a division of Rivera Pools Care (DBA of Claudio Rivera). All rights reserved.</p>
             <div className="flex gap-4">
-                <span className="flex items-center gap-1"><Award className="w-3 h-3" /> Licensed, Bonded, &amp; Insured. CA C-35 Contractor License #1053279</span>
+                <span className="flex items-center gap-1"><Award className="w-3 h-3" /> C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</span>
             </div>
           </div>
         </div>

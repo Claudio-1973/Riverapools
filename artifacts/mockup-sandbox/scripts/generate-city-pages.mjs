@@ -58,7 +58,7 @@ const esc = (value) => String(value)
 const staticLicenseFooter = () => `
     <footer style="border-top:1px solid #dbe5e8;margin-top:40px;padding-top:20px;color:#475569">
       <p>Rivera Pools Riverside · (951) 345-9276</p>
-      <p>CA C-35 Contractor License #1053279 · Licensed, Bonded, &amp; Insured</p>
+      <p>C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p>
     </footer>`;
 
 function parseRemodelingTopics(source) {
@@ -193,7 +193,7 @@ function cityStaticRoot(city) {
     </main>
     <footer style="border-top:1px solid #dbe5e8;margin-top:40px;padding-top:20px;color:#475569">
       <p>Rivera Pools Riverside · (951) 345-9276</p>
-      <p>CA C-35 Contractor License #1053279 · Licensed, Bonded, &amp; Insured</p>
+      <p>C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p>
     </footer>
   </div>`;
 }
@@ -293,7 +293,7 @@ function seoStaticRoot(page, details) {
     </main>
     <footer style="border-top:1px solid #dbe5e8;margin-top:40px;padding-top:20px;color:#475569">
       <p>Rivera Pools Riverside · (951) 345-9276</p>
-      <p>CA C-35 Contractor License #1053279 · Licensed, Bonded, &amp; Insured</p>
+      <p>C R Quality Pool Services dba Rivera Pools Care · CSLB #1053279 (C-35 Lathing &amp; Plastering) · Licensed, Bonded &amp; Insured</p>
     </footer>
   </div>`;
 }
@@ -608,7 +608,7 @@ const cities = [
   {
     slug: "corona",
     name: "Corona",
-    title: "Pool Remodeling, Tile & Coping in Corona, CA | C-35 Contractor",
+    title: "Pool Remodeling, Tile & Coping in Corona, CA | Rivera Pools",
     description: "Pool remodeling in Corona, CA by Rivera Pools Riverside. Stone Scapes, plaster resurfacing, coping & tile. Licensed & insured. Free estimate — (951) 345-9276.",
     keywords: "pool remodeling Corona CA, pool resurfacing Corona, pool renovation Corona, pool contractor Corona CA, Stone Scapes Corona",
     url: "https://www.riverapoolsriverside.com/corona",
