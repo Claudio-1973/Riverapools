@@ -1103,8 +1103,12 @@ export function Landing() {
                 <li><a href="/riverside" className="hover:text-[#06B6D4] transition-colors">Riverside</a></li>
                 <li><a href="/temecula" className="hover:text-[#06B6D4] transition-colors">Temecula</a></li>
                 <li><a href="/murrieta" className="hover:text-[#06B6D4] transition-colors">Murrieta</a></li>
+                <li><a href="/menifee" className="hover:text-[#06B6D4] transition-colors">Menifee</a></li>
+                <li><a href="/hemet" className="hover:text-[#06B6D4] transition-colors">Hemet</a></li>
                 <li><a href="/corona" className="hover:text-[#06B6D4] transition-colors">Corona</a></li>
                 <li><a href="/fallbrook" className="hover:text-[#06B6D4] transition-colors">Fallbrook</a></li>
+                <li><a href="/bonsall" className="hover:text-[#06B6D4] transition-colors">Bonsall</a></li>
+                <li><a href="/vista" className="hover:text-[#06B6D4] transition-colors">Vista</a></li>
                 <li><a href="/oceanside" className="hover:text-[#06B6D4] transition-colors">Oceanside</a></li>
               </ul>
             </div>
