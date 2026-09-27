@@ -27,7 +27,7 @@ interface ReviewFunnelProps {
   isStandalonePage?: boolean;
 }
 
-export function ReviewFunnel({ onSuccessClose, initialLanguage = "es", isStandalonePage = false }: ReviewFunnelProps) {
+export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandalonePage = false }: ReviewFunnelProps) {
   const [language, setLanguage] = useState<Language>(initialLanguage);
   const [rating, setRating] = useState<number>(0);
   const [hoveredRating, setHoveredRating] = useState<number>(0);

@@ -219,7 +219,7 @@ export function Landing() {
               className="text-left px-4 py-2 hover:bg-slate-50 rounded-lg font-medium text-slate-700 flex items-center justify-between"
               onClick={() => { setMobileMenuOpen(false); setReviewModalOpen(true); }}
             >
-              <span>Reviews / Dejar Reseña</span>
+              <span>Customer Reviews</span>
               <span className="text-xs text-[#D4AF37] font-bold">★★★★★</span>
             </button>
             <Button onClick={() => { setMobileMenuOpen(false); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }} className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white w-full rounded-lg mt-2">
@@ -664,7 +664,7 @@ export function Landing() {
                     Query: Pool Replastering Cost Riverside
                   </div>
                   <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
-                    ¿Cuánto cuesta el replastering en Riverside County?
+                    How much does pool replastering cost in Riverside County?
                   </h4>
                   <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
                     <strong className="text-emerald-900">Direct Answer:</strong> Standard replastering costs between <strong>$4,500 and $7,500</strong> for traditional white plaster, <strong>$6,000 to $9,500</strong> for quartz aggregate, and <strong>$8,500 to $13,500</strong> for StoneScapes pebble for an average 15,000-gallon pool.
@@ -681,7 +681,7 @@ export function Landing() {
                     Query: Pool Remodel Timeline
                   </div>
                   <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
-                    ¿Cuánto tarda un remodel o resurfacing de piscina?
+                    How long does a pool remodel or resurfacing take?
                   </h4>
                   <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
                     <strong className="text-emerald-900">Direct Answer:</strong> Standard pool resurfacing takes <strong>5 to 7 business days</strong> from drain to refill. Full pool remodels (including travertine coping, waterline tile, Baja shelf, and equipment) take <strong>2 to 3 weeks</strong>.
@@ -698,7 +698,7 @@ export function Landing() {
                     Query: Pool Plaster Delamination Signs
                   </div>
                   <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
-                    ¿Cómo sé si mi yeso (plaster) se está desprendiendo (delaminating)?
+                    How do I know if my pool plaster is delaminating?
                   </h4>
                   <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
                     <strong className="text-emerald-900">Direct Answer:</strong> Delamination has 4 signature signs: <strong>1) A hollow "popping" sound</strong> when tapped underwater with a pole; <strong>2) Soft raised blisters</strong> on pool floor/walls; <strong>3) Flaking plaster</strong> exposing rough gray gunite; and <strong>4) Calcium nodules</strong> weeping through surface cracks.
@@ -870,34 +870,34 @@ export function Landing() {
               <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 {[
                   {
-                    q: "¿Cuánto cuesta el replastering en Riverside County?",
-                    a: "El replastering en Riverside County cuesta entre $4,500 y $7,500 para yeso blanco estándar, $6,000 a $9,500 para acabado de cuarzo (Diamond Brite), y $8,500 a $13,500 para acabados de piedra StoneScapes pebble en una alberca promedio de 15,000 galones. El presupuesto final depende del perímetro, profundidad y el grado de picado (chip-out) necesario.",
-                    tag: "Costo & Precios"
+                    q: "How much does pool replastering cost in Riverside County?",
+                    a: "Pool replastering in Riverside County costs between $4,500 and $7,500 for standard white plaster, $6,000 to $9,500 for quartz aggregate (Diamond Brite), and $8,500 to $13,500 for StoneScapes pebble finishes for an average 15,000-gallon pool. The final estimate depends on pool perimeter, depth, and whether a complete pneumatic chip-out is required.",
+                    tag: "Cost & Pricing"
                   },
                   {
-                    q: "¿Cuánto tarda una remodelación o resurfacing de piscina?",
-                    a: "Un replastering estándar toma de 5 a 7 días hábiles desde el vaciado hasta el llenado de agua. Una remodelación completa que incluya reemplazo de coping de piedra travertino, azulejo decorativo en la línea de agua, repisas Baja shelf y automatización de bombas suele demorar de 2 a 3 semanas.",
-                    tag: "Tiempo de Obra"
+                    q: "How long does a pool remodel or resurfacing take?",
+                    a: "A standard replastering project takes 5 to 7 business days from water drainage to refill. A complete remodel involving natural travertine coping, waterline tile, Baja shelf additions, and equipment automation typically takes 2 to 3 weeks.",
+                    tag: "Project Timeline"
                   },
                   {
-                    q: "¿Cuál es mejor para el clima de Riverside: Quartz o Pebble?",
-                    a: "Para el clima caluroso del Inland Empire, Pebble (StoneScapes) es la mejor inversión: ofrece de 15 a 20+ años de vida útil y no se ve afectado por el agua dura local. Quartz (Diamond Brite) es la mejor alternativa intermedia para quienes prefieren una textura más lisa al tacto con una duración de 10 a 14 años.",
-                    tag: "Comparativa de Acabados"
+                    q: "Which pool finish is best for Riverside's climate: Quartz or Pebble?",
+                    a: "For the Inland Empire's high-heat desert climate, Pebble (StoneScapes) is the #1 investment: it offers 15 to 20+ years of lifespan and resists hard tap water scaling (15–26 grains/gal). Quartz (Diamond Brite) is an excellent mid-tier choice lasting 10 to 14 years with a smoother foot feel at 20% to 30% lower cost.",
+                    tag: "Finish Comparison"
                   },
                   {
-                    q: "¿Cómo sé si el yeso (plaster) de mi alberca se está desprendiendo (delaminating)?",
-                    a: "Los signos definitivos son: 1) Sonido hueco al golpear bajo el agua con el mango del cepillo; 2) Ampollas o protuberancias visibles en la superficie; 3) Desprendimiento de capas de yeso dejando visible la gunita gris rugosa; y 4) Nódulos blancos de calcio supurando por fisuras.",
-                    tag: "Diagnóstico Estructural"
+                    q: "How do I know if my pool plaster is delaminating?",
+                    a: "Four definitive signs of delamination: 1) A hollow 'popping' sound when tapped underwater with a service pole; 2) Visible raised blisters or lumps on walls and floor; 3) Flaking or peeling plaster exposing rough gray gunite; and 4) Calcium carbonate nodules weeping through fine cracks.",
+                    tag: "Structural Diagnostic"
                   },
                   {
-                    q: "¿Se requieren permisos para remodelar mi alberca en Riverside County?",
-                    a: "Sí, las ciudades del condado de Riverside exigen permisos para modificaciones estructurales, trabajos eléctricos en bombas y normas de barrera de seguridad. En Rivera Pools nos encargamos de toda la gestión de permisos e inspecciones oficiales.",
-                    tag: "Permisos CSLB"
+                    q: "Are permits required for pool remodeling in Riverside County?",
+                    a: "Yes, Riverside County cities require permits for structural alterations, electrical equipment upgrades, and safety barrier compliance. Rivera Pools handles all permit filings and city inspections on your behalf.",
+                    tag: "CSLB & Permits"
                   },
                   {
-                    q: "¿Está Rivera Pools Riverside asegurada y con licencia vigente?",
-                    a: "Totalmente. Rivera Pools Riverside opera bajo la licencia de contratista de California CSLB #1053279, clasificación C-35 (Lathing & Plastering) a nombre de C R Quality Pool Services dba Rivera Pools Care, con pólizas completas de fianza (bond) y responsabilidad civil.",
-                    tag: "Licencia & Garantía"
+                    q: "Is Rivera Pools Riverside fully licensed and insured?",
+                    a: "Yes. Rivera Pools Riverside operates under California contractor license CSLB #1053279, Class C-35 (Lathing & Plastering) registered as C R Quality Pool Services dba Rivera Pools Care, with full workers' compensation and general liability insurance.",
+                    tag: "License & Warranty"
                   }
                 ].map(({ q, a, tag }) => (
                   <div key={q} className="bg-[#F8FAFC] rounded-2xl p-7 border border-slate-200/80 hover:border-[#06B6D4]/50 transition-all flex flex-col justify-between">
@@ -915,7 +915,7 @@ export function Landing() {
                     <div className="mt-4 pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-400">
                       <span>Rivera Pools Riverside</span>
                       <a href="#contact" className="text-[#06B6D4] font-semibold hover:underline flex items-center gap-1">
-                        Cotizar gratis <ArrowRight className="w-3 h-3" />
+                        Get Free Estimate <ArrowRight className="w-3 h-3" />
                       </a>
                     </div>
                   </div>
@@ -1084,13 +1084,13 @@ export function Landing() {
               <div className="max-w-xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-bold uppercase tracking-wider mb-3">
                   <Star className="w-3.5 h-3.5 fill-[#D4AF37]" />
-                  Calificación 5.0 en Riverside County
+                  5.0 Star Rating in Riverside County
                 </div>
                 <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-white mb-2">
-                  ¿Hicimos un proyecto en tu piscina recientemente?
+                  Did We Complete a Project for Your Pool Recently?
                 </h3>
                 <p className="text-white/80 text-sm leading-relaxed">
-                  Tu opinión nos ayuda a seguir cuidando cada patio con el máximo estándar. Déjanos saber cómo fue tu experiencia con nuestro equipo.
+                  Your feedback helps us maintain the highest standard of craftsmanship for every backyard. Let us know how our crew performed.
                 </p>
               </div>
 
@@ -1101,7 +1101,7 @@ export function Landing() {
                   className="px-6 py-3.5 rounded-full bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white font-bold text-sm shadow-lg shadow-[#06B6D4]/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   <Star className="w-4 h-4 fill-white" />
-                  <span>Dejar una Reseña / Leave a Review</span>
+                  <span>Leave a Review</span>
                 </button>
               </div>
             </div>
@@ -1378,7 +1378,7 @@ export function Landing() {
                 <li><a href="/baja-shelf-addition-cost" className="hover:text-[#06B6D4] transition-colors">Baja Shelf Additions</a></li>
                 <li><a href="/blog/pool-cleaning-maintenance-riverside-ca" className="hover:text-[#06B6D4] transition-colors">Pool Cleaning Guide</a></li>
                 <li><a href="/blog/pool-remodeling" className="hover:text-[#06B6D4] transition-colors">Pool Remodeling Blog</a></li>
-                <li><button type="button" onClick={() => setReviewModalOpen(true)} className="hover:text-[#06B6D4] transition-colors flex items-center gap-1.5 cursor-pointer text-left text-white/80">Customer Reviews / Dejar Reseña</button></li>
+                <li><button type="button" onClick={() => setReviewModalOpen(true)} className="hover:text-[#06B6D4] transition-colors flex items-center gap-1.5 cursor-pointer text-left text-white/80">Customer Reviews</button></li>
                 <li><a href="#contact" className="hover:text-[#06B6D4] transition-colors">Free Pool Estimate</a></li>
               </ul>
             </div>
@@ -1470,7 +1470,7 @@ export function Landing() {
 
             {/* Footer CTA */}
             <div className="flex items-center justify-between px-8 py-5 border-t border-white/10">
-              <p className="text-white/75 text-sm">¿Te gustaría un resultado similar?</p>
+              <p className="text-white/75 text-sm">Looking for a similar transformation?</p>
               <Button
                 onClick={() => { setBaModal(null); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }}
                 className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white rounded-xl px-6 h-10 text-sm font-semibold shadow-lg shadow-[#06B6D4]/20"
