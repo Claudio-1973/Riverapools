@@ -512,7 +512,7 @@ export function CityLanding({ city }: { city: CityConfig }) {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0F253F] hover:bg-[#0F253F]/90 text-white font-semibold text-sm shadow-md transition-all cursor-pointer hover:scale-105 active:scale-95"
               >
                 <Star className="w-4 h-4 fill-[#D4AF37] text-[#D4AF37]" />
-                <span>Dejar una Reseña / Leave a Review</span>
+                <span>Leave a Google Review</span>
               </button>
             </div>
           </div>

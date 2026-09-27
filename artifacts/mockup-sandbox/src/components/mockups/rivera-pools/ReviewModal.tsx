@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { 
   Star, 
   X, 
@@ -19,16 +19,12 @@ export const GOOGLE_REVIEW_URL =
 
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-type Language = "es" | "en";
-
 interface ReviewFunnelProps {
   onSuccessClose?: () => void;
-  initialLanguage?: Language;
   isStandalonePage?: boolean;
 }
 
-export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandalonePage = false }: ReviewFunnelProps) {
-  const [language, setLanguage] = useState<Language>(initialLanguage);
+export function ReviewFunnel({ onSuccessClose }: ReviewFunnelProps) {
   const [rating, setRating] = useState<number>(0);
   const [hoveredRating, setHoveredRating] = useState<number>(0);
 
@@ -44,22 +40,13 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
 
   const activeRating = hoveredRating || rating;
 
-  const starLabels = {
-    es: [
-      "Muy mala experiencia",
-      "Mala experiencia",
-      "Regular / Podría mejorar",
-      "Muy buena experiencia",
-      "¡Excelente servicio y calidad!"
-    ],
-    en: [
-      "Very poor experience",
-      "Poor experience",
-      "Average / Room for improvement",
-      "Great experience",
-      "Outstanding craftsmanship & service!"
-    ]
-  };
+  const starLabels = [
+    "Very poor experience",
+    "Poor experience",
+    "Average / Room for improvement",
+    "Great experience",
+    "Outstanding craftsmanship & service!"
+  ];
 
   const handleRatingClick = (stars: number) => {
     setRating(stars);
@@ -73,19 +60,17 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
   const validateForm = () => {
     const errors: Record<string, string> = {};
     if (!formData.name.trim()) {
-      errors.name = language === "es" ? "Por favor escribe tu nombre." : "Please enter your name.";
+      errors.name = "Please enter your name.";
     }
     const cleanPhone = formData.phone.replace(/\D/g, "");
     if (!cleanPhone || cleanPhone.length < 7) {
-      errors.phone = language === "es" ? "Ingresa un teléfono válido para poder llamarte." : "Please enter a valid phone number so we can call you.";
+      errors.phone = "Please enter a valid phone number so we can call you.";
     }
     if (formData.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
-      errors.email = language === "es" ? "Ingresa un correo electrónico válido." : "Please enter a valid email address.";
+      errors.email = "Please enter a valid email address.";
     }
     if (!formData.issue.trim() || formData.issue.trim().length < 5) {
-      errors.issue = language === "es" 
-        ? "Por favor explícanos brevemente qué ocurrió para solucionarlo." 
-        : "Please explain briefly what happened so we can make it right.";
+      errors.issue = "Please explain briefly what happened so we can make it right.";
     }
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -98,25 +83,22 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
     setFormStatus("sending");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `⚠️ ATENCIÓN: Queja de Cliente / Feedback Privado (${rating}/5★) — ${formData.name}`,
+          subject: `⚠️ Client Feedback (${rating}/5★) — ${formData.name}`,
           from_name: formData.name,
           phone: formData.phone,
-          email: formData.email || "No especificado",
-          rating: `${rating} de 5 estrellas`,
+          email: formData.email || "Not specified",
+          rating: `${rating} of 5 stars`,
           message: formData.issue,
           source: "Smart Review Funnel",
-          priority: "ALTA - Contactar inmediatamente por teléfono",
+          priority: "HIGH - Follow up promptly by phone",
         }),
       });
 
-      const data = await response.json().catch(() => ({ success: false }));
-      
-      // Even if key is missing or test mode, handle tracking and completion
       trackPrivateFeedbackSubmission(rating);
       setFormStatus("success");
     } catch (err) {
@@ -127,7 +109,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
 
   return (
     <div className="w-full">
-      {/* Top bar: Brand + Language switcher */}
+      {/* Top bar: Brand */}
       <div className="flex items-center justify-between pb-5 border-b border-slate-100">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-[#06B6D4]/10 text-[#06B6D4] flex items-center justify-center">
@@ -139,14 +121,9 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setLanguage(lang => lang === "es" ? "en" : "es")}
-          className="text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 text-slate-600 hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors"
-          title={language === "es" ? "Cambiar a inglés" : "Switch to Spanish"}
-        >
-          {language === "es" ? "🇺🇸 English" : "🇲🇽 Español"}
-        </button>
+        <div className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-600">
+          Client Feedback
+        </div>
       </div>
 
       {/* STEP 1: RATING SELECTION */}
@@ -154,19 +131,15 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
         <div className="py-6 text-center animate-in fade-in duration-300">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-wider mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            {language === "es" ? "Tu opinión importa" : "Your feedback matters"}
+            Your feedback matters
           </div>
 
           <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-[#0F253F] mb-3">
-            {language === "es" 
-              ? "¿Cómo calificarías tu experiencia con Rivera Pools?" 
-              : "How would you rate your experience with Rivera Pools?"}
+            How would you rate your experience with Rivera Pools?
           </h3>
 
           <p className="text-sm text-slate-500 max-w-md mx-auto mb-8">
-            {language === "es"
-              ? "Somos un negocio familiar y nos esforzamos al máximo en cada piscina. Selecciona cuántas estrellas deseas otorgarnos:"
-              : "We are a local family crew dedicated to top-tier craftsmanship. Select how many stars you would like to give us:"}
+            We are a local family crew dedicated to top-tier craftsmanship. Select how many stars you would like to give us:
           </p>
 
           {/* Star selector */}
@@ -199,11 +172,11 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
           <div className="min-h-[28px] flex items-center justify-center">
             {activeRating > 0 ? (
               <span className="text-sm font-bold text-[#0F253F] animate-in fade-in">
-                {activeRating} ★ — {starLabels[language][activeRating - 1]}
+                {activeRating} ★ — {starLabels[activeRating - 1]}
               </span>
             ) : (
               <span className="text-xs text-slate-400">
-                {language === "es" ? "Haz clic en las estrellas para calificar" : "Click on the stars to rate"}
+                Click on the stars to rate
               </span>
             )}
           </div>
@@ -224,23 +197,12 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
           </div>
 
           <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-[#0F253F] mb-3">
-            {language === "es" 
-              ? "¡Muchísimas gracias por tu confianza!" 
-              : "Thank you so much for your trust!"}
+            Thank you so much for your trust!
           </h3>
 
           <p className="text-sm text-slate-600 max-w-lg mx-auto mb-6 leading-relaxed">
-            {language === "es" ? (
-              <>
-                Nos alegra enormemente saber que quedaste satisfecho con el trabajo en tu piscina. 
-                Como empresa familiar local en Riverside, <strong>tu reseña pública en Google significa el mundo para nosotros</strong> y ayuda a que más vecinos conozcan nuestro trabajo.
-              </>
-            ) : (
-              <>
-                We are thrilled that you had a wonderful experience. 
-                As a local, family-owned business in Riverside County, <strong>your public review on Google means the world to us</strong> and helps neighbors choose quality pool craftsmanship.
-              </>
-            )}
+            We are thrilled that you had a wonderful experience. 
+            As a local, family-owned business in Riverside County, <strong>your public review on Google means the world to us</strong> and helps neighbors choose quality pool craftsmanship.
           </p>
 
           <div className="space-y-3 max-w-md mx-auto">
@@ -258,9 +220,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                 <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
                 <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
               </svg>
-              <span>
-                {language === "es" ? "Publicar Reseña en Google" : "Post Review on Google"}
-              </span>
+              <span>Post Review on Google</span>
               <ExternalLink className="w-4 h-4 text-slate-300" />
             </a>
 
@@ -270,7 +230,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
               className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-600 transition-colors pt-2"
             >
               <RotateCcw className="w-3 h-3" />
-              {language === "es" ? "Cambiar calificación" : "Change rating"}
+              Change rating
             </button>
           </div>
         </div>
@@ -285,23 +245,15 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                 <CheckCircle2 className="w-9 h-9" />
               </div>
               <h3 className="font-['Montserrat'] font-bold text-2xl text-[#0F253F] mb-2">
-                {language === "es" ? "Hemos recibido tu mensaje" : "We have received your message"}
+                We have received your message
               </h3>
               <p className="text-sm text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
-                {language === "es" ? (
-                  <>
-                    Gracias por tu sinceridad. <strong>Claudio Rivera</strong> revisará personalmente tu caso y se comunicará contigo al teléfono proporcionado para darle solución inmediata.
-                  </>
-                ) : (
-                  <>
-                    Thank you for being candid. <strong>Claudio Rivera</strong> will personally review your feedback and call you shortly to address this directly.
-                  </>
-                )}
+                Thank you for being candid. <strong>Claudio Rivera</strong> will personally review your feedback and call you shortly to address this directly.
               </p>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 max-w-sm mx-auto mb-6">
                 <p className="text-xs text-slate-500 mb-2">
-                  {language === "es" ? "¿Necesitas resolverlo de inmediato?" : "Need immediate assistance?"}
+                  Need immediate assistance?
                 </p>
                 <a
                   href="tel:+19513459276"
@@ -319,7 +271,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                   onClick={onSuccessClose}
                   className="py-2.5 px-6 rounded-xl bg-[#0F253F] text-white text-sm font-semibold hover:bg-[#0F253F]/90"
                 >
-                  {language === "es" ? "Cerrar" : "Close"}
+                  Close
                 </button>
               )}
             </div>
@@ -333,20 +285,10 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                   </div>
                   <div>
                     <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-1">
-                      {language === "es" 
-                        ? "Lamentamos no haber alcanzado tus expectativas" 
-                        : "We're truly sorry we missed the mark"}
+                      We're truly sorry we missed the mark
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      {language === "es" ? (
-                        <>
-                          En Rivera Pools la satisfacción de cada cliente es nuestra prioridad absoluta. Por favor cuéntanos qué ocurrió para que <strong>Claudio Rivera y nuestro equipo podamos solucionarlo personalmente</strong>.
-                        </>
-                      ) : (
-                        <>
-                          At Rivera Pools your peace of mind comes first. Please tell us what went wrong so <strong>Claudio Rivera and our leadership team can personally resolve it</strong>.
-                        </>
-                      )}
+                      At Rivera Pools your peace of mind comes first. Please tell us what went wrong so <strong>Claudio Rivera and our leadership team can personally resolve it</strong>.
                     </p>
                   </div>
                 </div>
@@ -357,14 +299,14 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-[#0F253F] uppercase tracking-wider mb-1.5">
-                      {language === "es" ? "Tu Nombre *" : "Your Name *"}
+                      Your Name *
                     </label>
                     <input
                       type="text"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData(p => ({ ...p, name: e.target.value }))}
-                      placeholder={language === "es" ? "Ej. Carlos Martínez" : "e.g. John Smith"}
+                      placeholder="e.g. John Smith"
                       className={`w-full px-3.5 py-2.5 text-sm rounded-xl border bg-slate-50 focus:bg-white transition-all outline-none ${
                         formErrors.name ? "border-rose-400 focus:ring-2 focus:ring-rose-200" : "border-slate-200 focus:border-[#06B6D4] focus:ring-2 focus:ring-[#06B6D4]/20"
                       }`}
@@ -376,7 +318,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
 
                   <div>
                     <label className="block text-xs font-bold text-[#0F253F] uppercase tracking-wider mb-1.5">
-                      {language === "es" ? "Teléfono de Contacto *" : "Phone Number *"}
+                      Phone Number *
                     </label>
                     <input
                       type="tel"
@@ -396,13 +338,13 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
 
                 <div>
                   <label className="block text-xs font-bold text-[#0F253F] uppercase tracking-wider mb-1.5">
-                    {language === "es" ? "Correo Electrónico (opcional)" : "Email Address (optional)"}
+                    Email Address (optional)
                   </label>
                   <input
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData(p => ({ ...p, email: e.target.value }))}
-                    placeholder="nombre@ejemplo.com"
+                    placeholder="name@example.com"
                     className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-[#06B6D4] focus:ring-2 focus:ring-[#06B6D4]/20 transition-all outline-none"
                   />
                   {formErrors.email && (
@@ -412,18 +354,14 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
 
                 <div>
                   <label className="block text-xs font-bold text-[#0F253F] uppercase tracking-wider mb-1.5">
-                    {language === "es" 
-                      ? "¿Qué ocurrió o qué podemos mejorar? *" 
-                      : "What went wrong or how can we improve? *"}
+                    What went wrong or how can we improve? *
                   </label>
                   <textarea
                     rows={4}
                     required
                     value={formData.issue}
                     onChange={(e) => setFormData(p => ({ ...p, issue: e.target.value }))}
-                    placeholder={language === "es" 
-                      ? "Comparte los detalles de lo sucedido con el trabajo en tu piscina para que podamos corregirlo..." 
-                      : "Please share what happened with your pool project so we can make things right..."}
+                    placeholder="Please share what happened with your pool project so we can make things right..."
                     className={`w-full px-3.5 py-2.5 text-sm rounded-xl border bg-slate-50 focus:bg-white transition-all outline-none resize-none ${
                       formErrors.issue ? "border-rose-400 focus:ring-2 focus:ring-rose-200" : "border-slate-200 focus:border-[#06B6D4] focus:ring-2 focus:ring-[#06B6D4]/20"
                     }`}
@@ -437,9 +375,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                   <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 shrink-0" />
                     <span>
-                      {language === "es"
-                        ? "Hubo un problema al enviar tu mensaje. Por favor llámanos directamente al (951) 345-9276 para atenderte."
-                        : "There was an issue sending your message. Please call us directly at (951) 345-9276."}
+                      There was an issue sending your message. Please call us directly at (951) 345-9276.
                     </span>
                   </div>
                 )}
@@ -451,7 +387,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                     className="text-xs text-slate-400 hover:text-slate-600 inline-flex items-center gap-1 order-2 sm:order-1"
                   >
                     <RotateCcw className="w-3 h-3" />
-                    {language === "es" ? "Cambiar calificación" : "Change rating"}
+                    Change rating
                   </button>
 
                   <button
@@ -461,9 +397,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
                   >
                     <Send className="w-4 h-4" />
                     <span>
-                      {formStatus === "sending"
-                        ? (language === "es" ? "Enviando mensaje..." : "Sending...")
-                        : (language === "es" ? "Enviar a Claudio Rivera" : "Send Directly to Claudio Rivera")}
+                      {formStatus === "sending" ? "Sending..." : "Send Directly to Claudio Rivera"}
                     </span>
                   </button>
                 </div>
@@ -472,7 +406,7 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
               {/* Direct phone fallback */}
               <div className="mt-4 pt-4 border-t border-slate-100 text-center">
                 <p className="text-xs text-slate-500 mb-1">
-                  {language === "es" ? "¿Prefieres hablar directamente ahora mismo?" : "Prefer to talk directly right now?"}
+                  Prefer to talk directly right now?
                 </p>
                 <a
                   href="tel:+19513459276"
@@ -492,10 +426,10 @@ export function ReviewFunnel({ onSuccessClose, initialLanguage = "en", isStandal
       <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
         <span className="flex items-center gap-1">
           <ShieldCheck className="w-3.5 h-3.5 text-[#06B6D4]" />
-          {language === "es" ? "Rivera Pools · CA License #1053279" : "Rivera Pools · CA License #1053279"}
+          Rivera Pools · CA License #1053279
         </span>
         <span>
-          {language === "es" ? "Privado y confidencial" : "Private & confidential"}
+          Private &amp; confidential
         </span>
       </div>
     </div>
@@ -536,7 +470,7 @@ export function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
           type="button"
           onClick={onClose}
           className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-700 transition-colors"
-          aria-label="Cerrar ventana"
+          aria-label="Close modal"
         >
           <X className="w-4 h-4" />
         </button>

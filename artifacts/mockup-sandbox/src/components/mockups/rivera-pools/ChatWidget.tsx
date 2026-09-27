@@ -11,72 +11,40 @@ import {
 } from "lucide-react";
 import { trackPhoneClick } from "@/lib/analytics";
 
-type Language = "en" | "es";
 type MessageRole = "user" | "assistant";
 type ChatMessage = { id: string; role: MessageRole; content: string };
 
-const FAQS: Record<Language, Array<{ question: string; answer: string }>> = {
-  en: [
-    {
-      question: "What services do you offer?",
-      answer:
-        "We help with pool remodeling, plaster and replastering, quartz and pebble finishes, StoneScapes, Diamond Brite, tile, travertine coping, Baja shelves, equipment upgrades, maintenance, and pool leak detection.",
-    },
-    {
-      question: "How do I know if my plaster needs repair?",
-      answer:
-        "Rough texture, stains, cracking, flaking, or visible delamination are common signs. A site assessment is the best way to confirm whether repair or full resurfacing makes sense.",
-    },
-    {
-      question: "Do you offer free estimates?",
-      answer:
-        "Yes. Rivera Pools offers free estimates. You can request one through the form on this page or call (951) 345-9276.",
-    },
-  ],
-  es: [
-    {
-      question: "¿Qué servicios ofrecen?",
-      answer:
-        "Ayudamos con remodelación de piscinas, plaster y replastering, acabados de quartz y pebble, StoneScapes, Diamond Brite, azulejo, coping de travertino, repisas Baja, equipos, mantenimiento y detección de fugas.",
-    },
-    {
-      question: "¿Cómo sé si mi plaster necesita reparación?",
-      answer:
-        "La textura áspera, manchas, grietas, descascaramiento o delaminación visible son señales comunes. Una evaluación en el sitio confirma si conviene reparar o resurfacing completo.",
-    },
-    {
-      question: "¿Ofrecen estimados gratis?",
-      answer:
-        "Sí. Rivera Pools ofrece estimados gratis. Puedes usar el formulario de esta página o llamar al (951) 345-9276.",
-    },
-  ],
-};
+const FAQS = [
+  {
+    question: "What services do you offer?",
+    answer:
+      "We help with pool remodeling, plaster and replastering, quartz and pebble finishes, StoneScapes, Diamond Brite, tile, travertine coping, Baja shelves, equipment upgrades, maintenance, and pool leak detection.",
+  },
+  {
+    question: "How do I know if my plaster needs repair?",
+    answer:
+      "Rough texture, stains, cracking, flaking, or visible delamination are common signs. A site assessment is the best way to confirm whether repair or full resurfacing makes sense.",
+  },
+  {
+    question: "Do you offer free estimates?",
+    answer:
+      "Yes. Rivera Pools offers free estimates. You can request one through the form on this page or call (951) 345-9276.",
+  },
+];
 
 function getEndpoint(): string {
-  // The /api/chat serverless function lives in the same Vercel project,
-  // so a relative path works in both development and production.
   return "/api/chat";
 }
 
-function getGreeting(language: Language): string {
-  return language === "es"
-    ? "Hola. Soy el asistente de Rivera Pools. Puedo ayudarte con servicios, acabados, reparaciones y el estimado gratis."
-    : "Hi. I’m the Rivera Pools assistant. I can help with services, finishes, repairs, and your free estimate.";
-}
-
-function getUnavailableMessage(language: Language): string {
-  return language === "es"
-    ? "Puedo ayudarte con preguntas frecuentes sobre nuestros servicios. Para una respuesta personalizada, llama al (951) 345-9276 o solicita un estimado gratis."
-    : "I can help with common questions about our services. For personalized help, call (951) 345-9276 or request a free estimate.";
-}
+const GREETING = "Hi. I’m the Rivera Pools assistant. I can help with services, finishes, repairs, and your free estimate.";
+const UNAVAILABLE_MESSAGE = "I can help with common questions about our services. For personalized help, call (951) 345-9276 or request a free estimate.";
 
 export function ChatWidget() {
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState<Language>("en");
   const [input, setInput] = useState("");
   const [pending, setPending] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { id: "greeting", role: "assistant", content: getGreeting("en") },
+    { id: "greeting", role: "assistant", content: GREETING },
   ]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -109,7 +77,7 @@ export function ChatWidget() {
     setMessages(nextMessages);
     setInput("");
 
-    const localAnswer = FAQS[language].find(
+    const localAnswer = FAQS.find(
       (faq) => faq.question.toLowerCase() === message.toLowerCase(),
     );
     if (localAnswer) {
@@ -125,7 +93,7 @@ export function ChatWidget() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           message,
-          language,
+          language: "en",
           history: nextMessages
             .slice(-8)
             .map(({ role, content }) => ({ role, content })),
@@ -137,22 +105,10 @@ export function ChatWidget() {
       }
       addAssistantMessage(data.reply);
     } catch {
-      addAssistantMessage(getUnavailableMessage(language));
+      addAssistantMessage(UNAVAILABLE_MESSAGE);
     } finally {
       setPending(false);
     }
-  };
-
-  const selectLanguage = (nextLanguage: Language) => {
-    setLanguage(nextLanguage);
-    setMessages((current) => [
-      ...current,
-      {
-        id: `language-${Date.now()}`,
-        role: "assistant",
-        content: getGreeting(nextLanguage),
-      },
-    ]);
   };
 
   const requestEstimate = () => {
@@ -165,7 +121,7 @@ export function ChatWidget() {
       {open && (
         <section
           className="mb-4 flex h-[min(620px,calc(100vh-110px))] w-[min(390px,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-[#0F253F]/25"
-          aria-label={language === "es" ? "Chat de Rivera Pools" : "Rivera Pools chat"}
+          aria-label="Rivera Pools chat"
           role="dialog"
           aria-modal="false"
         >
@@ -178,7 +134,7 @@ export function ChatWidget() {
                 <div>
                   <h2 className="font-['Montserrat'] text-base font-bold">Rivera Pools Assistant</h2>
                   <p className="text-xs text-slate-300">
-                    {language === "es" ? "Respuestas en español o inglés" : "English and Spanish support"}
+                    Pool Remodeling &amp; Resurfacing Support
                   </p>
                 </div>
               </div>
@@ -186,25 +142,10 @@ export function ChatWidget() {
                 type="button"
                 onClick={() => setOpen(false)}
                 className="rounded-full p-2 text-slate-300 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#67e8f9]"
-                aria-label={language === "es" ? "Cerrar chat" : "Close chat"}
+                aria-label="Close chat"
               >
                 <X className="h-5 w-5" aria-hidden="true" />
               </button>
-            </div>
-            <div className="mt-4 flex gap-1 rounded-lg bg-white/10 p-1" aria-label="Chat language">
-              {(["en", "es"] as Language[]).map((item) => (
-                <button
-                  key={item}
-                  type="button"
-                  onClick={() => selectLanguage(item)}
-                  className={`flex-1 rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors ${
-                    language === item ? "bg-white text-[#0F253F]" : "text-slate-300 hover:bg-white/10"
-                  }`}
-                  aria-pressed={language === item}
-                >
-                  {item === "en" ? "English" : "Español"}
-                </button>
-              ))}
             </div>
           </header>
 
@@ -229,9 +170,9 @@ export function ChatWidget() {
             {messages.length === 1 && (
               <div className="space-y-2 pt-1">
                 <p className="px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-                  {language === "es" ? "Preguntas rápidas" : "Quick questions"}
+                  Quick questions
                 </p>
-                {FAQS[language].map((faq) => (
+                {FAQS.map((faq) => (
                   <button
                     key={faq.question}
                     type="button"
@@ -247,7 +188,7 @@ export function ChatWidget() {
             {pending && (
               <div className="flex items-center gap-2 text-xs text-slate-400">
                 <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                {language === "es" ? "Escribiendo..." : "Writing..."}
+                Writing...
               </div>
             )}
             <div ref={messagesEndRef} />
@@ -260,7 +201,7 @@ export function ChatWidget() {
               className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-[#06B6D4]/30 bg-[#ecfeff] px-3 py-2 text-xs font-bold text-[#0f7490] transition-colors hover:bg-[#cffafe] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#06B6D4]"
             >
               <Sparkles className="h-4 w-4" aria-hidden="true" />
-              {language === "es" ? "Solicitar un estimado gratis" : "Request a free estimate"}
+              Request a free estimate
             </button>
             <form
               onSubmit={(event) => {
@@ -270,14 +211,14 @@ export function ChatWidget() {
               className="flex items-center gap-2"
             >
               <label className="sr-only" htmlFor="rivera-chat-message">
-                {language === "es" ? "Escribe tu pregunta" : "Type your question"}
+                Type your question
               </label>
               <input
                 ref={inputRef}
                 id="rivera-chat-message"
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
-                placeholder={language === "es" ? "Escribe tu pregunta..." : "Ask about your pool..."}
+                placeholder="Ask about your pool..."
                 maxLength={1200}
                 disabled={pending}
                 className="min-w-0 flex-1 rounded-xl border border-slate-200 px-3 py-2.5 text-sm text-slate-700 outline-none transition-colors placeholder:text-slate-400 focus:border-[#06B6D4] focus:ring-2 focus:ring-[#06B6D4]/20 disabled:bg-slate-50"
@@ -286,15 +227,13 @@ export function ChatWidget() {
                 type="submit"
                 disabled={pending || !input.trim()}
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#06B6D4] text-white transition-colors hover:bg-[#0891b2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F253F] disabled:cursor-not-allowed disabled:opacity-50"
-                aria-label={language === "es" ? "Enviar mensaje" : "Send message"}
+                aria-label="Send message"
               >
                 <Send className="h-4 w-4" aria-hidden="true" />
               </button>
             </form>
             <p className="mt-2 text-center text-[10px] leading-relaxed text-slate-400">
-              {language === "es"
-                ? "Para diagnóstico exacto o citas, llama al (951) 345-9276."
-                : "For exact diagnosis or scheduling, call (951) 345-9276."}
+              For exact diagnosis or scheduling, call (951) 345-9276.
             </p>
           </div>
         </section>
@@ -308,10 +247,10 @@ export function ChatWidget() {
             type="button"
             onClick={() => setOpen(true)}
             className="relative flex items-center gap-2 rounded-full bg-[#F97316] px-5 py-3.5 text-sm font-bold text-white shadow-xl shadow-[#F97316]/40 transition-all hover:-translate-y-0.5 hover:bg-[#ea6c00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F97316] focus-visible:ring-offset-2"
-            aria-label={language === "es" ? "Abrir chat de Rivera Pools" : "Open Rivera Pools chat"}
+            aria-label="Open Rivera Pools chat"
           >
             <MessageCircle className="h-5 w-5" aria-hidden="true" />
-            <span>{language === "es" ? "¿Preguntas?" : "Questions?"}</span>
+            <span>Questions?</span>
             <ChevronDown className="h-4 w-4 rotate-180" aria-hidden="true" />
           </button>
         </div>
@@ -322,7 +261,7 @@ export function ChatWidget() {
           href="tel:+19513459276"
           onClick={() => trackPhoneClick("chat_widget")}
           className="sr-only"
-          aria-label={language === "es" ? "Llamar a Rivera Pools" : "Call Rivera Pools"}
+          aria-label="Call Rivera Pools"
         >
           <Phone />
         </a>

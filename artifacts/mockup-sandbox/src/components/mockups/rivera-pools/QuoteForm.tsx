@@ -58,7 +58,7 @@ export function QuoteForm({ compact = false }: { compact?: boolean }) {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-500/20 mb-5">
                 <CheckCircle2 className="w-9 h-9 text-emerald-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">¡Message Sent!</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Thank you, <span className="text-white font-medium">{form.name}</span>.<br />
                 Claudio will contact you shortly at <span className="text-[#06B6D4]">{form.phone || form.email}</span>.
