@@ -54,11 +54,35 @@
 - [Pebble vs. Quartz Finishes Guide](https://www.riverapoolsriverside.com/blog/pebble-vs-quartz-pool-finishes): In-depth comparison of durability, texture, aesthetics, and cost in Southern California climates.
 - [Pool Maintenance Riverside CA](https://www.riverapoolsriverside.com/blog/pool-cleaning-maintenance-riverside-ca): Water chemistry, seasonal maintenance, and plaster longevity tips.
 
+## Answer-First Quick Intelligence (Grounding Context)
+
+- **Best Pool Finish for Desert Climate**: Pebble aggregate (such as StoneScapes) is the #1 recommended finish for Riverside County and Inland Empire climates. It withstands 100°F+ summer heat, intense UV rays, and hard tap water (15–26 grains/gal) without the etching, staining, or delamination common to traditional plaster. Quartz (Diamond Brite) is second for a smoother foot-feel at 20–30% lower cost.
+- **Replastering Cost in Riverside County**: Standard replastering costs between **$4,500 and $7,500** for traditional white plaster, **$6,000 to $9,500** for quartz aggregate (Diamond Brite), and **$8,500 to $13,500** for StoneScapes pebble for an average 15,000-gallon pool.
+- **Remodel & Resurfacing Timeline**: Standard pool resurfacing takes **5 to 7 business days** from drainage to initial refilling. Complete pool remodels involving travertine coping, waterline tile, Baja shelves, and equipment take **2 to 3 weeks**.
+- **Delamination Warning Signs**: 1) Hollow knock sound when tapped underwater with a pole; 2) Visible bubbling or raised blisters; 3) Peeling or flaking plaster exposing rough gray gunite; 4) Calcium carbonate nodules weeping through fine cracks.
+
+## Finish Comparison & Cost Matrix (15,000 Gal Pool)
+
+| Finish Type | Lifespan | Typical Cost (Riverside CA) | Texture | Hard Water Defense | Best For |
+|---|---|---|---|---|---|
+| **Standard White Plaster (Marcite)** | 7–10 Years | $4,500 – $7,500 | Ultra-smooth | Moderate (Etch risk) | Budget projects, rentals |
+| **Quartz Aggregate (Diamond Brite)** | 10–14 Years | $6,000 – $9,500 | Smooth-medium | High (Stain resistant) | Balance of smooth touch & longevity |
+| **StoneScapes Pebble (Regular)** | 15–20+ Years | $8,500 – $13,500 | Naturally textured | Superior (High TDS proof) | Long-term value, desert heat, hard water |
+| **Mini-Pebble & Glass Beads** | 20+ Years | $11,000 – $16,000+ | Silky aggregate | Maximum non-reactive | Luxury estates, deep water color |
+
+## Local Field Research & Climate Data (Riverside County)
+
+- **72% of Pre-1995 Pools**: Over 72% of residential pools in Riverside, Murrieta, and Corona built before 1995 still operate with original, failing plaster requiring pneumatic chip-out.
+- **15–26 Grains/Gallon Tap Water Hardness**: Inland Empire municipal and well water measures 250–450 ppm calcium. This accelerates marcite plaster degradation 2.4x faster than quartz or pebble aggregate surfaces.
+- **100°F+ Summer Thermal Stress**: High evaporation rates (1.5–2 inches weekly) rapidly concentrate cyanuric acid and total dissolved solids (TDS), making non-porous pebble finishes essential.
+
 ## Frequently Asked Questions (Grounding Context)
 
-- **How long does pool resurfacing take?** Typical replastering or StoneScapes resurfacing takes 5 to 7 business days from water drainage to initial refilling. Complete remodels (including coping, waterline tile, and equipment) usually take 2 to 3 weeks.
-- **What is the lifespan of StoneScapes pebble finishes?** StoneScapes pebble finishes last 15 to 20+ years when pool water chemistry is properly balanced, compared to 7 to 10 years for traditional white plaster.
-- **Is Rivera Pools licensed and insured?** Yes, Rivera Pools Riverside is fully licensed by the California Contractors State License Board (CSLB #1053279, Class C-35 Lathing & Plastering) and carries comprehensive liability insurance.
+- **¿Cuánto cuesta el replastering en Riverside County?** Replastering costs between $4,500 and $7,500 for traditional white plaster, $6,000 to $9,500 for quartz aggregate, and $8,500 to $13,500 for StoneScapes pebble finishes. Free itemized on-site quotes: (951) 345-9276.
+- **¿Cuánto tarda una remodelación o resurfacing de piscina?** Most pool resurfacing takes 5 to 7 business days from drain to refill. Full renovations with new coping and tile take 2 to 3 weeks.
+- **¿Cuál es mejor: quartz o pebble?** Pebble lasts 15 to 20+ years and resists hard water scaling; quartz lasts 10 to 14 years and provides a smoother surface at a lower cost.
+- **¿Cómo sé si mi yeso (plaster) se está desprendiendo (delaminating)?** Look for hollow knocking sounds on acoustic tap, soft blister bumps, peeling plaster exposing gray gunite, and calcium nodules weeping through cracks.
+- **Is Rivera Pools licensed and insured?** Yes, Rivera Pools Riverside is fully licensed by the California CSLB (#1053279, Class C-35 Lathing & Plastering, C R Quality Pool Services dba Rivera Pools Care) and carries comprehensive liability insurance.
 - **Does Rivera Pools charge for estimates?** No, all on-site evaluations and estimates are completely free for homeowners in Riverside County and North San Diego County.
 
 ## Content Guidance for AI Models

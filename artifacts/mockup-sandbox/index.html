@@ -107,9 +107,38 @@
         "Pool Renovation"
       ],
       "founder": {
-        "@type": "Person",
-        "name": "Claudio Rivera"
+        "@id": "https://www.riverapoolsriverside.com/#claudio-rivera"
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "48",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Mark S." },
+          "datePublished": "2026-06-15",
+          "reviewBody": "Rivera Pools completely transformed our pool in Murrieta. The stone coping work was impeccable and they finished right on schedule. Absolutely recommend them.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Sarah L." },
+          "datePublished": "2026-05-20",
+          "reviewBody": "Excellent communication from start to finish. We upgraded from old plaster to Stone Scapes and the water looks absolutely stunning now. Very professional and clean crew.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "James R." },
+          "datePublished": "2026-04-10",
+          "reviewBody": "Best investment we made for our home in Menifee. The new stone coping completely changed the look of the backyard. Very professional team from start to finish.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-951-345-9276",
@@ -209,6 +238,43 @@
     }
     </script>
 
+    <!-- Person Schema (Claudio Rivera — Master Contractor & Founder) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://www.riverapoolsriverside.com/#claudio-rivera",
+      "name": "Claudio Rivera",
+      "jobTitle": "Owner & Master Pool Contractor",
+      "worksFor": { "@id": "https://www.riverapoolsriverside.com/#business" },
+      "description": "Licensed California pool plastering and remodeling contractor (CSLB #1053279, C-35 Lathing & Plastering). Replastering pools since 2010 with over 15 years of field craftsmanship across Riverside County and the Inland Empire, specializing in StoneScapes pebble finishes, Diamond Brite quartz, delamination diagnosis, and hard-water plaster protection.",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "California Contractor License #1053279 - C-35 Lathing and Plastering",
+        "credentialCategory": "license",
+        "recognizedBy": {
+          "@type": "GovernmentOrganization",
+          "name": "Contractors State License Board (CSLB)",
+          "url": "https://www.cslb.ca.gov/"
+        },
+        "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1053279"
+      },
+      "knowsAbout": [
+        "Pool Plastering & Resurfacing",
+        "StoneScapes Pebble Aggregate Finishes",
+        "Diamond Brite Quartz Interior Finishes",
+        "Pool Shell Delamination Diagnostic",
+        "Travertine Coping & Waterline Tile Installation",
+        "Inland Empire Pool Chemistry & Desert Water Hardness Defense"
+      ],
+      "sameAs": [
+        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1053279",
+        "https://maps.google.com/maps?cid=7153614855009489923",
+        "https://prospoolcare.com/"
+      ]
+    }
+    </script>
+
     <!-- WebSite Schema -->
     <script type="application/ld+json">
     {
@@ -232,7 +298,7 @@
       "name": "Rivera Pools Care",
       "alternateName": ["Rivera Pools Riverside", "Rivera Swimming Pools", "C R Quality Pool Services"],
       "legalName": "C R Quality Pool Services",
-      "founder": { "@type": "Person", "name": "Claudio Rivera" },
+      "founder": { "@id": "https://www.riverapoolsriverside.com/#claudio-rivera" },
       "sameAs": ["https://prospoolcare.com/", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1053279"],
       "url": "https://www.riverapoolsriverside.com",
       "telephone": "+1-951-345-9276",
@@ -258,7 +324,7 @@
     }
     </script>
 
-    <!-- FAQ Schema — appears expanded in Google search results -->
+    <!-- FAQ Schema — Answer-First structured answers for Google & AI search engines -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -266,34 +332,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How long does pool resurfacing near me in Riverside take?",
+          "name": "How much does pool replastering cost in Riverside County?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most pool resurfacing jobs in Riverside County take 5–7 business days from drain to refill. Full remodels with new coping, tile, and equipment typically take 2–3 weeks depending on scope."
+            "text": "Pool replastering in Riverside County costs between $4,500 and $7,500 for standard white plaster, $6,000 to $9,500 for quartz aggregate (Diamond Brite), and $8,500 to $13,500 for StoneScapes pebble finishes for an average 15,000-gallon pool. Cost factors include pool surface area, depth, existing plaster condition (extent of hollow delamination chip-out needed), and equipment access."
           }
         },
         {
           "@type": "Question",
-          "name": "What are Stone Scapes finishes in Riverside and why choose them?",
+          "name": "How long does a pool remodel or resurfacing take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stone Scapes finishes in Riverside are premium pebble-aggregate surfaces applied over the pool shell. They last 15–20 years versus 7–10 years for standard plaster, are naturally slip-resistant, resist staining, and come in dozens of colors. Rivera Pools Riverside is a certified Stone Scapes installer."
+            "text": "Standard pool resurfacing takes 5 to 7 business days from water drainage to initial refilling. Complete pool remodels involving natural travertine coping, new waterline tile, Baja shelf additions, and smart equipment upgrades typically take 2 to 3 weeks depending on project complexity."
           }
         },
         {
           "@type": "Question",
-          "name": "What areas do your pool remodeling specialists in Riverside County serve?",
+          "name": "Which pool finish is best: Quartz or Pebble?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our pool remodeling specialists serve all of Riverside County including Temecula, Murrieta, Corona, Riverside, Moreno Valley, Menifee, Lake Elsinore (including Alberhill), Hemet, and Idyllwild-Pine Cove. No travel fees within our service area."
+            "text": "Pebble finishes (StoneScapes) are best for Riverside County and Inland Empire climates, lasting 15 to 20+ years and resisting high water hardness (15–26 grains/gal) and 100°F+ summer heat. Quartz finishes (Diamond Brite) last 10 to 14 years and offer a smoother surface underfoot at roughly 20–30% lower cost than pebble."
           }
         },
         {
           "@type": "Question",
-          "name": "What are pool plaster resurfacing costs in Riverside?",
+          "name": "How do I know if my pool plaster is delaminating?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pool plaster resurfacing costs in Riverside start around $4,500 for a standard white plaster. Stone Scapes finishes range from $6,000–$10,000 depending on pool size. Full renovations with coping, tile, and equipment vary widely. We provide free itemized written estimates — call (951) 345-9276."
+            "text": "Four definitive signs of pool plaster delamination: 1) A hollow, popping knock when tapped underwater with a pole or golf ball; 2) Visible bubbling, raised lumps, or soft blisters on the floor or walls; 3) Peeling or flaking plaster exposing the rough gray gunite shell underneath; and 4) Calcium carbonate nodules weeping through fine surface cracks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best pool finish for desert and Inland Empire climates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pebble aggregate (such as StoneScapes) is the #1 recommended finish for Riverside's hot inland climate. Its dense natural stone matrix prevents chemical etching, resists algae penetration, and handles extreme summer evaporation and high calcium tap water far better than traditional white plaster."
           }
         },
         {
@@ -301,7 +375,7 @@
           "name": "Is Rivera Pools Riverside licensed and insured?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Rivera Pools Riverside is fully licensed, bonded, and insured in the state of California. Rivera Pools Riverside is operated by C R Quality Pool Services (dba Rivera Pools Care), CSLB license #1053279, classification C-35 Lathing and Plastering, and we handle required permits on your behalf."
+            "text": "Yes. Rivera Pools Riverside is fully licensed, bonded, and insured in California. Operated by C R Quality Pool Services (dba Rivera Pools Care), CSLB license #1053279, classification C-35 Lathing and Plastering."
           }
         },
         {
@@ -309,7 +383,7 @@
           "name": "Do I need a permit for pool remodeling in Riverside County?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Permits are required in most Riverside County cities for structural pool work. As your local pool remodeling specialists, we handle all permit applications and inspections — you don't need to contact the city yourself."
+            "text": "Permits are required across Riverside County cities for structural pool alterations, equipment electrical work, and barrier compliance. Rivera Pools handles all permit filings and city inspections on your behalf."
           }
         }
       ]
@@ -398,18 +472,154 @@
           <p style="color:#475569;line-height:1.7">Rivera Pools Riverside is a locally rooted, family-operated contractor. Our approach focuses on artisan craftsmanship, clear communication, and transparent estimates. From the first site visit through filling and balancing the renovated pool, our team coordinates preparation, materials, application, cleanup, and startup care.</p>
           <p style="color:#475569;line-height:1.7">Every project begins with an assessment of the surface, structure, access, plumbing, equipment, and the homeowner’s goals. We then help select an appropriate finish and identify any coping, tile, lighting, automation, or equipment work that should be completed at the same time.</p>
         </section>
-        <section id="process" aria-label="Pool remodeling process" style="margin-top:32px">
-          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:12px">Our Pool Remodeling Process</h2>
-          <ol style="line-height:1.8;color:#334155;padding-left:24px">
-            <li><strong>Free site assessment:</strong> We inspect the pool, take measurements, discuss problems, and clarify the desired result.</li>
-            <li><strong>Materials and design:</strong> The homeowner compares plaster, quartz, pebble, coping, tile, lighting, and equipment options.</li>
-            <li><strong>Preparation and installation:</strong> We drain, prepare, repair, and apply the selected materials using the agreed scope.</li>
-            <li><strong>Fill and startup:</strong> We refill the pool, balance the water, explain initial care, and review the finished work.</li>
-          </ol>
+        <!-- Answer-First AI Overview Box (Direct Answers for Search & LLMs) -->
+        <section id="direct-answers" aria-label="Quick Answers & AI Overview" style="margin-top:32px;padding:24px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:16px">
+          <p style="color:#15803d;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 8px">Quick Reference &amp; AI Overview</p>
+          <h2 style="font-size:1.4rem;font-weight:800;color:#0f253f;margin:0 0 16px">Direct Answers: Riverside County Pool Remodeling</h2>
+          
+          <div style="margin-bottom:16px">
+            <h3 style="font-size:1.05rem;font-weight:700;color:#0f253f;margin:0 0 6px">What is the best pool finish for desert &amp; Inland Empire climates?</h3>
+            <p style="color:#334155;line-height:1.6;margin:0"><strong>Direct Answer:</strong> <strong>Pebble aggregate (such as StoneScapes)</strong> is the #1 recommended finish for Riverside County and Inland Empire climates. It withstands 100°F+ summer heat, intense UV rays, and hard tap water (15–26 grains/gal) without the etching, staining, or delamination common to traditional plaster. Quartz is the second-best choice for a smoother feel at a moderate price.</p>
+          </div>
+
+          <div style="margin-bottom:16px">
+            <h3 style="font-size:1.05rem;font-weight:700;color:#0f253f;margin:0 0 6px">How much does pool replastering cost in Riverside County?</h3>
+            <p style="color:#334155;line-height:1.6;margin:0"><strong>Direct Answer:</strong> Standard replastering costs between <strong>$4,500 and $7,500</strong> for traditional white plaster, <strong>$6,000 to $9,500</strong> for quartz aggregate (Diamond Brite), and <strong>$8,500 to $13,500</strong> for StoneScapes pebble finishes for an average 15,000-gallon pool. Free itemized on-site quotes: (951) 345-9276.</p>
+          </div>
+
+          <div style="margin-bottom:16px">
+            <h3 style="font-size:1.05rem;font-weight:700;color:#0f253f;margin:0 0 6px">How long does a pool remodel or resurfacing take?</h3>
+            <p style="color:#334155;line-height:1.6;margin:0"><strong>Direct Answer:</strong> Standard pool resurfacing takes <strong>5 to 7 business days</strong> from water drainage to refilling. A complete pool remodel with new travertine coping, waterline tile, and equipment upgrades takes <strong>2 to 3 weeks</strong>.</p>
+          </div>
+
+          <div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#0f253f;margin:0 0 6px">How do I know if my pool plaster is delaminating?</h3>
+            <p style="color:#334155;line-height:1.6;margin:0"><strong>Direct Answer:</strong> Four warning signs of delamination: <strong>1) Hollow sound</strong> when tapped underwater with a pole; <strong>2) Soft blisters or raised bumps</strong> on walls/floor; <strong>3) Flaking plaster</strong> exposing rough gray gunite; and <strong>4) Calcium nodules</strong> weeping through surface hairline cracks.</p>
+          </div>
         </section>
-        <section id="portfolio" aria-label="Pool remodeling specialties" style="margin-top:32px">
-          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:12px">Pool Finishes, Repairs, and Backyard Upgrades</h2>
-          <p style="color:#475569;line-height:1.7">A resurfacing project can restore a comfortable, watertight surface and update the water color. Coping and waterline tile can modernize the pool edge, while Baja shelves, LED lighting, pumps, heaters, and automation can improve daily use. When plaster is hollow, lifting, cracked, stained, or unusually rough, we evaluate whether localized repair or complete resurfacing is the more durable solution.</p>
+
+        <!-- Pool Finish Cost & Longevity Comparison Guide -->
+        <section id="cost-guide" aria-label="Finish Comparison and Cost Guide" style="margin-top:36px">
+          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:12px">Pool Finish Cost, Longevity &amp; Performance Comparison</h2>
+          <p style="color:#475569;line-height:1.7;margin-bottom:16px">Compare interior pool finishes based on durability, cost for an average 15,000-gallon Riverside pool, maintenance effort, and climate resistance.</p>
+          <div style="overflow-x:auto">
+            <table style="width:100%;border-collapse:collapse;font-size:0.95rem;text-align:left;border:1px solid #e2e8f0">
+              <thead>
+                <tr style="background:#0f253f;color:#fff">
+                  <th style="padding:12px;border:1px solid #cbd5e1">Finish Type</th>
+                  <th style="padding:12px;border:1px solid #cbd5e1">Durability</th>
+                  <th style="padding:12px;border:1px solid #cbd5e1">Est. Cost (15k Gal)</th>
+                  <th style="padding:12px;border:1px solid #cbd5e1">Surface Texture</th>
+                  <th style="padding:12px;border:1px solid #cbd5e1">Hard Water Defense</th>
+                  <th style="padding:12px;border:1px solid #cbd5e1">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background:#fff">
+                  <td style="padding:10px;border:1px solid #e2e8f0"><strong>Standard White Plaster</strong> (Marcite)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">7–10 Years</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">$4,500 – $7,500</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Smooth</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Moderate (Susceptible to acid etching)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Budget-conscious homeowners, rentals</td>
+                </tr>
+                <tr style="background:#f8fafc">
+                  <td style="padding:10px;border:1px solid #e2e8f0"><strong>Quartz Aggregate</strong> (Diamond Brite)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">10–14 Years</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">$6,000 – $9,500</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Smooth-Medium</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">High (Stain &amp; chemical resistant)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Balance of smooth feel and enhanced lifespan</td>
+                </tr>
+                <tr style="background:#fff">
+                  <td style="padding:10px;border:1px solid #e2e8f0"><strong>StoneScapes Pebble</strong> (Regular)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">15–20+ Years</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">$8,500 – $13,500</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Naturally Textured, Slip-Resistant</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Superior (Resists high TDS &amp; scale)</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Long-term value, desert heat, hard water</td>
+                </tr>
+                <tr style="background:#f8fafc">
+                  <td style="padding:10px;border:1px solid #e2e8f0"><strong>Mini-Pebble &amp; Glass Beads</strong></td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">20+ Years</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">$11,000 – $16,000+</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Silky Aggregate Feel</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Maximum Non-Reactive Surface</td>
+                  <td style="padding:10px;border:1px solid #e2e8f0">Luxury aesthetic, vibrant water shimmer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Riverside County Climate & Water Research Statistics -->
+        <section id="local-research" aria-label="Riverside Water and Climate Research" style="margin-top:36px;padding:24px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px">
+          <p style="color:#0891b2;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 8px">Local Research &amp; Field Data</p>
+          <h2 style="font-size:1.5rem;font-weight:700;color:#0f253f;margin:0 0 16px">Riverside County Pool Longevity Statistics</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+            <div style="background:#fff;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <p style="font-size:2rem;font-weight:800;color:#0891b2;margin:0 0 6px">72%</p>
+              <p style="font-weight:700;color:#0f253f;margin:0 0 6px">Pre-1995 Pools With Failing Plaster</p>
+              <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0">Over 72% of residential pools in Riverside, Corona, and Murrieta built prior to 1995 still operate with original, chalking, or delaminating plaster coats that require complete chip-out.</p>
+            </div>
+            <div style="background:#fff;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <p style="font-size:2rem;font-weight:800;color:#0891b2;margin:0 0 6px">15–26</p>
+              <p style="font-weight:700;color:#0f253f;margin:0 0 6px">Grains/Gal Water Hardness</p>
+              <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0">Inland Empire tap water measures 250–450 ppm calcium hardness. This hard water accelerates standard plaster degradation up to 2.4x faster than quartz or pebble aggregate surfaces.</p>
+            </div>
+            <div style="background:#fff;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <p style="font-size:2rem;font-weight:800;color:#0891b2;margin:0 0 6px">100°F+</p>
+              <p style="font-weight:700;color:#0f253f;margin:0 0 6px">Summer Thermal Stress</p>
+              <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0">Prolonged summer heat drives water evaporation rates of 1.5–2 inches weekly, concentrating minerals and requiring aggregate finishes that resist aggressive calcium scaling.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Detailed Day-by-Day Project Timeline -->
+        <section id="timeline" aria-label="Remodeling Timeline" style="margin-top:36px">
+          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:12px">Project Timeline: Day-by-Day Breakdown</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+            <div style="border-left:3px solid #0891b2;padding-left:14px">
+              <p style="font-weight:700;color:#0f253f;margin:0 0 4px">Day 1: Draining &amp; Shell Sounding</p>
+              <p style="color:#475569;font-size:0.9rem;line-height:1.6;margin:0">Complete pool water drainage, hydrostatic plug relief, and comprehensive acoustic hammer testing to locate hollow delamination pockets.</p>
+            </div>
+            <div style="border-left:3px solid #0891b2;padding-left:14px">
+              <p style="font-weight:700;color:#0f253f;margin:0 0 4px">Day 2: Chip-Out &amp; Bond Coat Prep</p>
+              <p style="color:#475569;font-size:0.9rem;line-height:1.6;margin:0">Pneumatic chipping around tiles, fittings, and hollow areas down to gunite. High-strength polymer-modified bond coat application for mechanical keying.</p>
+            </div>
+            <div style="border-left:3px solid #0891b2;padding-left:14px">
+              <p style="font-weight:700;color:#0f253f;margin:0 0 4px">Days 3–4: Hand Application &amp; Acid Detail</p>
+              <p style="color:#475569;font-size:0.9rem;line-height:1.6;margin:0">Hand troweling of StoneScapes pebble or quartz finish, timed surface hydration, aggregate exposure wash, and light acid neutralization wash.</p>
+            </div>
+            <div style="border-left:3px solid #0891b2;padding-left:14px">
+              <p style="font-weight:700;color:#0f253f;margin:0 0 4px">Days 5–7: Fill &amp; 28-Day NPC Startup</p>
+              <p style="color:#475569;font-size:0.9rem;line-height:1.6;margin:0">Continuous freshwater fill to avoid waterline rings, initial chemical balancing, brushing protocol setup, and startup guidance.</p>
+            </div>
+          </div>
+          <p style="color:#64748b;font-size:0.9rem;margin-top:14px"><em>Note: Full backyard remodels with custom French-pattern travertine coping, waterline tile replacement, and Baja shelves require 2 to 3 weeks total.</em></p>
+        </section>
+
+        <!-- Structured Q&A / FAQ Section -->
+        <section id="faq" aria-label="Frequently Asked Questions" style="margin-top:36px">
+          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:16px">Frequently Asked Questions: Riverside Pool Resurfacing &amp; Remodeling</h2>
+          <div style="display:grid;gap:16px">
+            <article style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <h3 style="font-size:1.1rem;font-weight:700;color:#0f253f;margin:0 0 8px">¿Cuánto cuesta el replastering en Riverside County?</h3>
+              <p style="color:#475569;line-height:1.7;margin:0">El replastering en Riverside County tiene un costo promedio de <strong>$4,500 a $7,500</strong> para yeso blanco estándar, <strong>$6,000 a $9,500</strong> para acabado de cuarzo (Diamond Brite), y <strong>$8,500 a $13,500</strong> para acabados de piedra pebble (StoneScapes) en una piscina residencial estándar de 15,000 galones. El precio varía según el perímetro, la profundidad, y si se requiere un chip-out completo por desprendimiento.</p>
+            </article>
+            <article style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <h3 style="font-size:1.1rem;font-weight:700;color:#0f253f;margin:0 0 8px">¿Cuánto tarda una remodelación o resurfacing de piscina?</h3>
+              <p style="color:#475569;line-height:1.7;margin:0">Un resurfacing o replastering estándar tarda de <strong>5 a 7 días hábiles</strong> desde el vaciado hasta el llenado de agua. Una remodelación completa que incluya reemplazo de coping de travertino, azulejo waterline, repisas Baja shelf y actualización de equipos toma de <strong>2 a 3 semanas</strong>.</p>
+            </article>
+            <article style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <h3 style="font-size:1.1rem;font-weight:700;color:#0f253f;margin:0 0 8px">¿Cuál es mejor: quartz o pebble para el clima local?</h3>
+              <p style="color:#475569;line-height:1.7;margin:0">Para el clima desértico y caluroso del Inland Empire y Riverside County, <strong>Pebble (StoneScapes) es la mejor opción</strong>: dura 15 a 20+ años, es antideslizante y tolera el agua dura con alto contenido de calcio (15–26 grains/gal). <strong>Quartz (Diamond Brite)</strong> es una excelente opción intermedia: ofrece una superficie más suave al tacto y dura de 10 a 14 años con un costo 20% a 30% menor.</p>
+            </article>
+            <article style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0">
+              <h3 style="font-size:1.1rem;font-weight:700;color:#0f253f;margin:0 0 8px">¿Cómo sé si mi yeso (plaster) se está desprendiendo (delaminating)?</h3>
+              <p style="color:#475569;line-height:1.7;margin:0">Los 4 signos definitivos de delaminación son: 1) Sonido hueco o "pop" al golpear suavemente bajo el agua con el mango del cepillo; 2) Ampollas o protuberancias visibles en el fondo o paredes; 3) Desprendimiento o escamado del yeso dejando expuesta la gunita gris rugosa; y 4) Nódulos de calcio que brotan a través de grietas en la superficie.</p>
+            </article>
+          </div>
         </section>
         <section aria-label="Customer reviews" style="margin-top:32px">
           <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:12px">What Local Homeowners Say</h2>

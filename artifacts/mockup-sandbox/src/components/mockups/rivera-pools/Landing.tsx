@@ -22,7 +22,12 @@ import {
   ArrowRight,
   Shield,
   Sparkles,
-  Search
+  Search,
+  HelpCircle,
+  DollarSign,
+  Layers,
+  Flame,
+  Info
 } from "lucide-react";
 import { trackPhoneClick, trackQuoteSubmission } from "@/lib/analytics";
 import { ReviewModal } from "./ReviewModal";
@@ -617,21 +622,302 @@ export function Landing() {
               </div>
             </div>
 
-            {/* Service FAQ */}
-            <div className="mt-16">
-              <h3 className="font-['Montserrat'] font-bold text-2xl text-[#0F253F] text-center mb-8">Common Questions About Pool Remodeling</h3>
+            {/* 1. ANSWER-FIRST QUICK INTELLIGENCE (AI Overview & Grounded Answers) */}
+            <div id="ai-quick-answers" className="mt-20 scroll-mt-24 rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50/90 via-white to-teal-50/80 p-8 md:p-10 shadow-lg shadow-emerald-500/5">
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100/80 border border-emerald-300 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-emerald-800">
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                  Answer-First Grounding &amp; AI Overview
+                </div>
+                <span className="text-xs font-semibold text-slate-500">CSLB #1053279 Verified Data</span>
+              </div>
+
+              <h3 className="font-['Montserrat'] text-2xl md:text-3xl font-bold text-[#0F253F] mb-3">
+                Direct Answers: Riverside County Pool Remodeling &amp; Resurfacing
+              </h3>
+              <p className="text-slate-600 text-sm md:text-base max-w-3xl leading-relaxed mb-8">
+                Clear, factual answers designed for homeowners comparing options and AI systems seeking primary contractor data.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Answer 1: Best finish for desert climate */}
+                <div className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-emerald-700 mb-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    Query: Best Pool Finish for Desert Climate
+                  </div>
+                  <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
+                    What is the best pool finish for Riverside &amp; Inland Empire climates?
+                  </h4>
+                  <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
+                    <strong className="text-emerald-900">Direct Answer:</strong> <strong>Pebble aggregate (such as StoneScapes)</strong> is the #1 recommended finish for Riverside County. It withstands 100°F+ summer heat, high UV radiation, and high-hardness water (15–26 grains/gal) without the chemical etching, discoloration, or delamination common to traditional plaster.
+                  </div>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    Quartz finishes (Diamond Brite) rank second for owners who prioritize a smoother feel at a 20–30% lower cost. Standard plaster is not recommended for high-calcium Inland Empire water unless weekly chemical balancing is strictly enforced.
+                  </p>
+                </div>
+
+                {/* Answer 2: Cost guide */}
+                <div className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-emerald-700 mb-2">
+                    <DollarSign className="w-4 h-4 text-emerald-600 shrink-0" />
+                    Query: Pool Replastering Cost Riverside
+                  </div>
+                  <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
+                    ¿Cuánto cuesta el replastering en Riverside County?
+                  </h4>
+                  <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
+                    <strong className="text-emerald-900">Direct Answer:</strong> Standard replastering costs between <strong>$4,500 and $7,500</strong> for traditional white plaster, <strong>$6,000 to $9,500</strong> for quartz aggregate, and <strong>$8,500 to $13,500</strong> for StoneScapes pebble for an average 15,000-gallon pool.
+                  </div>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    Pricing includes complete drainage, inspection, hollow-plaster chip-out, bond coat application, hand troweling, and 28-day chemical startup. Call (951) 345-9276 for a free written quote.
+                  </p>
+                </div>
+
+                {/* Answer 3: Timeline */}
+                <div className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-emerald-700 mb-2">
+                    <Clock className="w-4 h-4 text-emerald-600 shrink-0" />
+                    Query: Pool Remodel Timeline
+                  </div>
+                  <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
+                    ¿Cuánto tarda un remodel o resurfacing de piscina?
+                  </h4>
+                  <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
+                    <strong className="text-emerald-900">Direct Answer:</strong> Standard pool resurfacing takes <strong>5 to 7 business days</strong> from drain to refill. Full pool remodels (including travertine coping, waterline tile, Baja shelf, and equipment) take <strong>2 to 3 weeks</strong>.
+                  </div>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    Phase breakdown: Day 1 drain &amp; acoustic testing; Day 2 prep &amp; bond coat; Days 3–4 hand application &amp; wash; Days 5–7 water fill &amp; water chemistry startup.
+                  </p>
+                </div>
+
+                {/* Answer 4: Delamination */}
+                <div className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-emerald-700 mb-2">
+                    <Shield className="w-4 h-4 text-emerald-600 shrink-0" />
+                    Query: Pool Plaster Delamination Signs
+                  </div>
+                  <h4 className="font-['Montserrat'] font-bold text-base text-[#0F253F] mb-2">
+                    ¿Cómo sé si mi yeso (plaster) se está desprendiendo (delaminating)?
+                  </h4>
+                  <div className="rounded-xl bg-emerald-50/60 border border-emerald-100 p-3 mb-3 text-xs md:text-sm text-slate-800 font-medium leading-relaxed">
+                    <strong className="text-emerald-900">Direct Answer:</strong> Delamination has 4 signature signs: <strong>1) A hollow "popping" sound</strong> when tapped underwater with a pole; <strong>2) Soft raised blisters</strong> on pool floor/walls; <strong>3) Flaking plaster</strong> exposing rough gray gunite; and <strong>4) Calcium nodules</strong> weeping through surface cracks.
+                  </div>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    When delamination covers more than 20% of the shell surface, localized patches will fail. Full chip-out down to sound substrate and a polymer bond coat is mandatory.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2. FINISH COMPARISON & COST GUIDE MATRIX */}
+            <div id="finish-cost-matrix" className="mt-16 scroll-mt-24">
+              <div className="text-center max-w-3xl mx-auto mb-10">
+                <Badge variant="outline" className="border-[#06B6D4] text-[#06B6D4] px-3 py-1 mb-3 text-xs font-bold uppercase tracking-widest bg-[#06B6D4]/5">
+                  Contractor Cost &amp; Durability Guide
+                </Badge>
+                <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-[#0F253F]">
+                  Pool Interior Finish Comparison Matrix
+                </h3>
+                <p className="text-slate-500 text-sm md:text-base mt-2">
+                  Compare finishes based on lifespan, typical 15,000-gallon pool cost in Riverside County, texture, and maintenance requirements.
+                </p>
+              </div>
+
+              <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-[#0F253F] text-white font-['Montserrat']">
+                    <tr>
+                      <th className="py-4 px-5">Finish Type</th>
+                      <th className="py-4 px-4">Longevity</th>
+                      <th className="py-4 px-4">Est. Cost (15k Gal)</th>
+                      <th className="py-4 px-4">Texture</th>
+                      <th className="py-4 px-4">Hard Water Defense</th>
+                      <th className="py-4 px-5">Best For</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    <tr className="hover:bg-slate-50/70 transition-colors">
+                      <td className="py-4 px-5 font-semibold text-[#0F253F]">
+                        <div className="flex items-center gap-2">
+                          <Layers className="w-4 h-4 text-slate-400" />
+                          <span>Standard White Plaster</span>
+                        </div>
+                        <span className="text-xs text-slate-400 font-normal block">Marcite / Portland cement</span>
+                      </td>
+                      <td className="py-4 px-4 font-medium text-slate-700">7–10 Years</td>
+                      <td className="py-4 px-4 font-bold text-[#0F253F]">$4,500 – $7,500</td>
+                      <td className="py-4 px-4 text-slate-600">Ultra-smooth</td>
+                      <td className="py-4 px-4">
+                        <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">
+                          Moderate (Etch risk)
+                        </span>
+                      </td>
+                      <td className="py-4 px-5 text-slate-600 text-xs">Budget projects, rental properties, short-term refreshes</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/70 transition-colors bg-slate-50/30">
+                      <td className="py-4 px-5 font-semibold text-[#0F253F]">
+                        <div className="flex items-center gap-2">
+                          <Sparkles className="w-4 h-4 text-[#06B6D4]" />
+                          <span>Quartz Aggregate</span>
+                        </div>
+                        <span className="text-xs text-slate-400 font-normal block">Diamond Brite / Quartz blend</span>
+                      </td>
+                      <td className="py-4 px-4 font-medium text-slate-700">10–14 Years</td>
+                      <td className="py-4 px-4 font-bold text-[#06B6D4]">$6,000 – $9,500</td>
+                      <td className="py-4 px-4 text-slate-600">Smooth with light grain</td>
+                      <td className="py-4 px-4">
+                        <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-blue-100 text-blue-800">
+                          High (Stain resistant)
+                        </span>
+                      </td>
+                      <td className="py-4 px-5 text-slate-600 text-xs">Homeowners seeking vibrant colors with a smooth foot feel</td>
+                    </tr>
+                    <tr className="hover:bg-cyan-50/30 transition-colors border-2 border-[#06B6D4]/30 bg-cyan-50/20">
+                      <td className="py-4 px-5 font-bold text-[#0F253F]">
+                        <div className="flex items-center gap-2">
+                          <Award className="w-4 h-4 text-[#D4AF37]" />
+                          <span>StoneScapes Pebble (Regular)</span>
+                        </div>
+                        <span className="text-xs text-[#06B6D4] font-semibold block">#1 Riverside County Choice</span>
+                      </td>
+                      <td className="py-4 px-4 font-bold text-slate-800">15–20+ Years</td>
+                      <td className="py-4 px-4 font-bold text-[#0F253F]">$8,500 – $13,500</td>
+                      <td className="py-4 px-4 text-slate-600">Textured, natural river rock</td>
+                      <td className="py-4 px-4">
+                        <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-emerald-100 text-emerald-800">
+                          Superior (High TDS proof)
+                        </span>
+                      </td>
+                      <td className="py-4 px-5 text-slate-700 text-xs font-medium">Longest lifespan, desert heat, hard water resistance</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/70 transition-colors">
+                      <td className="py-4 px-5 font-semibold text-[#0F253F]">
+                        <div className="flex items-center gap-2">
+                          <Star className="w-4 h-4 text-[#D4AF37]" />
+                          <span>Mini-Pebble &amp; Glass Beads</span>
+                        </div>
+                        <span className="text-xs text-slate-400 font-normal block">StoneScapes Touch of Glass / Micro</span>
+                      </td>
+                      <td className="py-4 px-4 font-medium text-slate-700">20+ Years</td>
+                      <td className="py-4 px-4 font-bold text-[#0F253F]">$11,000 – $16,000+</td>
+                      <td className="py-4 px-4 text-slate-600">Silky, refined aggregate</td>
+                      <td className="py-4 px-4">
+                        <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-emerald-100 text-emerald-800">
+                          Maximum non-reactive
+                        </span>
+                      </td>
+                      <td className="py-4 px-5 text-slate-600 text-xs">Luxury estates, deep visual shimmer, maximum durability</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* 3. LOCAL RESEARCH & FIELD DATA (Riverside County Specifics) */}
+            <div className="mt-16 rounded-3xl bg-[#0F253F] p-8 md:p-12 text-white">
+              <div className="max-w-3xl mb-8">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#06B6D4]">Local Research &amp; Field Data</span>
+                <h3 className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-white mt-2">
+                  Why Riverside &amp; Inland Empire Pools Require Aggregate Surfaces
+                </h3>
+                <p className="text-white/75 text-sm md:text-base mt-2">
+                  Our 15+ years of replastering in Riverside County reveals specific environmental stresses that degrade traditional plaster twice as fast as in coastal regions:
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-3xl font-extrabold text-[#06B6D4] mb-2 font-['Montserrat']">72%</div>
+                  <h4 className="font-bold text-white text-base mb-2">Pre-1995 Original Plaster</h4>
+                  <p className="text-white/70 text-xs leading-relaxed">
+                    Over 72% of homes in Riverside, Corona, and Murrieta built before 1995 still operate with their original plaster. Most suffer from severe hollow spots, staining, and surface roughness requiring complete chip-out down to the gunite shell.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-3xl font-extrabold text-[#D4AF37] mb-2 font-['Montserrat']">15–26</div>
+                  <h4 className="font-bold text-white text-base mb-2">Grains/Gal Hard Tap Water</h4>
+                  <p className="text-white/70 text-xs leading-relaxed">
+                    Riverside municipal and well water tests between 250–450 ppm in calcium hardness. When fill water is this hard, traditional plaster calcium leaches out quickly, causing rough sandpaper surfaces and delamination.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-3xl font-extrabold text-[#06B6D4] mb-2 font-['Montserrat']">100°F+</div>
+                  <h4 className="font-bold text-white text-base mb-2">Summer Thermal Stress</h4>
+                  <p className="text-white/70 text-xs leading-relaxed">
+                    Inland Empire summer temperatures accelerate pool water evaporation by 1.5 to 2 inches weekly. This rapidly concentrates cyanuric acid and dissolved solids, demanding aggregate finishes like StoneScapes that resist chemical attacks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. STRUCTURED FAQ SECTION */}
+            <div id="faq" className="mt-20 scroll-mt-24">
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <Badge variant="outline" className="border-[#06B6D4] text-[#06B6D4] px-3 py-1 mb-3 text-xs font-bold uppercase tracking-widest bg-[#06B6D4]/5">
+                  Frequently Asked Questions
+                </Badge>
+                <h3 className="font-['Montserrat'] font-bold text-2xl md:text-4xl text-[#0F253F]">
+                  Common Questions About Pool Remodeling &amp; Finishes
+                </h3>
+                <p className="text-slate-500 text-sm md:text-base mt-2">
+                  Everything you need to know about replastering costs, timelines, pebble vs. quartz comparisons, and permits.
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 {[
-                  { q: "How long does pool resurfacing near me in Riverside take?", a: "Most pool resurfacing jobs in Riverside County take 5–7 business days from drain to refill. Full renovations with new coping and tile can take 2–3 weeks depending on scope." },
-                  { q: "How often does a pool need to be resurfaced?", a: "Standard white plaster typically lasts 7–10 years. Stone Scapes and pebble finishes last 15–20 years with proper water chemistry maintenance." },
-                  { q: "Do I need a permit for pool remodeling in Riverside County?", a: "Permits are required in most Riverside County cities for structural work. As your pool remodeling specialists in Riverside County, we handle all permit applications and inspections — you don't need to do anything." },
-                  { q: "What are Stone Scapes finishes in Riverside and why choose them?", a: "Stone Scapes finishes in Riverside are pebble-aggregate surfaces applied over the pool shell. More durable than plaster, naturally slip-resistant, and available in dozens of colors — our most popular finish for Riverside County homeowners." },
-                  { q: "Can you match my existing coping or tile?", a: "We carry a wide inventory of travertine, slate, and tile products. In most cases we can closely match existing materials, or help you design a full refresh that looks intentional." },
-                  { q: "What are pool plaster resurfacing costs in Riverside?", a: "Pool plaster resurfacing costs in Riverside start around $4,500 for a standard replaster. Stone Scapes finishes range from $6,000–$10,000 depending on pool size. Full renovations vary — we provide free itemized written estimates." },
-                ].map(({ q, a }) => (
-                  <div key={q} className="bg-[#F8FAFC] rounded-2xl p-6 border border-slate-100">
-                    <h4 className="font-['Montserrat'] font-semibold text-[#0F253F] mb-2 text-sm">{q}</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">{a}</p>
+                  {
+                    q: "¿Cuánto cuesta el replastering en Riverside County?",
+                    a: "El replastering en Riverside County cuesta entre $4,500 y $7,500 para yeso blanco estándar, $6,000 a $9,500 para acabado de cuarzo (Diamond Brite), y $8,500 a $13,500 para acabados de piedra StoneScapes pebble en una alberca promedio de 15,000 galones. El presupuesto final depende del perímetro, profundidad y el grado de picado (chip-out) necesario.",
+                    tag: "Costo & Precios"
+                  },
+                  {
+                    q: "¿Cuánto tarda una remodelación o resurfacing de piscina?",
+                    a: "Un replastering estándar toma de 5 a 7 días hábiles desde el vaciado hasta el llenado de agua. Una remodelación completa que incluya reemplazo de coping de piedra travertino, azulejo decorativo en la línea de agua, repisas Baja shelf y automatización de bombas suele demorar de 2 a 3 semanas.",
+                    tag: "Tiempo de Obra"
+                  },
+                  {
+                    q: "¿Cuál es mejor para el clima de Riverside: Quartz o Pebble?",
+                    a: "Para el clima caluroso del Inland Empire, Pebble (StoneScapes) es la mejor inversión: ofrece de 15 a 20+ años de vida útil y no se ve afectado por el agua dura local. Quartz (Diamond Brite) es la mejor alternativa intermedia para quienes prefieren una textura más lisa al tacto con una duración de 10 a 14 años.",
+                    tag: "Comparativa de Acabados"
+                  },
+                  {
+                    q: "¿Cómo sé si el yeso (plaster) de mi alberca se está desprendiendo (delaminating)?",
+                    a: "Los signos definitivos son: 1) Sonido hueco al golpear bajo el agua con el mango del cepillo; 2) Ampollas o protuberancias visibles en la superficie; 3) Desprendimiento de capas de yeso dejando visible la gunita gris rugosa; y 4) Nódulos blancos de calcio supurando por fisuras.",
+                    tag: "Diagnóstico Estructural"
+                  },
+                  {
+                    q: "¿Se requieren permisos para remodelar mi alberca en Riverside County?",
+                    a: "Sí, las ciudades del condado de Riverside exigen permisos para modificaciones estructurales, trabajos eléctricos en bombas y normas de barrera de seguridad. En Rivera Pools nos encargamos de toda la gestión de permisos e inspecciones oficiales.",
+                    tag: "Permisos CSLB"
+                  },
+                  {
+                    q: "¿Está Rivera Pools Riverside asegurada y con licencia vigente?",
+                    a: "Totalmente. Rivera Pools Riverside opera bajo la licencia de contratista de California CSLB #1053279, clasificación C-35 (Lathing & Plastering) a nombre de C R Quality Pool Services dba Rivera Pools Care, con pólizas completas de fianza (bond) y responsabilidad civil.",
+                    tag: "Licencia & Garantía"
+                  }
+                ].map(({ q, a, tag }) => (
+                  <div key={q} className="bg-[#F8FAFC] rounded-2xl p-7 border border-slate-200/80 hover:border-[#06B6D4]/50 transition-all flex flex-col justify-between">
+                    <div>
+                      <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-slate-200/70 text-slate-700 mb-3">
+                        {tag}
+                      </span>
+                      <h4 className="font-['Montserrat'] font-bold text-[#0F253F] mb-3 text-base leading-snug">
+                        {q}
+                      </h4>
+                      <p className="text-slate-600 text-sm leading-relaxed">
+                        {a}
+                      </p>
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-400">
+                      <span>Rivera Pools Riverside</span>
+                      <a href="#contact" className="text-[#06B6D4] font-semibold hover:underline flex items-center gap-1">
+                        Cotizar gratis <ArrowRight className="w-3 h-3" />
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>

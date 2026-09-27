@@ -1,5 +1,5 @@
 # robots.txt — riverapoolsriverside.com
-# Last updated: 2026-09-21
+# Last updated: 2026-09-22
 
 # Allow all major search engines
 User-agent: Googlebot
